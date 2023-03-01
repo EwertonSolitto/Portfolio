@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "commit": "cz"
+    "commit": "cz",
+    "sass": "sass --watch --style=compressed src/styles/sass/index.scss:src/styles/css/index.css"
   },
   "eslintConfig": {
     "extends": [
