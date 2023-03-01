@@ -1,1 +1,1 @@
-*{box-sizing:border-box;margin:0;background-color:#0f1621;color:#e8e8e8;font-family:"Fira sans",sans-serif}/*# sourceMappingURL=index.css.map */
+header{display:flex;align-items:center;justify-content:space-between;padding:.75rem}header a{font-size:.75rem}header button{border:none}*{box-sizing:border-box;margin:0;background-color:#0f1621;color:#e8e8e8;font-family:"Fira sans",sans-serif}body{display:flex;justify-content:center}a{text-decoration:none}.app{width:22.5rem}.font-blue{color:#7fadeb}/*# sourceMappingURL=index.css.map */

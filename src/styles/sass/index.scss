@@ -1,5 +1,6 @@
 @import './variables/font.scss';
 @import './variables/colors.scss';
+@import './components/header.scss';
 
 * {  
   box-sizing: border-box;
@@ -8,4 +9,21 @@
   color: $secondary-color;
 
   font-family: $primary-font;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  width: 22.5rem;
+}
+
+.font-blue {
+  color: $terciary-color;
 }
