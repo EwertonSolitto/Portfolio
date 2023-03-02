@@ -1,6 +1,6 @@
 import { WhiteBurger } from "../assets/WhiteBurger";
 
-export function Header () {
+export default function Header () {
  
   return (
     <header>
