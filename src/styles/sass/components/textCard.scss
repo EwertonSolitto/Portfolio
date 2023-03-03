@@ -1,16 +1,24 @@
-.front-card {
-  background-color: $secondary-color;
-  
-  position: absolute;
-  left: -10%;
-  z-index: 1;
-}
+.text-card {
+  .front-card {
+    background-color: $secondary-color;
+    
+    position: relative;
+    right: 2rem;
+    z-index: 1;
 
-.back-card {
-  background-color: $terciary-color;
-  
-  padding-top: 1rem;
+    p {
+      background-color: transparent;
+      color: $primary-color;
+      padding-left: 3rem;
+    }
+  }
 
-  position: absolute;
-  left: -5%;
+  .back-card {
+    background-color: $terciary-color;
+    
+
+    position: relative;
+    right: 1.25rem;
+    bottom: 14.75rem;
+  }
 }
