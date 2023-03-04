@@ -1,6 +1,6 @@
-type Size = {width: number, height: number}
+import ImageSize from "../types/ImageSize";
 
-export function WhiteBurger (props: Size) {
+export function WhiteBurger (props: ImageSize) {
   return (
     <svg width={props.width} height={props.height} viewBox={`0 0 ${props.width} ${props.height}`} fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width={props.width} height={props.height} fill="url(#pattern0)"/>
