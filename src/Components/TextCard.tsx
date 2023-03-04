@@ -1,10 +1,10 @@
-import TextCardProps from "../Interfaces/TextCardProps";
+import TextCardProps from "../interfaces/TextCardProps";
 
 export default function TextCard (props: TextCardProps) {
-  const {size, paragraphs, a} = props
+  const {size, side, paragraphs, a} = props
 
   return (
-    <div className="text-card">
+    <div className={`text-card ${side}`}>
       <div className={`front-card ${size}`}>
         <div className="text-card-content">
           {paragraphs?.map(({name, style}) => {

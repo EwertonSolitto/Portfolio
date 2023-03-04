@@ -14,10 +14,8 @@ function App() {
   return (
     <div className="app">
       < Header/>
-      
       <main className="home-main">
-        < TextCard size="10" paragraphs={mainText}/>
-
+        < TextCard side="left" size="10" paragraphs={mainText}/>
       </main>
     </div>
   );
