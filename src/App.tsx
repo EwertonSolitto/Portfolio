@@ -1,3 +1,5 @@
+import GithubWhiteLogo from "./assets/GithubWhiteLogo";
+import LinkedInWhiteLogo from "./assets/LinkedInWhiteLogo";
 import Header from "./Components/Header";
 import TextCard from "./Components/TextCard";
 
@@ -10,12 +12,17 @@ function App() {
     {name: 'Eu sou o Ewerton Solitto.'}, 
     {name: 'Programador Fullstack'}
   ]
+
+  const mainButtons = [
+    {content: 'GitHub', link: 'https://github.com/EwertonSolitto', svg: <GithubWhiteLogo width={40} height={40}/>, alt: "GitHub Logo"},
+    {content: 'LinkedIn', link: 'https://www.linkedin.com/in/ewerton-solitto/', svg: <LinkedInWhiteLogo width={40} height={40} />, alt: "LinkedIn Logo"}
+  ]
   
   return (
     <div className="app">
       < Header/>
       <main className="home-main">
-        < TextCard side="left" size="10" paragraphs={mainText}/>
+        < TextCard side="left" size="10" paragraphs={mainText} a={mainButtons}/>
       </main>
     </div>
   );

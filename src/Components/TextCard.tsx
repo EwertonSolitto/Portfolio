@@ -1,4 +1,5 @@
 import TextCardProps from "../interfaces/TextCardProps";
+import LinkButton from "./Button";
 
 export default function TextCard (props: TextCardProps) {
   const {size, side, paragraphs, a} = props
@@ -11,8 +12,8 @@ export default function TextCard (props: TextCardProps) {
               return <p className={style}>{name}</p>
             })}
 
-          {a?.map(({name, url, style}) => {
-              return <a href={url} className={style}>{name}</a>
+          {a?.map(({content, link, style, svg}) => {
+              return <LinkButton link={link} style={style} content={content} svg={svg}/>
             })}
         </div>
       </div>
