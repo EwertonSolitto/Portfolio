@@ -5,6 +5,7 @@
 @import './components/textCard.scss';
 
 @import './pages/home/home.scss';
+@import './pages/about/about.scss';
 
 * {  
   box-sizing: border-box;
@@ -26,7 +27,7 @@ a {
 }
 
 .app {
-  width: 100vw;
+  min-width: 100vw;
 
   padding-inline: 0.5rem;
 }
