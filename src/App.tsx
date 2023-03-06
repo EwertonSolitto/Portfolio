@@ -7,15 +7,15 @@ import './styles/css/index.css'
 
 function App() {
   const mainText = [
-    {name: 'Olá'}, 
-    {name: 'Bem vindo ao meu portfólio!'}, 
-    {name: 'Eu sou o Ewerton Solitto.'}, 
-    {name: 'Programador Fullstack'}
+    {name: 'Olá!', style: 'hello'}, 
+    {name: 'Bem vindo ao meu portfólio!', style: 'mid-text'}, 
+    {name: 'Eu sou o Ewerton Solitto.', style: 'mid-text'}, 
+    {name: 'Programador Fullstack', style: 'strong-text'}
   ]
 
   const mainButtons = [
-    {content: 'GitHub', link: 'https://github.com/EwertonSolitto', svg: <GithubWhiteLogo width={40} height={40}/>, alt: "GitHub Logo"},
-    {content: 'LinkedIn', link: 'https://www.linkedin.com/in/ewerton-solitto/', svg: <LinkedInWhiteLogo width={40} height={40} />, alt: "LinkedIn Logo"}
+    {content: 'GitHub', link: 'https://github.com/EwertonSolitto', svg: <GithubWhiteLogo width={30} height={29}/>, alt: "GitHub Logo"},
+    {content: 'LinkedIn', link: 'https://www.linkedin.com/in/ewerton-solitto/', svg: <LinkedInWhiteLogo width={30} height={30} />, alt: "LinkedIn Logo"}
   ]
   
   return (

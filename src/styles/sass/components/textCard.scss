@@ -2,16 +2,63 @@
   .front-card {
     background-color: $secondary-color;
     
-    position: relative;
-    right: 2rem;
+    position: absolute;
+    left: -2rem;
     z-index: 1;
 
-    p {
-      background-color: transparent;
-      color: $primary-color;
-      padding-left: 3rem;
+    .text-card-content {
+      height: 15.5rem;
     }
-  }
+
+    .hello {
+      padding-top: 0.75rem;
+      
+      font-size: 5rem;
+      line-height: 4.75rem;
+    }
+
+    .mid-text {
+      padding-block: 0;
+
+      font-size: 1.25rem;
+    }
+
+    .strong-text {
+      padding-top: 0.125rem;
+
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    p, .buttons-div {
+      color: $primary-color;
+
+      padding-top: 1.5rem;
+      padding-left: 2.75rem;
+    }
+
+    .buttons-div {
+      display: flex; 
+      gap: 0.5rem; 
+    
+      a {
+          display: flex;
+          align-items: center;
+          gap: 0.25rem;
+
+          background-color: $primary-color;
+        
+          height: 2.375rem;
+
+          padding: 0.25rem 0.5rem;
+
+          font-size: 1.5rem;
+          font-weight: 500;
+
+          border-radius: 0.25rem;
+        }
+      }
+    }
 
   .back-card {
     background-color: $terciary-color;
@@ -19,6 +66,6 @@
 
     position: relative;
     right: 1.25rem;
-    bottom: 14.75rem;
+    top: 1rem;
   }
 }

@@ -8,18 +8,16 @@ export default function TextCard (props: TextCardProps) {
     <div className={`text-card ${side}`}>
       <div className={`front-card ${size}`}>
         <div className="text-card-content">
-          {paragraphs?.map(({name, style}, index) => {
+          
+          {paragraphs?.map(({name, style = ''}, index) => {
               return <p key={index} className={style}>{name}</p>
             })}
 
-
-
-
-
-          {a?.map(({content, link, style, svg}, index) => {
+          <div className="buttons-div">
+            {a?.map(({content, link, style = '', svg}, index) => {
               return <LinkButton key={index} link={link} style={style} content={content} svg={svg}/>
             })}
-
+          </div>
 
         </div>
       </div>
