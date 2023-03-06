@@ -2,11 +2,11 @@ import TextCardProps from "../interfaces/TextCardProps";
 import LinkButton from "./Button";
 
 export default function TextCard (props: TextCardProps) {
-  const {size, side, paragraphs, a} = props
+  const {side, paragraphs, a} = props
 
   return (
     <div className={`text-card ${side}`}>
-      <div className={`front-card ${size}`}>
+      <div className={`front-card ${side}`}>
         <div className="text-card-content">
           
           {paragraphs?.map(({name, style = ''}, index) => {
@@ -21,7 +21,6 @@ export default function TextCard (props: TextCardProps) {
 
         </div>
       </div>
-      <div className={`back-card ${size}`}></div>
     </div>
   )
 }

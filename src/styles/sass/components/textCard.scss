@@ -1,10 +1,23 @@
 .text-card {
-  .front-card {
-    background-color: $secondary-color;
-    
-    position: absolute;
+  .left.front-card {
+    position: relative;
     left: -2rem;
     z-index: 1;
+
+    box-shadow: 0.03125rem 0.09375rem 0.25rem rgba(0,0,0,25%), 0.75rem 0.75rem $terciary-color;
+  }
+
+  .right.front-card {
+    position: relative;
+    right: -2rem;
+    z-index: 1;
+
+    box-shadow: -0.03125rem 0.09375rem 0.25rem rgba(0,0,0,25%), -0.75rem 0.75rem $terciary-color;
+  }
+
+  .front-card {
+    background-color: $secondary-color;
+
 
     .text-card-content {
       height: 15.5rem;
@@ -59,13 +72,4 @@
         }
       }
     }
-
-  .back-card {
-    background-color: $terciary-color;
-    
-
-    position: relative;
-    right: 1.25rem;
-    top: 1rem;
-  }
 }

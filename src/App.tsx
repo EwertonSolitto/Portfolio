@@ -22,7 +22,7 @@ function App() {
     <div className="app">
       < Header/>
       <main className="home-main">
-        < TextCard side="left" size="10" paragraphs={mainText} a={mainButtons}/>
+        < TextCard side="left" paragraphs={mainText} a={mainButtons}/>
       </main>
     </div>
   );
