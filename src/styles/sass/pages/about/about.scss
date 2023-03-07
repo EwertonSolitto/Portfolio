@@ -1,7 +1,11 @@
 @import './components/textCard.scss';
 
 .about {
-  padding-block: 5.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin-block: 5.75rem;
 
   height: 25rem;
 }
