@@ -20,5 +20,10 @@ header {
     background-color: transparent;
 
     cursor: pointer;
+
+    svg {
+      width: clamp(2.75rem, 12.75vw, 3rem);
+      height: clamp(2.75rem, 12.75vw, 3rem);
+    }
   }
 }
