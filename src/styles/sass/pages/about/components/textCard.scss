@@ -2,12 +2,13 @@
   .text-card { 
     .front-card {
       height: 25rem;
-      width: 20.5rem;
+      width: clamp(18rem, 90vw, 20.5rem);
 
       .text {
         padding-block: 0 0.25rem;
+        padding-right: 1rem;
 
-        width: 18.75rem;
+        width: clamp(16rem, 80vw, 18rem);
 
         font-size: 0.875rem;
         text-align: justify;

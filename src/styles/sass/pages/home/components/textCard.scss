@@ -1,7 +1,12 @@
 .home-main {
   .text-card {
     .front-card{
-      height: 15.5rem;
+      .hello {
+        padding-top: 0.75rem;
+        
+        font-size: clamp(4rem, 20vw, 5rem);
+        line-height: 4.75rem;
+      }
     }
   }
 }

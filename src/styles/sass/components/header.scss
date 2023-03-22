@@ -6,7 +6,7 @@ header {
   padding-block: 0.5rem;
 
   a {
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 4vw, 1.125rem);
   }
 
   button {
