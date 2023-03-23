@@ -1,5 +1,5 @@
-import GithubWhiteLogo from "./assets/GithubWhiteLogo";
-import LinkedInWhiteLogo from "./assets/LinkedInWhiteLogo";
+import GithubWhiteLogo from "./assets/Technologies/GithubWhiteLogo";
+import LinkedInWhiteLogo from "./assets/socialMedia/LinkedInWhiteLogo";
 import Header from "./Components/Header";
 import TextCard from "./Components/TextCard";
 
