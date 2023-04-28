@@ -28,8 +28,6 @@ export default function TextCard (props: TextCardProps) {
 
   return (
     <div className={`text-card ${side}`}>
-      <div className={`front-card ${side}`}>
-        <div className="text-card-content">
 
           {h2 ? h2 : ''}
           
@@ -37,8 +35,6 @@ export default function TextCard (props: TextCardProps) {
 
           {buttonsDiv ? buttonsDiv : ''}
 
-        </div>
-      </div>
     </div>
   )
 }

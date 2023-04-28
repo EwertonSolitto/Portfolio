@@ -1,4 +1,4 @@
-import GithubWhiteLogo from "./assets/Technologies/GithubWhiteLogo";
+import GithubWhiteLogo from "./assets/technologies/GithubWhiteLogo";
 import LinkedInWhiteLogo from "./assets/socialMedia/LinkedInWhiteLogo";
 import Header from "./Components/Header";
 import TextCard from "./Components/TextCard";
@@ -42,6 +42,10 @@ function App() {
       
       <section className="about">
         < TextCard side="right" title={aboutProps.title} paragraphs={aboutProps.text} />
+      </section>
+
+      <section className="">
+        < TextCard side="left" />
       </section>
     </div>
   );
