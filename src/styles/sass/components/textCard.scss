@@ -1,5 +1,9 @@
 .text-card {
-  .left.front-card {
+  background-color: $secondary-color;
+
+  width: clamp(20rem, 99vw, 22.5rem);
+
+  &.left {
     position: relative;
     left: -2rem;
     z-index: 1;
@@ -11,7 +15,7 @@
     }
   }
 
-  .right.front-card {
+  &.right {
     position: relative;
     right: -0.5rem;
     z-index: 1;
@@ -23,65 +27,59 @@
     }
   }
 
-  .front-card {
-    background-color: $secondary-color;
+  h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: $primary-color;
 
-    width: clamp(20rem, 99vw, 22.5rem);
+    padding-block: 0.75rem;
+  }
 
-    h2 {
-      font-weight: 600;
-      font-size: 1.5rem;
-      color: $primary-color;
+  .mid-text {
+    padding-block: 0;
 
-      padding-block: 0.75rem;
-    }
+    font-size: clamp(1.15rem, 5vw, 1.25rem);
+  }
 
-    .mid-text {
-      padding-block: 0;
+  .strong-text {
+    padding-top: 0.125rem;
 
-      font-size: clamp(1.15rem, 5vw, 1.25rem);
-    }
+    font-size: clamp(1.4rem, 6vw, 1.5rem);
+    font-weight: 600;
+  }
 
-    .strong-text {
-      padding-top: 0.125rem;
+  p, .buttons-div {
+    color: $primary-color;
 
-      font-size: clamp(1.4rem, 6vw, 1.5rem);
-      font-weight: 600;
-    }
+    padding-top: 1.5rem;
+  }
 
-    p, .buttons-div {
-      color: $primary-color;
+  .buttons-div {
+    display: flex; 
+    gap: 0.5rem; 
 
-      padding-top: 1.5rem;
-    }
+    padding-bottom: 1rem;
+  
+    a {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
 
-    .buttons-div {
-      display: flex; 
-      gap: 0.5rem; 
+        background-color: $primary-color;
+      
+        height: 2.375rem;
 
-      padding-bottom: 1rem;
-    
-      a {
-          display: flex;
-          align-items: center;
-          gap: 0.25rem;
+        padding: 0.25rem 0.5rem;
 
-          background-color: $primary-color;
-        
-          height: 2.375rem;
+        font-size: clamp(1.4rem, 6vw, 1.5rem);
+        font-weight: 500;
 
-          padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
 
-          font-size: clamp(1.4rem, 6vw, 1.5rem);
-          font-weight: 500;
-
-          border-radius: 0.25rem;
-
-          svg {
-            width: clamp(1.8rem, 8vw, 1.9rem);
-            height: clamp(1.8rem, 8vw, 1.9rem);
-          }
+        svg {
+          width: clamp(1.8rem, 8vw, 1.9rem);
+          height: clamp(1.8rem, 8vw, 1.9rem);
         }
-      }
     }
+  }
 }
