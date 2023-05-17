@@ -6,7 +6,9 @@ export default function TechnologyFigure(props: TechnologyFigureProps) {
   return (
     <li>
       <figure>
-        {svg}
+        <div>
+          {svg}
+        </div>
         <figcaption className={description?.style}>{description?.content}</figcaption>
       </figure>
     </li>

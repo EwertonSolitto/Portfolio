@@ -27,7 +27,7 @@ export default function TextCard (props: TextCardProps) {
     : ''
 
   return (
-    <div className={`text-card ${side}`}>
+    <div className={`card text-card ${side}`}>
 
           {h2 ? h2 : ''}
           

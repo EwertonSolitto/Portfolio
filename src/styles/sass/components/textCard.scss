@@ -1,39 +1,4 @@
 .text-card {
-  background-color: $secondary-color;
-
-  width: clamp(20rem, 99vw, 22.5rem);
-
-  &.left {
-    position: relative;
-    left: -2rem;
-    z-index: 1;
-
-    box-shadow: 0.03125rem 0.09375rem 0.25rem rgba(0,0,0,25%), 0.75rem 0.75rem $terciary-color;
-
-    h2, p, .buttons-div {
-      padding-left: clamp(2.5rem, 15vw, 2.75rem);
-    }
-  }
-
-  &.right {
-    position: relative;
-    right: -0.5rem;
-    z-index: 1;
-
-    box-shadow: -0.03125rem 0.09375rem 0.25rem rgba(0,0,0,25%), -0.75rem 0.75rem $terciary-color;
-
-    h2, p, .buttons-div {
-      margin-left: clamp(1rem, 6vw, 1.5rem);
-    }
-  }
-
-  h2 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: $primary-color;
-
-    padding-block: 0.75rem;
-  }
 
   .mid-text {
     padding-block: 0;

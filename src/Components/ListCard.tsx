@@ -10,7 +10,7 @@ export default function ListCard(props: ListCardProps) {
   : ''
 
   return (
-    <div className={`list-card ${side}`}>
+    <div className={`card list-card ${side}`}>
       
       {h2 ? h2 : ''}
 
