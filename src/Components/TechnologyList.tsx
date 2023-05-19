@@ -1,14 +1,18 @@
 import TechnologyListProps from "../interfaces/TechnologyListProps";
+import TechnologyFigure from "./TechnologyFigure";
 
 export default function TechnologyList(props: TechnologyListProps) {
   const {technologies, title} = props
 
+  const technologiesList = technologies.map(({svg, description}, index) => {
+    return <TechnologyFigure key={index} svg={svg} description={description}/>
+  })
+
   return (
     <div>
       <h3>{title}</h3>
-
         <ul>
-          {technologies}
+          {technologiesList}
         </ul>
     </div>
   )

@@ -1,5 +1,10 @@
 export default interface TechnologyListProps {
   title: string
-
-  technologies: JSX.Element[]
+  technologies: Array<{
+    svg: JSX.Element, 
+    description:{
+      content: string, 
+      style?: string
+    }
+  }>
 }

@@ -7,7 +7,6 @@ import './styles/css/index.css'
 import TextCard from "./Components/TextCard";
 import ListCard from "./Components/ListCard";
 import TechnologyList from "./Components/TechnologyList";
-import TechnologyFigure from "./Components/TechnologyFigure";
 
 import HTMLLogo from "./assets/technologies/HTMLLogo";
 import CSSLogo from "./assets/technologies/CSSLogo";
@@ -65,54 +64,54 @@ function App() {
   const technologyListCardProps = {
     title: {content: 'Habilidades'},
     lists: [
-      < TechnologyList title="Tecnologias que domino:" technologies={[
-        < TechnologyFigure svg={< HTMLLogo width={56} height={56}/>} description={{content: 'HTML'}} key={1}/>,
-        < TechnologyFigure svg={< CSSLogo width={56} height={56}/>} description={{content: 'CSS'}} key={2}/>,
-        < TechnologyFigure svg={< JavascriptLogo width={56} height={56}/>} description={{content: 'Javascript'}} key={3}/>,
-        < TechnologyFigure svg={< TypescriptLogo width={56} height={56}/>} description={{content: 'Typescript'}} key={4}/>,
-        < TechnologyFigure svg={< ReactJSLogo width={56} height={56}/>} description={{content: 'ReactJs'}} key={5}/>,
-        < TechnologyFigure svg={< SassLogo width={56} height={56}/>} description={{content: 'Sass'}} key={6}/>,
-        < TechnologyFigure svg={< BootstrapLogo width={56} height={56}/>} description={{content: 'Bootstrap'}} key={7}/>,
-        < TechnologyFigure svg={< TailwindCSSLogo width={56} height={35}/>} description={{content: 'TailwindCSS'}} key={8}/>,
-        < TechnologyFigure svg={< GitLogo width={56} height={56}/>} description={{content: 'Git'}} key={9}/>,
-        < TechnologyFigure svg={< GithubBlackLogo width={56} height={56}/>} description={{content: 'Github'}} key={10}/>,
-        < TechnologyFigure svg={< FigmaLogo width={37} height={56}/>} description={{content: 'Figma'}} key={11}/>,
+      <TechnologyList key={1} title="Tecnologias que domino:" technologies={[
+        {svg: <HTMLLogo width={56} height={56}/>, description:{content: 'HTML'}},
+        {svg: <CSSLogo width={56} height={56}/>, description:{content: 'CSS'}},
+        {svg: <JavascriptLogo width={56} height={56}/>, description:{content: 'Javascript'}},
+        {svg: <TypescriptLogo width={56} height={56}/>, description:{content: 'Typescript'}},
+        {svg: <ReactJSLogo width={56} height={56}/>, description:{content: 'ReactJs'}},
+        {svg: <SassLogo width={56} height={56}/>, description:{content: 'Sass'}},
+        {svg: <BootstrapLogo width={56} height={56}/>, description:{content: 'Bootstrap'}},
+        {svg: <TailwindCSSLogo width={56} height={35}/>, description:{content: 'TailwindCSS'}},
+        {svg: <GitLogo width={56} height={56}/>, description:{content: 'Git'}},
+        {svg: <GithubBlackLogo width={56} height={56}/>, description:{content: 'Github'}},
+        {svg: <FigmaLogo width={37} height={56}/>, description:{content: 'Figma'}},
       ]}/>,
-      < TechnologyList title="Tecnologias com pouco domínio:" technologies={[
-        < TechnologyFigure svg={< NodeJSLogo width={56} height={56}/>} description={{content: 'NodeJS'}} key={12}/>,
-        < TechnologyFigure svg={< GraphQLLogo width={56} height={56}/>} description={{content: 'GraphQL'}} key={13}/>,
-        < TechnologyFigure svg={< MongoDBLogo width={26} height={56}/>} description={{content: 'MongoDB'}} key={14}/>,
-        < TechnologyFigure svg={< PrismaLogo width={46} height={56}/>} description={{content: 'Prisma'}} key={15}/>,
-        < TechnologyFigure svg={< ViteLogo width={56} height={56}/>} description={{content: 'Vite'}} key={16}/>,
+      <TechnologyList key={2} title="Tecnologias com pouco domínio:" technologies={[
+        {svg: <NodeJSLogo width={56} height={56}/>, description:{content: 'NodeJS'}},
+        {svg: <GraphQLLogo width={56} height={56}/>, description:{content: 'GraphQL'}},
+        {svg: <MongoDBLogo width={26} height={56}/>, description:{content: 'MongoDB'}},
+        {svg: <PrismaLogo width={46} height={56}/>, description:{content: 'Prisma'}},
+        {svg: <ViteLogo width={56} height={56}/>, description:{content: 'Vite'}}
       ]}/>,
-      < TechnologyList title="Tecnologias que pretendo aprender:" technologies={[
-        < TechnologyFigure svg={< NextJSLogo width={56} height={56}/>} description={{content: 'NextJS'}} key={17}/>,
-        < TechnologyFigure svg={< AngularLogo width={56} height={56}/>} description={{content: 'Angular'}} key={18}/>,
-        < TechnologyFigure svg={< DockerLogo width={56} height={56}/>} description={{content: 'Docker'}} key={19}/>,
-        < TechnologyFigure svg={< JestLogo width={50} height={56}/>} description={{content: 'Jest'}} key={20}/>,
-        < TechnologyFigure svg={< VueJSLogo width={56} height={49}/>} description={{content: 'Vue.js'}} key={21}/>,
-        < TechnologyFigure svg={< ElectronLogo width={56} height={56}/>} description={{content: 'Electron'}} key={22}/>,
-        < TechnologyFigure svg={< NestJSLogo width={56} height={54}/>} description={{content: 'NestJS'}} key={23}/>,
-        < TechnologyFigure svg={< PhotoshopLogo width={56} height={55}/>} description={{content: 'Photoshop'}} key={24}/>,
-        < TechnologyFigure svg={< PythonLogo width={46} height={56}/>} description={{content: 'Python'}} key={25}/>,
+      <TechnologyList key={3} title="Tecnologias que pretendo aprender:" technologies={[
+        {svg: <NextJSLogo width={56} height={56}/>, description:{content: 'NextJS'}},
+        {svg: <AngularLogo width={56} height={56}/>, description:{content: 'Angular'}},
+        {svg: <DockerLogo width={56} height={56}/>, description:{content: 'Docker'}},
+        {svg: <JestLogo width={50} height={56}/>, description:{content: 'Jest'}},
+        {svg: <VueJSLogo width={56} height={49}/>, description:{content: 'Vue.js'}},
+        {svg: <ElectronLogo width={56} height={56}/>, description:{content: 'Electron'}},
+        {svg: <NestJSLogo width={56} height={54}/>, description:{content: 'NestJS'}},
+        {svg: <PhotoshopLogo width={56} height={55}/>, description:{content: 'Photoshop'}},
+        {svg: <PythonLogo width={46} height={56}/>, description:{content: 'Python'}},
       ]} />
     ]
   }
   
   return (
     <div className="app">
-      < Header/>
+      <Header/>
 
       <main className="home-main">
-        < TextCard side="left" paragraphs={mainProps.text} a={mainProps.buttons} />
+        <TextCard side="left" paragraphs={mainProps.text} a={mainProps.buttons} />
       </main>
       
       <section className="about">
-        < TextCard side="right" title={aboutProps.title} paragraphs={aboutProps.text} />
+        <TextCard side="right" title={aboutProps.title} paragraphs={aboutProps.text} />
       </section>
 
       <section className="tecnologies">
-        < ListCard side="left" title={technologyListCardProps.title} lists={technologyListCardProps.lists}/>
+        <ListCard side="left" title={technologyListCardProps.title} lists={technologyListCardProps.lists}/>
       </section>
     </div>
   );
