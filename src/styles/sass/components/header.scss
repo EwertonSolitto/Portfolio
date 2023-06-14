@@ -1,9 +1,12 @@
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
   padding-block: 0.5rem;
+  transition: all 1000ms ease;
+
+  .header-logo-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   a {
     font-size: clamp(1rem, 4vw, 1.125rem);
@@ -24,6 +27,28 @@ header {
     svg {
       width: clamp(2.75rem, 12.75vw, 3rem);
       height: clamp(2.75rem, 12.75vw, 3rem);
+    }
+  }
+
+  &.opened-menu {
+    height: 90lvh;
+
+    nav {
+      margin-top: 13vh;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 13vh;
+
+        padding: 0;
+        li {
+          a {
+            font-size: clamp(1.8rem, 7vw, 2rem);
+          }
+        }
+      }
     }
   }
 }
