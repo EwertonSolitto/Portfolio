@@ -2,7 +2,11 @@ header {
   padding-block: 0.5rem;
   transition: all 1000ms ease;
 
-  .header-logo-button {
+  div.desktop-header {
+    display: none;
+  }
+
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,6 +14,10 @@ header {
 
   a {
     font-size: clamp(1rem, 4vw, 1.125rem);
+  }
+
+  .opened-nav {
+    display: none;
   }
 
   button {
@@ -33,14 +41,31 @@ header {
   &.opened-menu {
     height: 90lvh;
 
+    .header {
+      display: grid;
+    }
+
+    button {
+      grid-row: 1;
+      grid-column: 2;
+    }
+
+    .opened-nav {
+      display: flex;
+      justify-content: center;
+      grid-row: 2;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
     nav {
-      margin-top: 13vh;
+      margin-block: 10vh;
 
       ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 13vh;
+        gap: 12vh;
 
         padding: 0;
         li {
@@ -51,4 +76,45 @@ header {
       }
     }
   }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 2.25rem;
+
+    .header {
+      justify-content: flex-start;
+      gap: 4rem;
+    }
+
+    div.mobile-header {
+      display: none;
+    }
+
+    div.desktop-header {
+      display: flex;
+    }
+
+    .opened-nav {
+      display: flex;
+      position: relative;
+      left: 5%;
+    }
+  
+
+    a h1 {
+      font-size: 2.25rem;
+    }
+
+    nav  {
+      ul {
+        display: flex;
+        gap: 1.75rem;
+
+        li a{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  } 
 }

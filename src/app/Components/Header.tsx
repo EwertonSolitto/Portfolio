@@ -5,6 +5,7 @@ import { useState } from "react";
 export default function Header () {
   const [nav, setNav] = useState(false)
 
+  const logo = <a href="#main"><h1><span className="font-blue">{'<'}</span>Portfólio<span className="font-blue">{'/>'}</span></h1></a>
   const burgerButton = <button onClick={() => handleMenu(true)}className="burger"><List size={48} color="#e8e8e8" weight="regular" /></button>
   const xButton = <button onClick={() => handleMenu(false)} className="x"><X size={48} color="#e8e8e8" weight="regular" /></button>
   const navigation = 
@@ -16,10 +17,12 @@ export default function Header () {
           <li><a href="/">Sobre</a></li>
           <li><a href="/">Habilidades</a></li>
           <li><a href="/">Projetos</a></li>
+          <li><a href="/">Contato</a></li>
         </ul>
       </nav>
     </div>
   )
+
 
   function handleMenu(option: boolean) {
     setNav(option)
@@ -27,13 +30,30 @@ export default function Header () {
     return nav ? document.body.style.position = 'relative' : document.body.style.position = 'fixed'
   }
 
-  return (
-    <header className={nav ? 'opened-menu' : ''}>
+  /*if (document.body.clientWidth >= 840) {
+    return (
+      <header>
         <div className='header-logo-button'>
           <a href="#main"><h1><span className="font-blue">{'<'}</span>Portfólio<span className="font-blue">{'/>'}</span></h1></a>
-          {nav ? xButton : burgerButton}
         </div>
-        {nav ? navigation : ''}
+        {navigation}
+        <div className="selector"></div>
+      </header>
+    )
+  }*/
+
+  return (
+    <header className={nav ? 'opened-menu' : ''}>
+        <div className='header mobile-header'>
+          {logo}
+          {nav ? xButton : burgerButton}
+          {navigation}
+
+        </div>
+        <div className='header desktop-header'>
+          {logo}
+          {navigation}
+        </div>
     </header>
   )
 }
