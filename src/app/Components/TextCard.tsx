@@ -1,4 +1,4 @@
-import TextCardProps from "../interfaces/TextCardProps";
+import { TextCardProps } from "../models/interfaces";
 import LinkButton from "./Button";
 
 export default function TextCard (props: TextCardProps) {

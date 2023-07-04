@@ -1,4 +1,4 @@
-import TechnologyFigureProps from "../interfaces/TechnologyFigureProps";
+import { TechnologyFigureProps } from "../models/interfaces"
 
 export default function TechnologyFigure(props: TechnologyFigureProps) {
   const {svg, description} = props

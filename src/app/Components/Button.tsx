@@ -1,4 +1,4 @@
-import LinkButtonProps from "../interfaces/LinkButtonProps";
+import { LinkButtonProps } from "../models/interfaces"
 
 export default function LinkButton (props: LinkButtonProps) {
   const {link, content, style, svg} = props

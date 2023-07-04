@@ -1,4 +1,4 @@
-import ImageSize from "../../types/ImageSize";
+import { ImageSize } from "@/app/models/types";
 
 export default function ViteLogo(props: ImageSize) {
   return (

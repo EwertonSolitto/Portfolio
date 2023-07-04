@@ -1,4 +1,4 @@
-import './styles/sass/index.scss'
+import './styles/index.scss'
 
 export const metadata = {
   title: 'Portfolio',

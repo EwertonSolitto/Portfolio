@@ -1,4 +1,4 @@
-import ListCardProps from "../interfaces/ListCardProps";
+import { ListCardProps } from "../models/interfaces"
 
 export default function ListCard(props: ListCardProps) {
   const {title, lists, side} = props

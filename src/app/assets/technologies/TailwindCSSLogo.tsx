@@ -1,10 +1,10 @@
-import ImageSize from "../../types/ImageSize";
+import { ImageSize } from "@/app/models/types";
 
 export default function TailwindCSSLogo(props: ImageSize) {
   return (
     <svg width={props.width} height={props.height} viewBox={`0 0 ${props.width} ${props.height}`} fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_57_97)">
-      <mask id="mask0_57_97" /*style="mask-type:luminance"*/ maskUnits="userSpaceOnUse" x="0" y="0" width={props.width} height={props.height}>
+      <mask id="mask0_57_97" maskUnits="userSpaceOnUse" x="0" y="0" width={props.width} height={props.height}>
         <path d="M0 0H54V32.4H0V0Z" fill="white"/>
       </mask>
       <g mask="url(#mask0_57_97)">
