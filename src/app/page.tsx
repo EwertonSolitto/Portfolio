@@ -50,11 +50,11 @@ function App() {
     title: {content: 'Sobre'},
     text: [
       {content: 
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus sapien quis metus cursus fermentum. Duis id sapien id magna cursus porttitor. Nulla viverra felis at posuere cursus. Maecenas condimentum volutpat hendrerit. Duis consequat felis quis volutpat aliquet. Nullam quis porttitor turpis. Aliquam erat volutpat.',
+        'Olá! Eu sou Ewerton Solitto, tenho 19 anos e sou Programador Fullstack mais focado no Front-end. Estou estudando programação a mais de 1 ano e procuro minha primeira oportunidade na área.',
         style: 'text'
       },
       {content: 
-        'Nullam venenatis augue in metus euismod tempus. Sed a varius eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean at magna pellentesque, hendrerit ultrices, in ultrices orci consequat. Maecenas eget congue nulla.',
+        'Possuo conhecimentos sólidos nas principais tecnologias web, hoje estou no foco em aprender os frameworks mais procurados do mercado e nas melhores práticas para garantir que meus projetos estejam em alta qualidade.',
         style: 'text'
       }]
   }
@@ -80,12 +80,12 @@ function App() {
         {svg: <GraphQLLogo width={56} height={56}/>, description:{content: 'GraphQL'}},
         {svg: <MongoDBLogo width={26} height={56}/>, description:{content: 'MongoDB'}},
         {svg: <PrismaLogo width={46} height={56}/>, description:{content: 'Prisma'}},
-        {svg: <ViteLogo width={56} height={56}/>, description:{content: 'Vite'}}
+        {svg: <ViteLogo width={56} height={56}/>, description:{content: 'Vite'}},
+        {svg: <NextJSLogo width={56} height={56}/>, description:{content: 'NextJS'}},
+        {svg: <DockerLogo width={56} height={56}/>, description:{content: 'Docker'}},
       ]}/>,
       <TechnologyList key={3} title="Tecnologias que pretendo aprender:" technologies={[
-        {svg: <NextJSLogo width={56} height={56}/>, description:{content: 'NextJS'}},
         {svg: <AngularLogo width={56} height={56}/>, description:{content: 'Angular'}},
-        {svg: <DockerLogo width={56} height={56}/>, description:{content: 'Docker'}},
         {svg: <JestLogo width={50} height={56}/>, description:{content: 'Jest'}},
         {svg: <VueJSLogo width={56} height={49}/>, description:{content: 'Vue.js'}},
         {svg: <ElectronLogo width={56} height={56}/>, description:{content: 'Electron'}},
