@@ -22,7 +22,15 @@ export default function Header () {
       </nav>
     </div>
   )
-
+  const select = 
+  (  
+    <div className="select-div">
+      <select name="language" id="language">
+        <option className="option" value="portuguese">Português</option>
+        <option className="option" value="english">Inglês</option>
+      </select>
+    </div>
+  )
 
   function handleMenu(option: boolean) {
     setNav(option)
@@ -48,11 +56,12 @@ export default function Header () {
           {logo}
           {nav ? xButton : burgerButton}
           {navigation}
-
+          {select}
         </div>
         <div className='header desktop-header'>
           {logo}
           {navigation}
+          {select}
         </div>
     </header>
   )
