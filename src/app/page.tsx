@@ -54,7 +54,7 @@ function App() {
         style: 'text'
       },
       {content: 
-        'Possuo conhecimentos sólidos nas principais tecnologias web, hoje estou no foco em aprender os frameworks mais procurados do mercado e nas melhores práticas para garantir que meus projetos estejam em alta qualidade.',
+        'Possuo conhecimentos sólidos nas principais tecnologias web, hoje estou no foco em aprender os frameworks mais procurados do mercado e nas melhores práticas para garantir que meus projetos estejam sempre em alta qualidade.',
         style: 'text'
       }]
   }

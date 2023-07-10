@@ -5,7 +5,7 @@
     left: -1.375rem;
 
     h2, h3, ul {
-      padding-left: clamp(1.5rem, 10vw, 2.125rem);
+      margin-left: clamp(1.5rem, 10vw, 2.125rem);
     }
   }
 
@@ -14,7 +14,7 @@
   }
 
   h2 {
-    padding-left: 2.125rem;
+    margin-left: 2.125rem;
     padding-bottom: 0.125rem;
   }
   
@@ -24,6 +24,7 @@
   }
 
   ul {
+    all: unset;
     display: grid;
 
     grid-template-columns: repeat(5 , 1fr);
@@ -31,6 +32,7 @@
 
     margin-top: 0.5rem;
     margin-right: 1.375rem;
+    padding-inline-start: 0;
   }
 
   figure {
@@ -70,6 +72,17 @@
 
     ul {
       grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  .list-card {
+    &.left {
+
+      h2, h3, ul {
+        margin-inline: 1.5rem;
+      }
     }
   }
 }

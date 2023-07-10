@@ -11,7 +11,7 @@
     box-shadow: 0.03125rem 0.09375rem 0.25rem rgba(0,0,0,25%), 0.75rem 0.75rem $terciary-color;
 
     h2, h3, p, .buttons-div {
-      padding-left: clamp(2.5rem, 15vw, 2.75rem);
+      margin-left: clamp(2.5rem, 15vw, 2.75rem);
     }
   }
 
@@ -36,5 +36,29 @@
     font-size: 1.5rem;
 
     padding-block: 0.75rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .card {
+    margin: auto;
+
+    &.left {
+      position: initial;
+      margin-left: 2rem;
+
+      h2, h3, p, .buttons-div {
+        margin-left: 1.5rem;
+      }
+    }
+
+    &.right {
+      position: initial;
+      margin-right: 2rem;
+
+      h2, h3, p, .buttons-div {
+        margin-left: 1.5rem;
+      }
+    } 
   }
 }

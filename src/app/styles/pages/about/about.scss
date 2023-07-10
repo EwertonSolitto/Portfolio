@@ -9,3 +9,9 @@
 
   height: 25rem;
 }
+
+@media (min-width: 540px) {
+  .about {
+    margin-block: 8rem;
+  }
+}
