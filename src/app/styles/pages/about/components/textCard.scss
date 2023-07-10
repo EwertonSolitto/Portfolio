@@ -24,6 +24,25 @@
   .about {
     .text-card {
       width: 21rem;
+
+      .text {
+        padding-bottom: 0.625rem;
+
+        width: 21rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .about {
+    .text-card {
+      height: 30rem;
+      width: 25rem;
+
+      .text {
+        font-size: 1.125rem;
+      }
     }
   }
 }

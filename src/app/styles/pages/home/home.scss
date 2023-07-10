@@ -1,5 +1,11 @@
 @import './components/textCard.scss';
 
 .home-main {
-  padding-top: 6.75rem;
+  margin-top: 6.75rem;
+}
+
+@media (min-width: 720px) {
+  .home-main {
+    margin-top: 8rem;
+  }
 }

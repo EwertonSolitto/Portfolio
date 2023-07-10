@@ -14,7 +14,6 @@
   }
 
   h2 {
-    margin-left: 2.125rem;
     padding-bottom: 0.125rem;
   }
   
@@ -83,6 +82,49 @@
       h2, h3, ul {
         margin-inline: 1.5rem;
       }
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .list-card {
+    width: 32rem;
+
+    h2 {
+      padding-bottom: 0.25rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+
+
+    ul {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 0.75rem 0.625rem;
+    
+      margin-top: 0.625rem;
+    }
+
+    figure {
+      width: 4rem;
+      height: 5.25rem;
+  
+      div {
+        height: 4.625rem;
+  
+        margin-bottom: 0.325rem;
+
+        svg {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+
+    figcaption {
+      font-size: 0.825rem;
     }
   }
 }
