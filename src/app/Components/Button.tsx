@@ -6,7 +6,7 @@ export default function LinkButton (props: LinkButtonProps) {
   return (
       <a href={link} className={`link-button ${style}`} target="_blank" rel="noreferrer">
       {svg}
-      {content}
+      <span>{content}</span>
       </a>
   )
 }

@@ -46,3 +46,19 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .about {
+    .text-card {
+      width: 32rem;
+      height: 40rem;
+    
+      
+    .text {
+      font-size: 1.5rem;
+
+      width: 26.25rem;
+    }
+    }
+  }
+}
