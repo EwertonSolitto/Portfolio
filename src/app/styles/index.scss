@@ -45,3 +45,15 @@ li {
 .font-blue {
   color: $terciary-color;
 }
+
+@media (min-width: 1024px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-main, section.about, section.tecnologies {
+    width: 64rem;
+  }
+}

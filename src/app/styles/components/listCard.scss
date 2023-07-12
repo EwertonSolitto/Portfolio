@@ -131,7 +131,7 @@
 
 @media (min-width: 1024px) {
   .list-card {
-    width: 40rem;
+    width: 54rem;
 
     padding-bottom: 2rem;
 
@@ -146,6 +146,7 @@
     }
 
     ul {
+      grid-template-columns: repeat(8, 1fr);
       gap: 1rem 0.75rem;
     }
 
