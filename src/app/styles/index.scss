@@ -63,3 +63,9 @@ li {
     width: 90rem;
   }
 }
+
+@media (min-width: 1520px) {
+  .home-main, section.about, section.tecnologies {
+    width: 90vw;
+  }
+}
