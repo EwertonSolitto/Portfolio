@@ -1,8 +1,8 @@
 import './styles/index.scss'
 
 export const metadata = {
-  title: 'Portfolio',
-  description: 'Portfolio do Ewerton',
+  title: 'Ewerton Solitto',
+  description: 'Portfolio do Ewerton Solitto',
 }
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
