@@ -57,3 +57,9 @@ li {
     width: 64rem;
   }
 }
+
+@media (min-width: 1440px) {
+  .home-main, section.about, section.tecnologies {
+    width: 90rem;
+  }
+}

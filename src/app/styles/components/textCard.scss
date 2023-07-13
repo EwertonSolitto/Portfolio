@@ -126,3 +126,34 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .text-card {
+    .mid-text {
+      font-size: 2.5rem;
+    }
+
+    .strong-text {
+      font-size: 2.75rem;
+    }
+
+    .buttons-div {
+      gap: 2.25rem;
+
+      padding-block: 3rem 1.5rem;
+      
+      a {
+        height: 4.5rem;
+
+        padding: 0.5rem 1rem;
+
+        font-size: 2.75rem;
+
+        svg {
+          width: 3.5rem;
+          height: 3.5rem;
+        }
+      }
+    }
+  }
+}

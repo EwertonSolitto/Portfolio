@@ -67,3 +67,19 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .about {
+    .text-card {
+      width: 42.5rem;
+      height: 48rem;
+    
+      
+    .text {
+      font-size: 1.75rem;
+
+      width: 35.5rem;
+    }
+    }
+  }
+}

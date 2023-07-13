@@ -34,3 +34,16 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .home-main {
+    .text-card {
+      .hello {
+        padding-top: 2rem;
+
+        font-size: 7.5rem;
+        line-height: 6.75rem;
+      }
+    }
+  }
+}

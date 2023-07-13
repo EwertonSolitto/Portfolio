@@ -114,7 +114,7 @@
       div {
         height: 4.625rem;
   
-        margin-bottom: 0.325rem;
+        margin-bottom: 0.25rem;
 
         svg {
           width: 4rem;
@@ -156,9 +156,7 @@
   
       div {
         height: 5.5rem;
-  
-        margin-bottom: 0.325rem;
-
+        
         svg {
           width: 5rem;
           height: 5rem;
@@ -168,6 +166,26 @@
 
     figcaption {
       font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .list-card {
+    width: 64rem;
+    height: 54rem;
+
+    padding-bottom: 2rem;
+
+    h3 {
+      font-size: 2rem;
+
+      margin-block: 1.125rem 0.25rem;
+    }
+
+    ul {
+      grid-template-columns: repeat(10, 1fr);
+      gap: 1.5rem 0.75rem;
     }
   }
 }
