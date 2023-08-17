@@ -1,5 +1,5 @@
-import { TextCardProps } from "../models/interfaces";
-import LinkButton from "./Button";
+import { TextCardProps } from "../../models/interfaces";
+import LinkButton from "../Button";
 
 export default function TextCard (props: TextCardProps) {
   const {side, title, paragraphs, a} = props

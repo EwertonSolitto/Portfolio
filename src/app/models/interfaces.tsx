@@ -41,3 +41,9 @@ export interface TextCardProps {
   paragraphs?: Array<{content: string, style?: string}>;
   a?: Array<{content: string, link: string ,style?: string, svg?: JSX.Element, alt?: string}>;
 }
+
+export interface ProjectsCardProps {
+  side: Side;
+
+  title?: {content: string, style?: string}
+}

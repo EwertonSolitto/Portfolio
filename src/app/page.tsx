@@ -2,9 +2,9 @@ import GithubWhiteLogo from "./assets/technologies/GithubWhiteLogo";
 import LinkedInWhiteLogo from "./assets/socialMedia/LinkedInWhiteLogo";
 import Header from "./Components/Header";
 
-import TextCard from "./Components/TextCard";
-import ListCard from "./Components/ListCard";
-import TechnologyList from "./Components/TechnologyList";
+import TextCard from "./Components/textCard/TextCard";
+import ListCard from "./Components/listCard/ListCard";
+import TechnologyList from "./Components/listCard/TechnologyList";
 
 import HTMLLogo from "./assets/technologies/HTMLLogo";
 import CSSLogo from "./assets/technologies/CSSLogo";
