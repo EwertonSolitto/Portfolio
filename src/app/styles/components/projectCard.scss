@@ -1,0 +1,77 @@
+.projects-card {
+  margin-bottom: 4rem;
+  padding-bottom: 2.5rem;
+
+  .projects-figure {
+    width: 16.875rem;
+    height: 10.9375rem;
+
+    img, .over-img {
+      width: 16.875rem;
+      height: 10.9375rem;
+      border-radius: 1rem;
+    }
+    
+    .over-img {
+      padding: 0.5rem 0.75rem;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      background-color: #0C121A80;
+
+      
+      div.line {
+        height: 1px;
+        width: 15.375rem;
+        background-color: $white;
+      }
+
+      h3 {
+        margin: 0 0 0.125rem;
+        color: $secondary-color;
+      }
+
+      > div {
+        height: 8.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        ul {
+          padding: 0.25rem 0 0;
+          display: flex;
+          gap: 0.25rem;
+          
+          li {
+            border: 1px $white solid;
+            color: $white;
+            padding-inline: 0.25rem;
+          }
+        }
+        
+        .links {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          
+          a {
+            color: $primary-color;
+            background-color: $white;
+            padding: 0.1875rem 0.25rem;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            border-radius: 0.375rem;
+            width: fit-content;
+
+            img {
+              width: 1.25rem;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

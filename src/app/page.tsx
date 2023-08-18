@@ -31,6 +31,9 @@ import NestJSLogo from "./assets/technologies/NestJSLogo";
 import PhotoshopLogo from "./assets/technologies/PhotoshopLogo";
 import PythonLogo from "./assets/technologies/PythonLogo";
 import AngularLogo from "./assets/technologies/AngularLogo";
+import ProjectsCard from "./Components/projectCard/ProjectsCard";
+
+import { url } from "inspector";
 
 function App() {
   const mainProps = {
@@ -95,6 +98,22 @@ function App() {
       ]} />
     ]
   }
+
+  const ProjectListProps = {
+    title: {content: 'Projetos'},
+    projects: [
+      {
+        title: "The Blog.",
+        img: "/the-blog.png",
+        alt: "Foto do The Blog",
+        tecnologies: ["HTML", "CSS", "Javascript"],
+        links: {
+          github: 'https://github.com/EwertonSolitto/The-Blog',
+          website: 'https://ewertonsolitto.github.io/The-Blog/'
+        }
+      }
+    ]
+  }
   
   return (
     <div className="app">
@@ -110,6 +129,10 @@ function App() {
 
       <section className="tecnologies">
         <ListCard side="left" title={technologyListCardProps.title} lists={technologyListCardProps.lists}/>
+      </section>
+
+      <section className="projects">
+        <ProjectsCard side="right" title={ProjectListProps.title} figure={ProjectListProps.projects}/>
       </section>
     </div>
   );

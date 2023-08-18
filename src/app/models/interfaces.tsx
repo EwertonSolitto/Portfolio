@@ -42,8 +42,18 @@ export interface TextCardProps {
   a?: Array<{content: string, link: string ,style?: string, svg?: JSX.Element, alt?: string}>;
 }
 
-export interface ProjectsCardProps {
+export interface ProjectCardProps {
   side: Side;
 
-  title?: {content: string, style?: string}
+  title: {content: string, style?: string}
+  figure: Array<ProjectFigureProps>
+}
+
+export interface ProjectFigureProps {
+  title: string
+  style?: string
+  img: string
+  alt: string
+  tecnologies: Array<string>
+  links: {github: string, website: string}
 }
