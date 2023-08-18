@@ -105,11 +105,41 @@ function App() {
       {
         title: "The Blog.",
         img: "/the-blog.png",
-        alt: "Foto do The Blog",
+        alt: "Foto The Blog",
         tecnologies: ["HTML", "CSS", "Javascript"],
         links: {
           github: 'https://github.com/EwertonSolitto/The-Blog',
           website: 'https://ewertonsolitto.github.io/The-Blog/'
+        }
+      },
+      {
+        title: "Rocket NFTs",
+        img: "/rocket-nfts.png",
+        alt: "Foto Rocket NFTs",
+        tecnologies: ["ReactJS", "TailwindCSS", "Typescript"],
+        links: {
+          github: 'https://github.com/EwertonSolitto/Rocket-NFTs',
+          website: 'https://rocket-nfts-ewertonsolitto.vercel.app/'
+        }
+      },
+      {
+        title: "GiordanoFettuccine",
+        img: "/giordanofettuccine.png",
+        alt: "Foto GiordanoFettuccine",
+        tecnologies: ["HTML", "CSS", "Javascript"],
+        links: {
+          github: 'https://github.com/EwertonSolitto/GiordanoFettuccine',
+          website: 'https://ewertonsolitto.github.io/GiordanoFettuccine/'
+        }
+      },
+      {
+        title: "OneBitX",
+        img: "/onebitx.png",
+        alt: "Foto OneBitX",
+        tecnologies: ["HTML", "Bootstrap", "Sass"],
+        links: {
+          github: 'https://github.com/EwertonSolitto/OneBitX',
+          website: 'https://ewertonsolitto.github.io/OneBitX/pages/index.html'
         }
       }
     ]

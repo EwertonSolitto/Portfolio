@@ -2,6 +2,14 @@
   margin-bottom: 4rem;
   padding-bottom: 2.5rem;
 
+  .figure-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 0;
+  }
+
   .projects-figure {
     width: 16.875rem;
     height: 10.9375rem;
@@ -40,6 +48,7 @@
         ul {
           padding: 0.25rem 0 0;
           display: flex;
+          flex-flow: wrap;
           gap: 0.25rem;
           
           li {
