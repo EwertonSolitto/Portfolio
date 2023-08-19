@@ -15,7 +15,7 @@ export function ProjectFigure(props: ProjectFigureProps) {
         <h3>{title}</h3>
         <div className="line"></div>
   
-        <div>
+        <div className="bottom">
           <ul>
             {tecnologyList}
           </ul>
