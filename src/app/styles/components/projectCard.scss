@@ -161,31 +161,79 @@
           }
 
           .over-img {
-          
-            h3 {
-              font-size: 1.75rem;
-            }
-  
+            background-color: #0c121a27;
+            transform: background-color ease 300ms;
+
             div.line {
               width: 20.875rem;
             }
 
+            h3 {
+              font-size: 1.75rem;
+            }
+            
             > .bottom {
               height: 12rem;
+                
+              ul li {
+                padding-inline: 0.3125rem;
+                font-size: 1.25rem;
+                color: transparent;
+                border-color: transparent;
+                transition: color ease 500ms, border-color ease 500ms;
+              }
 
-              ul {
+              a {
+                font-size: 1.5rem;
+                color: transparent;
+                background-color: transparent;
+                transition: color ease 300ms, background-color ease 300ms;
 
-                li {
-                  padding-inline: 0.3125;
-                  font-size: 1.25rem;
+
+                img {
+                  width: 1.5625rem;
+                  z-index: -1;
+                }
+              }
+            }
+
+            h3, > .bottom, div.line {
+              color: transparent;
+              background-color: transparent;
+              transition: color ease 300ms, background-color ease 300ms;
+            }
+
+            &:hover {
+              background-color: $transparent-primary-color;
+              transition: background-color ease 500ms;
+
+              h3 {
+                color: $secondary-color;
+                transition: color ease 500ms;
+              }
+    
+              div.line {
+                background-color: $secondary-color;
+                transition: background-color ease 500ms;
+              }
+  
+              > .bottom {
+                display: flex;
+
+                ul li {
+                  color: $secondary-color;
+                  border-color: $secondary-color;
+                  transition: color ease 500ms, border-color ease 500ms;
                 }
 
                 a {
-                  font-size: 1.5rem;
-                  width: 7.125rem;
+                  color: $primary-color;
+                  background-color: $secondary-color;
+                  transition: background-color ease 500ms, color ease 500ms;
 
                   img {
-                    width: 1.5625rem;
+                    background-color: none;
+                    z-index: initial;
                   }
                 }
               }

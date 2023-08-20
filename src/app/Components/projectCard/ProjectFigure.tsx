@@ -20,6 +20,7 @@ export function ProjectFigure(props: ProjectFigureProps) {
             {tecnologyList}
           </ul>
 
+          
           <div className="links">
             <a href={links.github} target="_blank" className="github">GitHub <Image src='/right-row.svg' alt="flecha para direita" width={20} height={20} /></a>
             <a href={links.website} target="_blank" className="website">Visite o Site <Image src='/right-row.svg' alt="flecha para direita" width={20} height={20} /></a>
@@ -27,7 +28,7 @@ export function ProjectFigure(props: ProjectFigureProps) {
         </div>
         
       </div>
-      <Image src={img} width={1080} height={700} alt={alt} />
+        <Image src={img} width={1080} height={700} alt={alt} />
     </li>
   )
 }
