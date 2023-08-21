@@ -11,7 +11,7 @@ header {
     align-items: center;
   }
 
-  a {
+  .logo {
     font-size: clamp(0.875rem, 4vw, 1.125rem);
   }
 
@@ -21,15 +21,14 @@ header {
 
   button {
     border: none;
-
     padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
 
+  .burger, .x {
     width: 3rem;
     height: 3rem;
-
-    background-color: transparent;
-
-    cursor: pointer;
 
     svg {
       width: clamp(2.75rem, 12.75vw, 3rem);
@@ -44,7 +43,7 @@ header {
       display: grid;
     }
 
-    button {
+    .burger, .x {
       grid-row: 1;
       grid-column: 2;
     }
@@ -68,7 +67,7 @@ header {
 
         padding: 0;
         li {
-          a {
+          .to-section {
             font-size: clamp(1.8rem, 7vw, 2rem);
           }
         }
@@ -117,7 +116,7 @@ header {
           display: flex;
           gap: 1.75rem;
 
-          li a {
+          li .to-section {
             font-size: 1.5rem;
           }
         }

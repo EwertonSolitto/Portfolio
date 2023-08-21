@@ -1,23 +1,68 @@
 'use client'
 import { List, X } from "@phosphor-icons/react";
-import { useState } from "react";
+import { useReducer } from "react";
+
+const initialState = {nav: false, section: ''}
+
+function reducer(state: {nav: boolean}, action: string) {
+  const about = document.querySelector('.about')?.getBoundingClientRect().top
+  const technologies = document.querySelector('.technologies')?.getBoundingClientRect().top
+  const projects = document.querySelector('.projects')?.getBoundingClientRect().top
+  
+  switch(action) {
+    case "TRUE":
+      document.body.style.position = 'fixed'
+      return {...state, nav: true}
+    case "FALSE":
+      document.body.style.position = 'relative'
+      return {...state, nav: false}
+    case 'ABOUT':
+      window.scrollTo({
+        top: about,
+        behavior: 'smooth'
+      }); 
+      return {...state, section: 'about'}
+    case 'TECHNOLOGIES':
+      window.scrollTo({
+        top: technologies,
+        behavior: 'smooth'
+      }); 
+      return {...state, section: 'technologies'}
+    case 'PROJECTS':
+      window.scrollTo({
+        top: projects,
+        behavior: 'smooth'
+      }); 
+      return {...state, section: 'projects'}
+    default:
+      return state;
+  }
+}
 
 export default function Header () {
-  const [nav, setNav] = useState(false)
+  const [states, dispatch] = useReducer(reducer, initialState)
 
-  const logo = <a href="#main"><h1><span className="font-blue">{'<'}</span>Ewerton Solitto<span className="font-blue">{'/>'}</span></h1></a>
-  const burgerButton = <button onClick={() => handleMenu(true)}className="burger"><List size={48} color="#e8e8e8" weight="regular" /></button>
-  const xButton = <button onClick={() => handleMenu(false)} className="x"><X size={48} color="#e8e8e8" weight="regular" /></button>
+  function toSection(section: string = '') {
+    dispatch("FALSE")
+    dispatch(section)
+  }
+
+  const logo = <button className="logo" onClick={() => {toSection()}}><h1><span className="font-blue">{'<'}</span>Ewerton Solitto<span className="font-blue">{'/>'}</span></h1></button>
+
+  const burgerButton = <button onClick={() => dispatch('TRUE')} className="burger"><List size={48} color="#e8e8e8" weight="regular" /></button>
+
+  const xButton = <button onClick={() => dispatch('FALSE')} className="x"><X size={48} color="#e8e8e8" weight="regular" /></button>
+
   const navigation = 
   (
     <div className="opened-nav">
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Sobre</a></li>
-          <li><a href="/">Habilidades</a></li>
-          <li><a href="/">Projetos</a></li>
-          <li><a href="/">Contato</a></li>
+          <li><button className="to-section" onClick={() => {toSection()}}>Home</button></li>
+          <li><button className="to-section" onClick={() => {toSection('ABOUT')}}>Sobre</button></li>
+          <li><button className="to-section" onClick={() => {toSection('TECHNOLOGIES')}}>Habilidades</button></li>
+          <li><button className="to-section" onClick={() => {toSection('PROJECTS')}}>Projetos</button></li>
+          <li><button className="to-section">Contato</button></li>
         </ul>
       </nav>
     </div>
@@ -32,29 +77,11 @@ export default function Header () {
     </div>
   )
 
-  function handleMenu(option: boolean) {
-    setNav(option)
-    window.scroll(0, 0)
-    return nav ? document.body.style.position = 'relative' : document.body.style.position = 'fixed'
-  }
-
-  /*if (document.body.clientWidth >= 840) {
-    return (
-      <header>
-        <div className='header-logo-button'>
-          <a href="#main"><h1><span className="font-blue">{'<'}</span>Portfólio<span className="font-blue">{'/>'}</span></h1></a>
-        </div>
-        {navigation}
-        <div className="selector"></div>
-      </header>
-    )
-  }*/
-
   return (
-    <header className={nav ? 'opened-menu' : ''}>
+    <header className={states.nav ? 'opened-menu' : ''}>
         <div className='header mobile-header'>
           {logo}
-          {nav ? xButton : burgerButton}
+          {states.nav ? xButton : burgerButton}
           {navigation}
           {select}
         </div>

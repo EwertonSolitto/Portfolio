@@ -54,19 +54,19 @@ li {
     align-items: center;
   }
 
-  .home-main, section.about, section.tecnologies {
+  .home-main, section.about, section.technologies, section.projects {
     width: 64rem;
   }
 }
 
 @media (min-width: 1440px) {
-  .home-main, section.about, section.tecnologies {
+  .home-main, section.about, section.technologies, section.projects {
     width: 90rem;
   }
 }
 
 @media (min-width: 1520px) {
-  .home-main, section.about, section.tecnologies {
+  .home-main, section.about, section.technologies, section.projects {
     width: 90vw;
   }
 }

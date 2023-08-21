@@ -157,7 +157,7 @@ function App() {
         <TextCard side="right" title={aboutProps.title} paragraphs={aboutProps.text} />
       </section>
 
-      <section className="tecnologies">
+      <section className="technologies">
         <ListCard side="left" title={technologyListCardProps.title} lists={technologyListCardProps.lists}/>
       </section>
 
