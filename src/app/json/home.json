@@ -1,0 +1,42 @@
+{
+  "text": [
+      {
+        "content": "Olá", 
+        "style": "hello"
+      }, 
+      {
+        "content": "Bem vindo ao meu portfólio!", 
+        "style": "mid-text"
+      }, 
+      {
+        "content": "Eu sou o Ewerton Solitto.", 
+        "style": "mid-text"
+      }, 
+      {
+        "content": "Programador Fullstack", 
+        "style": "strong-text"
+      }
+  ],
+  "buttons": [
+    {
+      "content": "GitHub", 
+      "link": "https://github.com/EwertonSolitto", 
+      "img": {
+        "src": "/technologies/github-white-logo.svg", 
+        "alt": "GitHub Logo", 
+        "width": 54, 
+        "height": 54
+      }
+    },
+    {
+      "content": "LinkedIn", 
+      "link": "https://www.linkedin.com/in/ewerton-solitto/", 
+      "img": {
+        "src": "/social-media/linkedin-white-logo.svg", 
+        "alt": "LinkedIn Logo", 
+        "width": 54, 
+        "height": 54
+      }
+    }
+  ]
+} 

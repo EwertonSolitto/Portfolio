@@ -1,4 +1,6 @@
+'use client'
 import { ProjectFigureProps } from "@/app/models/interfaces";
+import { CaretRight } from "@phosphor-icons/react";
 import Image from "next/image";
 
 export function ProjectFigure(props: ProjectFigureProps) {
@@ -19,11 +21,11 @@ export function ProjectFigure(props: ProjectFigureProps) {
           <ul>
             {tecnologyList}
           </ul>
-
+          
           
           <div className="links">
-            <a href={links.github} target="_blank" className="github">GitHub <Image src='/right-row.svg' alt="flecha para direita" width={20} height={20} /></a>
-            <a href={links.website} target="_blank" className="website">Visite o Site <Image src='/right-row.svg' alt="flecha para direita" width={20} height={20} /></a>
+            <a href={links.github} target="_blank" className="github">GitHub <CaretRight size={20} color="#0f1621" weight="bold" /></a>
+            <a href={links.website} target="_blank" className="website">Visite o Site <CaretRight size={20} color="#0f1621" weight="bold" /></a>
           </div>
         </div>
         

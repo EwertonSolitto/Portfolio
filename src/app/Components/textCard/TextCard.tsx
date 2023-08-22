@@ -18,8 +18,8 @@ export default function TextCard (props: TextCardProps) {
 
   const buttonsDiv = a && 
     <div className="buttons-div">
-      {a.map(({content, link, style = '', svg}, index) => {
-        return <LinkButton key={index} link={link} style={style} content={content} svg={svg}/>
+      {a.map(({content, link, style = '', img}, index) => {
+        return <LinkButton key={index} link={link} style={style} content={content} img={img}/>
       })}
     </div> 
     

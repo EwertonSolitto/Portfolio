@@ -1,0 +1,15 @@
+{
+  "title": {
+    "content": "Sobre"
+  },
+  "text": [
+    {
+      "content": "Olá! Eu sou Ewerton Solitto, tenho 19 anos e sou Programador Fullstack mais focado no Front-end. Estou estudando programação a mais de 1 ano e procuro minha primeira oportunidade na área.",
+      "style": "text"
+    },
+    {
+      "content": "Possuo conhecimentos sólidos nas principais tecnologias web, hoje estou no foco em aprender os frameworks mais procurados do mercado e nas melhores práticas para garantir que meus projetos estejam sempre em alta qualidade.",
+      "style": "text"
+    }
+  ]
+}

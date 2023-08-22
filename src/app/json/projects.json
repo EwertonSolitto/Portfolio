@@ -1,0 +1,45 @@
+{
+  "title": {"content": "Projetos"},
+  "projects": [
+    {
+      "title": "The Blog.",
+      "img": "/projects/the-blog.png",
+      "alt": "Foto The Blog",
+      "tecnologies": ["HTML", "CSS", "Javascript"],
+      "links": {
+        "github": "https://github.com/EwertonSolitto/The-Blog",
+        "website": "https://ewertonsolitto.github.io/The-Blog/"
+      }
+    },
+    {
+      "title": "Rocket NFTs",
+      "img": "/projects/rocket-nfts.png",
+      "alt": "Foto Rocket NFTs",
+      "tecnologies": ["ReactJS", "TailwindCSS", "Typescript"],
+      "links": {
+        "github": "https://github.com/EwertonSolitto/Rocket-NFTs",
+        "website": "https://rocket-nfts-ewertonsolitto.vercel.app/"
+      }
+    },
+    {
+      "title": "GiordanoFettuccine",
+      "img": "/projects/giordanofettuccine.png",
+      "alt": "Foto GiordanoFettuccine",
+      "tecnologies": ["HTML", "CSS", "Javascript"],
+      "links": {
+        "github": "https://github.com/EwertonSolitto/GiordanoFettuccine",
+        "website": "https://ewertonsolitto.github.io/GiordanoFettuccine/"
+      }
+    },
+    {
+      "title": "OneBitX",
+      "img": "/projects/onebitx.png",
+      "alt": "Foto OneBitX",
+      "tecnologies": ["HTML", "Bootstrap", "Sass"],
+      "links": {
+        "github": "https://github.com/EwertonSolitto/OneBitX",
+        "website": "https://ewertonsolitto.github.io/OneBitX/pages/index.html"
+      }
+    }
+  ]
+}

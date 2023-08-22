@@ -1,13 +1,14 @@
+import Image from "next/image"
 import { TechnologyFigureProps } from "../../models/interfaces"
 
 export default function TechnologyFigure(props: TechnologyFigureProps) {
-  const {svg, description} = props
+  const {img, description} = props
 
   return (
     <li>
       <figure>
         <div>
-          {svg}
+          <Image src={img.src} alt={img.alt} width={img.width} height={img.height} />
         </div>
         <figcaption className={description?.style}>{description?.content}</figcaption>
       </figure>

@@ -1,0 +1,42 @@
+{
+  "title": {"content": "Habilidades"},
+  "lists": [{
+     "title": "Tecnologias que domino:",
+     "technologies": [
+      {"img": {"src": "/technologies/html-logo.svg", "alt": "HTML logo", "width": 80, "height": 80}, "description":{"content": "HTML"}},
+      {"img": {"src": "/technologies/css-logo.svg", "alt": "CSS logo", "width": 80, "height": 80}, "description":{"content": "CSS"}},
+      {"img": {"src": "/technologies/javascript-logo.svg", "alt": "Javascript logo", "width": 80, "height": 80}, "description":{"content": "Javascript"}},
+      {"img": {"src": "/technologies/typescript-logo.svg", "alt": "Typescript logo", "width": 80, "height": 80}, "description":{"content": "Typescript"}},
+      {"img": {"src": "/technologies/reactjs-logo.svg", "alt": "ReactJS logo", "width": 80, "height": 80}, "description":{"content": "ReactJs"}},
+      {"img": {"src": "/technologies/sass-logo.svg", "alt": "Sass logo", "width": 80, "height": 80}, "description":{"content": "Sass"}},
+      {"img": {"src": "/technologies/bootstrap-logo.svg", "alt": "Bootstrap logo", "width": 80, "height": 80}, "description":{"content": "Bootstrap"}},
+      {"img": {"src": "/technologies/tailwindcss-logo.svg", "alt": "TailwindCSS logo", "width": 80, "height": 80}, "description":{"content": "TailwindCSS"}},
+      {"img": {"src": "/technologies/git-logo.svg", "alt": "Git logo", "width": 80, "height": 80}, "description":{"content": "Git"}},
+      {"img": {"src": "/technologies/github-black-logo.svg", "alt": "GitHub logo", "width": 80, "height": 80}, "description":{"content": "Github"}},
+      {"img": {"src": "/technologies/figma-logo.svg", "alt": "Figma logo", "width": 53, "height": 80}, "description":{"content": "Figma"}}
+    ]},
+    {
+      "title":"Tecnologias com pouco domínio:", 
+      "technologies": [
+        {"img": {"src": "/technologies/nodejs-logo.svg", "alt": "NodeJS logo", "width": 80, "height": 80}, "description":{"content": "NodeJS"}},
+        {"img": {"src": "/technologies/graphql-logo.svg", "alt": "GraphQL logo", "width": 80, "height": 80}, "description":{"content": "GraphQL"}},
+        {"img": {"src": "/technologies/mongodb-logo.svg", "alt": "MongoDB logo", "width": 37, "height": 80}, "description":{"content": "MongoDB"}},
+        {"img": {"src": "/technologies/prisma-logo.svg", "alt": "Prisma logo", "width": 66, "height": 80}, "description":{"content": "Prisma"}},
+        {"img": {"src": "/technologies/vite-logo.svg", "alt": "Vite logo", "width": 80, "height": 80}, "description":{"content": "Vite"}},
+        {"img": {"src": "/technologies/nextjs-logo.svg", "alt": "NextJS logo", "width": 80, "height": 80}, "description":{"content": "NextJS"}},
+        {"img": {"src": "/technologies/docker-logo.svg", "alt": "Docker logo", "width": 80, "height": 80}, "description":{"content": "Docker"}}
+    ]},
+    {
+      "title":"Tecnologias que pretendo aprender:", 
+      "technologies": [
+        {"img": {"src": "/technologies/angular-logo.svg", "alt": "Angular logo", "width": 80, "height": 80}, "description":{"content": "Angular"}},
+        {"img": {"src": "/technologies/jest-logo.svg", "alt": "Jest logo", "width": 72, "height": 80}, "description":{"content": "Jest"}},
+        {"img": {"src": "/technologies/vuejs-logo.svg", "alt": "Vue.js logo", "width": 80, "height": 69}, "description":{"content": "Vue.js"}},
+        {"img": {"src": "/technologies/electron-logo.svg", "alt": "Electron logo", "width": 80, "height": 80}, "description":{"content": "Electron"}},
+        {"img": {"src": "/technologies/nestjs-logo.svg", "alt": "NestJS logo", "width": 80, "height": 77}, "description":{"content": "NestJS"}},
+        {"img": {"src": "/technologies/photoshop-logo.svg", "alt": "Photoshop logo", "width": 80, "height": 78}, "description":{"content": "Photoshop"}},
+        {"img": {"src": "/technologies/python-logo.svg", "alt": "Python logo", "width": 66, "height": 80}, "description":{"content": "Python"}}
+      ]
+    }
+  ]
+}

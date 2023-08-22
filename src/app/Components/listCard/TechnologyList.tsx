@@ -4,8 +4,8 @@ import TechnologyFigure from "./TechnologyFigure";
 export default function TechnologyList(props: TechnologyListProps) {
   const {technologies, title} = props
 
-  const technologiesList = technologies.map(({svg, description}, index) => {
-    return <TechnologyFigure key={index} svg={svg} description={description}/>
+  const technologiesList = technologies.map(({img, description}, index) => {
+    return <TechnologyFigure key={index} img={img} description={description}/>
   })
 
   return (

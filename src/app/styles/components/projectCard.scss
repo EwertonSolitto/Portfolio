@@ -78,7 +78,7 @@
               border-radius: 0.375rem;
               width: fit-content;
   
-              img {
+              svg {
                 width: 1.25rem;
                 height: auto;
               }
@@ -190,7 +190,7 @@
                 transition: color ease 300ms, background-color ease 300ms;
 
 
-                img {
+                svg {
                   width: 1.5625rem;
                   z-index: -1;
                 }
@@ -231,7 +231,7 @@
                   background-color: $secondary-color;
                   transition: background-color ease 500ms, color ease 500ms;
 
-                  img {
+                  svg {
                     background-color: none;
                     z-index: initial;
                   }
