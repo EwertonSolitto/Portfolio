@@ -53,6 +53,12 @@
       height: 4.5625rem;
 
       margin-bottom: 0.25rem;
+
+      img {
+        width: auto;
+        height: auto;
+        min-height: 3.5rem;
+      }
     }
   }
   
@@ -116,7 +122,7 @@
   
         margin-bottom: 0.25rem;
 
-        svg {
+        img {
           width: 4rem;
           height: 4rem;
         }
@@ -157,7 +163,7 @@
       div {
         height: 5.5rem;
         
-        svg {
+        img {
           width: 5rem;
           height: 5rem;
         }
