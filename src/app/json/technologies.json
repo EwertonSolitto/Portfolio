@@ -10,7 +10,7 @@
       {"img": {"src": "/technologies/reactjs-logo.svg", "alt": "ReactJS logo", "width": 80, "height": 80}, "description":{"content": "ReactJs"}},
       {"img": {"src": "/technologies/sass-logo.svg", "alt": "Sass logo", "width": 80, "height": 80}, "description":{"content": "Sass"}},
       {"img": {"src": "/technologies/bootstrap-logo.svg", "alt": "Bootstrap logo", "width": 80, "height": 80}, "description":{"content": "Bootstrap"}},
-      {"img": {"src": "/technologies/tailwindcss-logo.svg", "alt": "TailwindCSS logo", "width": 80, "height": 80}, "description":{"content": "TailwindCSS"}},
+      {"img": {"src": "/technologies/tailwindcss-logo.svg", "alt": "TailwindCSS logo", "width": 80, "height": 50}, "description":{"content": "TailwindCSS"}},
       {"img": {"src": "/technologies/git-logo.svg", "alt": "Git logo", "width": 80, "height": 80}, "description":{"content": "Git"}},
       {"img": {"src": "/technologies/github-black-logo.svg", "alt": "GitHub logo", "width": 80, "height": 80}, "description":{"content": "Github"}},
       {"img": {"src": "/technologies/figma-logo.svg", "alt": "Figma logo", "width": 53, "height": 80}, "description":{"content": "Figma"}}
