@@ -42,9 +42,8 @@ li {
 }
 
 .app {
-  min-width: 100lvw;
-
-  padding-inline: 0.5rem;
+  width: 100lvw;
+  overflow-y: hidden;
 }
 
 .font-blue {
