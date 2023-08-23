@@ -67,7 +67,7 @@ header {
 
         padding: 0;
         li {
-          .to-section {
+          a {
             font-size: clamp(1.8rem, 7vw, 2rem);
           }
         }
@@ -116,7 +116,7 @@ header {
           display: flex;
           gap: 1.75rem;
 
-          li .to-section {
+          li a {
             font-size: 1.5rem;
           }
         }

@@ -20,6 +20,10 @@
   font-family: $primary-font;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   justify-content: center;
