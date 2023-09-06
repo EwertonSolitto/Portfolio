@@ -16,10 +16,6 @@
   }
 
   &.right {
-    position: relative;
-    right: -0.5rem;
-    z-index: 1;
-
     box-shadow: -0.03125rem 0.09375rem 0.25rem rgba(0,0,0,25%), -0.75rem 0.75rem $terciary-color;
 
     h2, h3, p, .buttons-div {
