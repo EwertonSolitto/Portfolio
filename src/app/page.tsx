@@ -3,12 +3,14 @@ import TextCard from "./Components/textCard/TextCard";
 import ListCard from "./Components/listCard/ListCard";
 import ProjectsCard from "./Components/projectCard/ProjectsCard";
 import getData from "./staticdata";
+import ContactCard from "./Components/contactCard/ContactCard";
 
 async function App() {
   const mainProps = await getData('/home.json')
   const aboutProps = await getData('/about.json')
   const technologyListCardProps = await getData('/technologies.json')
-  const ProjectListProps = await getData('/projects.json') 
+  const projectListProps = await getData('/projects.json') 
+  const contactProps = await getData('/contact.json')
   
   return (
     <div className="app" id="home">
@@ -33,10 +35,14 @@ async function App() {
       <div id="projects"></div>
 
       <section className="projects">
-        <ProjectsCard side="right" title={ProjectListProps.title} figure={ProjectListProps.projects}/>
+        <ProjectsCard side="right" title={projectListProps.title} figure={projectListProps.projects}/>
       </section>
 
       <div id="contact"></div>
+
+      <section className="contact">
+        <ContactCard side="left" title={contactProps.title} />
+      </section>
     </div>
   );
 }

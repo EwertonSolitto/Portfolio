@@ -1,0 +1,139 @@
+.form-card {
+  margin-block: 6rem 4rem;
+  padding-bottom: 1.5rem;
+  
+  form {
+    margin-left: clamp(2.5rem, 15vw, 2.75rem);
+    width: clamp(15rem, 80vw, 18.5rem);
+    
+    div {
+      display: flex;
+      flex-direction: column;
+
+      label, input, textarea {
+        color: $primary-color;
+      }
+
+      textarea {
+        min-height: 5rem;
+      }
+
+      input, textarea {
+        padding: 0.5rem;
+        margin-block: 0.125rem 0.625rem;
+        width: 100%;
+        border: none;
+        border-radius: 0.25rem;
+        background-color: $terciary-color;
+        
+
+        &:focus {
+
+          border: $primary-color 1px solid;
+        }
+      }
+
+      label, input, textarea, button {
+        font-size: 1.125rem;
+        resize: vertical;
+      }
+    }
+
+    .button-div {
+      align-items: center;
+      margin-top: 0.5rem;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 6rem;
+        padding-block: 0.75rem;
+        border: none;
+        border-radius: 0.25rem;
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  .form-card {
+    width: 24rem;
+
+      form {
+      margin-left: 1.5rem;
+      width: 21rem;
+    }  
+  }
+}
+
+@media (min-width: 720px) {
+  .form-card {
+    width: 28rem;
+
+    form {
+      margin-left: 2rem;
+      width: 23.75rem;
+      
+      div {
+        input, textarea {
+          margin-top: 0.25rem;
+          border-radius: 0.5rem;
+        }
+
+        label, input, textarea, button {
+          font-size: 1.25rem;
+        }
+      }
+
+      .button-div button {
+        padding-block: 0.875rem;
+        width: 7.5rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-card {
+    margin-top: 8rem;
+    width: 52rem;
+
+    form {
+      margin-left: 3.25rem;
+      width: 45.5rem;
+
+      div {
+        input, textarea {
+          padding-inline: 0.75rem;
+        }
+
+        textarea {
+          height: 12rem;
+        }
+
+        label, input, textarea, button {
+          font-size: 1.375rem;
+        }
+      }
+
+      .button-div button {
+        width: 8rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .form-card {
+    margin-top: 10rem;
+    width: 64rem;
+
+    form {
+      width: 57.25rem;
+      margin-left: 3.5rem;
+    }
+  }
+}

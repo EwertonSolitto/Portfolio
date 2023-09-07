@@ -50,3 +50,9 @@ export interface ProjectFigureProps {
   tecnologies: Array<string>
   links: {github: string, website: string}
 }
+
+export interface ContactCardProps {
+  side: Side
+
+  title: string
+}

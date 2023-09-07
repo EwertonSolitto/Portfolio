@@ -7,6 +7,7 @@
 @import './components/textCard.scss';
 @import './components/listCard.scss';
 @import './components/projectCard.scss';
+@import './components/contactCard.scss';
 
 @import './pages/home/home.scss';
 
@@ -55,19 +56,19 @@ li {
     align-items: center;
   }
 
-  .home-main, section.about, section.technologies, section.projects {
+  .home-main, section.about, section.technologies, section.projects, section.contact {
     width: 64rem;
   }
 }
 
 @media (min-width: 1440px) {
-  .home-main, section.about, section.technologies, section.projects {
+  .home-main, section.about, section.technologies, section.projects, section.contact  {
     width: 90rem;
   }
 }
 
 @media (min-width: 1520px) {
-  .home-main, section.about, section.technologies, section.projects {
+  .home-main, section.about, section.technologies, section.projects, section.contact  {
     width: 90vw;
   }
 }
