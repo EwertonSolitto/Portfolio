@@ -4,7 +4,7 @@ import { ContactCardProps } from "@/app/models/interfaces";
 import { FormEvent, useState } from "react";
 
 export default function ContactCard(props: ContactCardProps) { 
-  const [form, setForm] = useState({close: false, accepted: ''})
+  const [form, setForm] = useState({close: false, accepted: 'initial'})
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
@@ -12,6 +12,8 @@ export default function ContactCard(props: ContactCardProps) {
 
   async function getMessageFromFormAndSendIt(e: FormEvent) {
     e.preventDefault()
+
+    setForm({close: true, accepted: 'loading'})
 
     const res = await fetch('/api/contact', {
       method: 'POST',
@@ -96,7 +98,28 @@ export default function ContactCard(props: ContactCardProps) {
         </div>
 
         <div className="button-div">
-          <button type="submit" disabled={form.close && true}>Enviar</button>
+          {
+          form.accepted === 'denied' 
+            ?
+          <p className='denied'>Não foi possível enviar o email. Tente novamente mais tarde.</p>
+            :
+          form.accepted === 'accepted' 
+            && 
+          <p className="accepted">Sua mensagem foi enviada com sucesso!</p>
+          }
+          {
+          form.accepted === 'loading' 
+            ? 
+          <button type="submit" disabled={form.close && true}>
+            <div className="loadingio-spinner-rolling-srj2vfqky4">
+              <div className="ldio-6mfebsyn19v">
+                <div></div>
+              </div>
+            </div>
+          </button> 
+          : 
+          <button type="submit" disabled={form.close && true} className={form.accepted === 'accepted' ? 'hidden' : ''}>Enviar</button>
+          }
         </div>
       </form>
     </div>
