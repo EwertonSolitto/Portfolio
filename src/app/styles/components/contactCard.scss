@@ -26,9 +26,16 @@
         border-radius: 0.25rem;
         background-color: $terciary-color;
         
+        &::placeholder {
+          color: $primary-color;
+          opacity: 0.5;
+        }
+
+        &:disabled {
+          opacity: 0.5;
+        }
 
         &:focus {
-
           border: $primary-color 1px solid;
         }
       }
@@ -52,6 +59,7 @@
         border: none;
         border-radius: 0.25rem;
         background-color: $primary-color;
+        cursor: pointer;
       }
     }
   }
@@ -91,6 +99,10 @@
         padding-block: 0.875rem;
         width: 7.5rem;
         border-radius: 0.5rem;
+
+        &:disabled {
+          opacity: 0.5;
+        }
       }
     }
   }
