@@ -46,7 +46,7 @@ export default function ContactCard(props: ContactCardProps) {
             type="text" 
             name="name" 
             id="name" 
-            placeholder="Ewerton Solitto" 
+            placeholder="Ewerton Solitto"
             required 
             value={name} 
             onChange={e => setName(e.target.value)}
@@ -74,7 +74,10 @@ export default function ContactCard(props: ContactCardProps) {
             type="tel" 
             name="phone" 
             id="phone" 
-            placeholder="11 12345-6789" 
+            placeholder="11 12345-6789"
+            pattern="(-*[0-9]){10,}"
+            minLength={0}
+            maxLength={16}
             required
             value={phone}
             onChange={e => setPhone(e.target.value)}

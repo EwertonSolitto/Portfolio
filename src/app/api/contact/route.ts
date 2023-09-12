@@ -15,7 +15,7 @@ export const POST = async (req: Request, res: Response) => {
     service: 'gmail',
     auth: {
       user: process.env.EMAIL,
-      pass: process.env.PASSWORD,
+      pass: ''//process.env.PASSWORD,
     },
   });
 
