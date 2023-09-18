@@ -17,10 +17,10 @@ export default function Header () {
       <nav>
         <ul>
           <li><a href="#home" onClick={() => setShowMenu(false)}>Home</a></li>
-          <li><a href="#about" onClick={() => setShowMenu(false)}>Sobre</a></li>
-          <li><a href="#technologies" onClick={() => setShowMenu(false)}>Habilidades</a></li>
-          <li><a href="#projects" onClick={() => setShowMenu(false)}>Projetos</a></li>
-          <li><a href="#contact" onClick={() => setShowMenu(false)}>Contato</a></li>
+          <li><a href="#sobre" onClick={() => setShowMenu(false)}>Sobre</a></li>
+          <li><a href="#habilidades" onClick={() => setShowMenu(false)}>Habilidades</a></li>
+          <li><a href="#projetos" onClick={() => setShowMenu(false)}>Projetos</a></li>
+          <li><a href="#contato" onClick={() => setShowMenu(false)}>Contato</a></li>
         </ul>
       </nav>
     </div>

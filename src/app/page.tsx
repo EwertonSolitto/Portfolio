@@ -20,25 +20,25 @@ async function App() {
         <TextCard side="left" paragraphs={mainProps.text} a={mainProps.buttons} />
       </main>
 
-      <div id="about"></div>
+      <div id="sobre"></div>
 
       <section className="about">
         <TextCard side="right" title={aboutProps.title} paragraphs={aboutProps.text} />
       </section>
 
-      <div id="technologies"></div>
+      <div id="habilidades"></div>
 
       <section className="technologies">
         <ListCard side="left" title={technologyListCardProps.title} lists={technologyListCardProps.lists}/>
       </section>
 
-      <div id="projects"></div>
+      <div id="projetos"></div>
 
       <section className="projects">
         <ProjectsCard side="right" title={projectListProps.title} figure={projectListProps.projects}/>
       </section>
 
-      <div id="contact"></div>
+      <div id="contato"></div>
 
       <section className="contact">
         <ContactCard side="left" title={contactProps.title} />
