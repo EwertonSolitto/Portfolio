@@ -1,11 +1,12 @@
 'use client'
 import { List, X } from "@phosphor-icons/react";
 import { useState } from "react";
+import Logo from "./Logo";
 
 export default function Header () {
   const [showMenu, setShowMenu] = useState(false)
 
-  const logo = <a href="#home" className="logo" onClick={() => {setShowMenu(false)}}><h1><span className="font-blue">{'<'}</span>Ewerton Solitto<span className="font-blue">{'/>'}</span></h1></a>
+  const logo = <a href="#home" className="logo" onClick={() => {setShowMenu(false)}}><Logo /></a>
 
   const burgerButton = <button onClick={() => setShowMenu(true)} className="burger"><List size={48} color="#e8e8e8" weight="regular" /></button>
 
