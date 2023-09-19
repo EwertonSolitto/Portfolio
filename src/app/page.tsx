@@ -4,6 +4,7 @@ import ListCard from "./Components/listCard/ListCard";
 import ProjectsCard from "./Components/projectCard/ProjectsCard";
 import getData from "./staticdata";
 import ContactCard from "./Components/contactCard/ContactCard";
+import Footer from "./Components/Footer";
 
 async function App() {
   const mainProps = await getData('/home.json')
@@ -43,6 +44,8 @@ async function App() {
       <section className="contact">
         <ContactCard side="left" title={contactProps.title} />
       </section>
+
+      <Footer />
     </div>
   );
 }
