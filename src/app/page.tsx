@@ -5,6 +5,7 @@ import ProjectsCard from "./Components/projectCard/ProjectsCard";
 import getData from "./staticdata";
 import ContactCard from "./Components/contactCard/ContactCard";
 import Footer from "./Components/Footer";
+import Background from "./Components/background/Background";
 
 async function App() {
   const mainProps = await getData('/home.json')
@@ -16,6 +17,8 @@ async function App() {
   return (
     <div className="app" id="home">
       <Header/>
+
+      <Background />
 
       <main className="home-main">
         <TextCard side="left" paragraphs={mainProps.text} a={mainProps.buttons} />

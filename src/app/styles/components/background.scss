@@ -1,0 +1,367 @@
+.background-elements {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+
+  p {
+    position: absolute;
+    color: $gray;
+    font-size: 1.5rem;
+    opacity: 0.5;
+
+    &.html {
+      font-size: 0.9875rem;
+      top: 4rem;
+      left: 40%;
+    }
+
+    &.empty-tag {
+      top: 4.5rem;
+      left: 10%;
+    }
+
+    &.empty-array {
+      top: 15rem;
+      left: 87%;
+    }
+
+    &.empty-object {
+      top: 16rem;
+      left: 55%;
+    }
+
+    &.hello-world {
+      display: none;
+    }
+
+    &.bars {
+      top: 26.75rem;
+      left: 20%;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: 1px -1px $primary-color, 2px -2px $gray;
+    background-color: $gray;
+
+    &.reverse {
+      box-shadow: -1px 1px $primary-color, -2px 2px $gray;
+    }
+
+    &.no-background {
+      background: none;
+      box-shadow: none;
+      border: 1px $gray solid;
+    }
+    
+    &.first-circle {
+      animation: vibrate 12s ease infinite;
+      top: 4rem;
+      left: 60%;
+    }
+
+    &.second-circle {
+      top: 20rem;
+      left: 2%;
+    }
+
+    &.third-circle {
+      top: 25rem;
+      left: 72%;
+    }
+  }
+
+  .points {
+    position: absolute;
+
+    &.vertical {
+      rotate: 90deg;
+    }
+
+    &.first-points {
+      top: 28rem;
+      left: 92%;
+    }
+
+    &.second-points {
+      top: 5rem;
+      left: 30%;
+    }
+
+    &.third-points {
+      display: none;
+    }
+
+    &.fourth-points {
+      top: 28rem;
+      left: 10%;
+    }
+
+    p {
+      position: absolute;
+      color: $gray;
+      font-size: 1.75rem;
+      letter-spacing: 0.125rem;
+      opacity: 0.5;
+
+      &:first-child {
+        padding-top: 0.75rem;
+      }
+
+      &:last-child {
+        padding-top: 1.5rem;
+      }
+    }
+  }
+
+  .wave-group-1 {
+    svg {
+      width: 50%;
+      height: auto;
+      top: -0.5rem;
+
+      &.wave-2 {
+        top: 0;
+      }
+
+      &.wave-3 {
+        top: 0.5rem;
+      }
+  
+      &.wave-4 {
+        top: 1rem;
+      }
+  
+      &.wave-5 {
+        top: 1.5rem;
+      }
+    }
+  }
+
+  .wave-group-2 {
+    svg {
+      width: 100vw;
+      height: auto;
+      top: 20rem;
+
+      &.wave-2 {
+        top: 19.75rem;
+      }
+
+      &.wave-3 {
+        top: 19.5rem;
+      }
+
+      &.wave-4 {
+        top: 19.25rem;
+      }
+
+      &.wave-5 {
+        top: 19rem;
+      }
+    }
+  }
+
+  svg {
+    position: absolute;
+
+    &.wave-1 {
+      opacity: 0.2;
+    }
+
+    &.wave-2 {
+      opacity: 0.4;
+    }
+
+    &.wave-3 {
+      opacity: 0.6;
+    }
+
+    &.wave-4 {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  .background-elements {
+    p {
+      &.hello-world {
+        display: block;
+        font-size: 1rem;
+        top: 8rem;
+        left: 62%;
+      }
+    }
+
+    .points {
+      &.third-points {
+        display: block;
+        top: 11.5rem;
+        left: 60%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .background-elements {
+    p {
+      font-size: 2.5rem;
+
+      &.html {
+        font-size: 2rem;
+        top: 6rem;
+      }
+
+      &.empty-tag {
+        top: 9rem;
+        left: 10%;
+      }
+
+      &.empty-array {
+        width: max-content;
+        top: 15rem;
+        left: 90%;
+      }
+
+      &.empty-object {
+        top: 22rem;
+        left: 58%;
+      }
+
+
+      &.hello-world {
+        font-size: 1.5rem; 
+        left: 70%;
+      }
+
+      &.bars {
+        top: 34.5rem;
+        left: 20%;
+      }
+    }
+
+    .circle {
+      width: 4.5rem;
+      height: 4.5rem;
+      box-shadow: 3px -3px $primary-color, 4px -4px $gray;
+      background-color: $gray;
+
+      &.reverse {
+        box-shadow: -3px 3px $primary-color, -4px 4px $gray;
+      }
+
+      &.first-circle {
+        top: 10rem;
+      }
+
+      &.second-circle {
+        top: 32rem;
+        left: 5%;
+      }
+
+      &.third-circle {
+        top: 40rem;
+        left: 70%;
+      }
+    }
+
+    .points {
+  
+      &.vertical {
+        rotate: 90deg;
+      }
+
+      &.first-points {
+        top: 30rem;
+        left: 95%;
+      }
+  
+      &.second-points {
+        top: 8rem;
+        left: 32%;
+      }
+
+      &.third-points {
+        top: 18rem;
+        left: 65%;
+      }
+
+      &.fourth-points {
+        top: 44rem;
+        left: 10%;
+      }
+
+      p {
+        font-size: 2.25rem;
+  
+        &:first-child {
+          padding-top: 1rem;
+        }
+  
+        &:last-child {
+          padding-top: 2rem;
+        }
+      }
+    }
+
+    .wave-group-1 {
+      svg {
+        width: initial;
+
+        &.wave-2 {
+          top: 0;
+        }
+  
+        &.wave-3 {
+          top: 0.5rem;
+        }
+  
+        &.wave-4 {
+          top: 1rem;
+        }
+  
+        &.wave-5 {
+          top: 1.5rem;
+        }
+      }
+    }
+
+    .wave-group-2 {
+      svg {
+        top: 20.5rem;
+
+        &.wave-2 {
+          top: 20rem;
+        }
+  
+        &.wave-3 {
+          top: 19.5rem;
+        }
+  
+        &.wave-4 {
+          top: 19rem;
+        }
+  
+        &.wave-5 {
+          top: 18.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .background-elements {
+    p {
+      &.bars {
+        top: 42rem;
+      }
+    }
+  }
+}
