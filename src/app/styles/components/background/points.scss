@@ -1,0 +1,141 @@
+.background-elements {
+  .points {
+    position: absolute;
+
+    &.vertical {
+      rotate: 90deg;
+    }
+
+    &.first-points {
+      top: 28rem;
+      left: 92%;
+    }
+
+    &.second-points {
+      top: 5rem;
+      left: 30%;
+    }
+
+    &.third-points {
+      display: none;
+    }
+
+    &.fourth-points {
+      top: 23rem;
+      left: 5%;
+    }
+
+    p {
+      position: absolute;
+      color: $gray;
+      font-size: 1.75rem;
+      letter-spacing: 0.125rem;
+      opacity: 0.5;
+
+      &:first-child {
+        padding-top: 0.75rem;
+      }
+
+      &:last-child {
+        padding-top: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  .background-elements {
+    .points {
+      &.second-points {
+        rotate: 90deg;
+        left: 55%;
+        top: 7rem;
+      }
+
+      &.third-points {
+        display: block;
+        top: 18rem;
+        left: 60%;
+      }
+
+      &.fourth-points {
+        left: 10%;
+      }
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .background-elements {
+    .points {
+      &.first-points {
+        left: 99%;
+      }
+      
+      &.fourth-points {
+        top: 27.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .background-elements {
+    .points {
+      &.vertical {
+        rotate: 90deg;
+      }
+
+      &.first-points {
+        top: 34rem;
+        left: 97%;
+      }
+  
+      &.second-points {
+        top: 8rem;
+        left: 60%;
+      }
+
+      &.third-points {
+        top: 18rem;
+        left: 65%;
+      }
+
+      &.fourth-points {
+        top: 36.5rem;
+        left: 10%;
+      }
+
+      p {
+        font-size: 2.25rem;
+  
+        &:first-child {
+          padding-top: 1rem;
+        }
+  
+        &:last-child {
+          padding-top: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .background-elements {
+    .points {
+      &.first-points {
+        top: 38rem;
+      }
+
+      &.second-points {
+        left: 53%;
+        top: 10rem;
+      }
+
+      &.fourth-points {
+        top: 44rem;
+      }
+    }
+  }
+}

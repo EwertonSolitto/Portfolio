@@ -1,0 +1,133 @@
+.background-elements {
+  .wave-group-1 {
+    display: none;
+  }
+
+  .wave-group-2 {
+    display: none;
+  }
+
+  svg {
+    position: absolute;
+
+    &.wave-1 {
+      opacity: 0.2;
+    }
+
+    &.wave-2 {
+      opacity: 0.4;
+    }
+
+    &.wave-3 {
+      opacity: 0.6;
+    }
+
+    &.wave-4 {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .background-elements {
+    .wave-group-1 {
+      display: block;
+
+      svg {
+        width: 50%;
+        height: auto;
+        top: -0.5rem;
+  
+        &.wave-2 {
+          top: 0;
+        }
+  
+        &.wave-3 {
+          top: 0.5rem;
+        }
+    
+        &.wave-4 {
+          top: 1rem;
+        }
+    
+        &.wave-5 {
+          top: 1.5rem;
+        }
+      }
+    }
+
+    .wave-group-2 {
+      display: block;
+
+      svg {
+        width: 100vw;
+        height: auto;
+        top: 24.5rem;
+  
+        &.wave-2 {
+          top: 24rem;
+        }
+  
+        &.wave-3 {
+          top: 23.5rem;
+        }
+  
+        &.wave-4 {
+          top: 23rem;
+        }
+  
+        &.wave-5 {
+          top: 22.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .background-elements {
+    .wave-group-1 {
+      svg {
+        width: initial;
+
+        &.wave-2 {
+          top: 0;
+        }
+  
+        &.wave-3 {
+          top: 0.5rem;
+        }
+  
+        &.wave-4 {
+          top: 1rem;
+        }
+  
+        &.wave-5 {
+          top: 1.5rem;
+        }
+      }
+    }
+
+    .wave-group-2 {
+      svg {
+        top: 28rem;
+
+        &.wave-2 {
+          top: 27.25rem;
+        }
+  
+        &.wave-3 {
+          top: 26.5rem;
+        }
+  
+        &.wave-4 {
+          top: 25.75rem;
+        }
+  
+        &.wave-5 {
+          top: 25rem;
+        }
+      }
+    }
+  }
+}

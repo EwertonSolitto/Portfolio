@@ -13,8 +13,8 @@ export default function Background() {
       <Wave1 />
       <p className="html">&lt;html&gt;</p>
       <p className="empty-tag">&lt;/&gt;</p>
-      <p className="empty-array">[ ]</p>
-      <p className="empty-object">{'{ }'}</p>
+      <p className="empty-array space">[]</p>
+      <p className="empty-object space">{'{}'}</p>
       <Circle styles="second-circle reverse"/> 
       <Points styles="fourth-points" quantity={2}/>
       <p className="hello-world">console.log(&quot;Hello World!&quot;)</p>

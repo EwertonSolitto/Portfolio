@@ -1,0 +1,84 @@
+.background-elements {
+  .circle {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: 1px -1px $primary-color, 2px -2px $gray;
+    background-color: $gray;
+
+    &.reverse {
+      box-shadow: -1px 1px $primary-color, -2px 2px $gray;
+    }
+
+    &.no-background {
+      background: none;
+      box-shadow: none;
+      border: 1px $gray solid;
+    }
+    
+    &.first-circle {
+      animation: vibrate 12s ease infinite;
+      top: 4rem;
+      left: 80%;
+    }
+
+    &.second-circle {
+      top: 20rem;
+      left: 2%;
+    }
+
+    &.third-circle {
+      top: 24rem;
+      left: 72%;
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .background-elements {
+    .circle {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .background-elements {
+    .circle {
+      width: 4.5rem;
+      height: 4.5rem;
+      box-shadow: 3px -3px $primary-color, 4px -4px $gray;
+      background-color: $gray;
+
+      &.reverse {
+        box-shadow: -3px 3px $primary-color, -4px 4px $gray;
+      }
+
+      &.first-circle {
+        top: 5rem;
+      }
+
+      &.second-circle {
+        top: 32rem;
+        left: 5%;
+      }
+
+      &.third-circle {
+        top: 40rem;
+        left: 70%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .background-elements {
+    .circle {
+      &.third-circle {
+        top: 50rem;
+      }
+    }
+  }
+}
