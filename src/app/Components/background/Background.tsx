@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Circle from "./background-components/Circle";
 import Points from "./background-components/Points";
 import Wave1 from "./background-components/Wave1";
@@ -21,6 +22,7 @@ export default function Background() {
       <p className="bars">&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;</p>
       <Wave2 />
       <Circle styles="third-circle no-background"/> 
+      <Image width={256} height={256} src={'/qr-code.svg'} alt="QR CODE" className="qr-code" />
     </div>
   )
 }

@@ -1,0 +1,45 @@
+.background-elements {
+  .qr-code {
+    position: absolute;
+    opacity: 0.6;
+    top: 35rem;
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .background-elements {
+    .qr-code {
+      left: 5%;
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .background-elements {
+    .qr-code {
+      top: 50rem;
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .background-elements {
+    .qr-code {
+      top: 72rem;
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .background-elements {
+    .qr-code {
+      top: 84rem;
+    }
+  }
+}
