@@ -6,7 +6,7 @@ import Logo from "./Logo";
 export default function Header () {
   const [showMenu, setShowMenu] = useState(false)
 
-  const logo = <a href="#home" className="logo" onClick={() => {setShowMenu(false)}}><Logo /></a>
+  const logo = <a href="#home" className="logo" onClick={() => {setShowMenu(false)}}><h1><Logo /></h1></a>
 
   const burgerButton = <button onClick={() => setShowMenu(true)} className="burger"><List size={48} color="#e8e8e8" weight="regular" /></button>
 

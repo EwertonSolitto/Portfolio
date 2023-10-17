@@ -9,6 +9,10 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+
+    .logo {
+      font-size: clamp(1.5rem, 10vw, 2rem);
+    }
   }
 
   .footer-line {

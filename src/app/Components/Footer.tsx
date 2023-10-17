@@ -5,7 +5,7 @@ export default function Footer() {
   return(
     <footer>
       <div className="footer-top">
-        <Logo />
+        <h2 className="logo"><Logo /></h2>
         <p>©Todos os Direitos Reservados</p>
       </div>
 

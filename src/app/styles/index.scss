@@ -35,6 +35,10 @@ body {
   background: linear-gradient(to bottom, $primary-color 0 23.3%, $gray 26% 73.5%, $white 77.5% 100%);
 }
 
+.logo {
+  font-size: clamp(0.875rem, 4vw, 1.125rem);
+}
+
 a {
   text-decoration: none;
 }
