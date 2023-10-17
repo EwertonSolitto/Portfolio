@@ -15,21 +15,6 @@
       left: 40%;
     }
 
-    &.empty-tag {
-      top: 4.5rem;
-      left: 10%;
-    }
-
-    &.empty-array {
-      top: 15rem;
-      left: 87%;
-    }
-
-    &.empty-object {
-      top: 16rem;
-      left: 55%;
-    }
-
     &.hello-world {
       display: none;
     }
@@ -95,22 +80,6 @@
         letter-spacing: 0.75rem;
       }
 
-      &.empty-tag {
-        top: 9rem;
-        left: 10%;
-      }
-
-      &.empty-array {
-        width: max-content;
-        top: 15rem;
-        left: 90%;
-      }
-
-      &.empty-object {
-        top: 22rem;
-        left: 58%;
-      }
-
       &.hello-world {
         left: 70%;
         top: 12rem;
@@ -129,11 +98,6 @@
     p {
       &.html {
         left: 40%;
-      }
-
-      &.empty-tag {
-        top: 8rem;
-        left: 8%;
       }
 
       &.bars {
