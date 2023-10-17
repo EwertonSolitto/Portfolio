@@ -51,6 +51,7 @@ export default function ContactCard(props: ContactCardProps) {
             value={name} 
             onChange={e => setName(e.target.value)}
             disabled={form.close && true}
+            autoComplete="on"
           />
         </div>
         
@@ -65,6 +66,7 @@ export default function ContactCard(props: ContactCardProps) {
             value={email}
             onChange={e => setEmail(e.target.value)}
             disabled={form.close && true}
+            autoComplete="on"
           />  
         </div>
 
@@ -82,6 +84,7 @@ export default function ContactCard(props: ContactCardProps) {
             value={phone}
             onChange={e => setPhone(e.target.value)}
             disabled={form.close && true}
+            autoComplete="on"
           />
         </div>
         
