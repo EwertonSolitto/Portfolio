@@ -204,7 +204,7 @@
               transition: color ease 300ms, background-color ease 300ms;
             }
 
-            &:hover {
+            &:hover, &:focus-within {
               background-color: $transparent-primary-color;
               transition: background-color ease 500ms;
 
