@@ -1,13 +1,6 @@
 .background-elements {
   svg, img {
     position: absolute;
-
-    &.qr-code {
-      opacity: 0.6;
-      top: 35rem;
-      width: 8rem;
-      height: 8rem;
-    }
   
     &.code {
       top: 4.5rem;
@@ -22,12 +15,64 @@
     &.object {
       display: none;
     }
+
+    &.javascript {
+      opacity: 0.5;
+      top: 25rem;
+      left: 55%;
+
+      path:first-child {
+        fill: $gray;
+      }
+
+      path {
+        fill: $primary-color;
+      }
+    }
+
+    &.nextjs {
+      width: 6rem;
+      height: 1.21875rem;
+      top: 70rem;
+      left: 70%;
+
+      path {
+        fill: $primary-color;
+      }
+    }
   }
 
   svg {
     opacity: 0.5;
     width: 2rem;
     height: 2rem;
+  }
+
+  div.qr-code {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.7;
+    gap: 0.25rem;
+    top: 35rem;
+    background-color: $primary-color;
+
+    svg, img {
+      position: initial;
+
+      &.github {
+        fill: $gray;
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 8rem;
+      height: 8rem;
+      outline: 5px solid $primary-color;
+      outline-offset: -2px;
+    }
   }
 }
 
@@ -44,17 +89,35 @@
       &.code {
         top: 4rem;
       }
+
+      &.javascript {
+        left: 45%;
+      }
+
+      &.nextjs {
+        top: 75rem;
+        left: 80%;
+      }
+
+      &.github {
+        top: 46.5rem;
+        left: 11.5%;
+      }
+    }
+
+    div.qr-code {
+      left: 5%;
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
     }
   }
 }
 
 @media (min-width: 720px) {
   .background-elements {
-    img.qr-code {
-      top: 50rem;
-      width: 12rem;
-      height: 12rem;
-    }
 
     svg {
       width: 3rem;
@@ -65,18 +128,35 @@
         top: 15rem;
         left: 53%;
       }
+
+      &.javascript {
+        top: 32rem;
+        left: 35%;
+      }
+
+      &.nextjs {
+        top: 85rem;
+      }
+    }
+
+    div.qr-code {
+      top: 50rem;
+
+      img {
+        width: 12rem;
+        height: 12rem;
+      }
+
+      svg {
+        width: 3rem;
+        height: 3rem;
+      }
     }
   }
 }
 
 @media (min-width: 1024px) {
   .background-elements {
-    img.qr-code {
-      top: 72rem;
-      width: 15rem;
-      height: 15rem;
-    }
-
     svg {
       width: 4rem;
       height: 4rem;
@@ -94,16 +174,30 @@
         top: 22rem;
         left: 57%;
       }
+
+      &.javascript {
+        top: 40rem;
+      }
+
+      &.nextjs {
+        top: 110rem;
+        left: 88%;
+      }
+    }
+
+    div.qr-code {
+      top: 64rem;
+
+      img {
+        width: 14rem;
+        height: 14rem;
+      }
     }
   }
 }
 
 @media (min-width: 1440px) {
   .background-elements {
-    img.qr-code {
-      top: 84rem;
-    }
-
     svg {
       &.code {
         top: 8rem;
@@ -113,6 +207,20 @@
       &.object {
         top: 30rem;
       }
+
+      &.javascript {
+        top: 52rem;
+        left: 35%;
+      }
+
+      &.nextjs {
+        top: 135rem;
+        left: 85%;
+      }
+    }
+
+    div.qr-code {
+      top: 80rem;
     }
   }
 }

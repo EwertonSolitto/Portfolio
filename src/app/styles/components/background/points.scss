@@ -25,6 +25,11 @@
       left: 5%;
     }
 
+    &.fifth-points {
+      top: 45rem;
+      left: 35%;
+    }
+
     p {
       position: absolute;
       color: $gray;
@@ -75,6 +80,11 @@
       &.fourth-points {
         top: 27.5rem;
       }
+
+      &.fifth-points {
+        top: 56rem;
+        left: 40%;
+      }
     }
   }
 }
@@ -106,6 +116,10 @@
         left: 10%;
       }
 
+      &.fifth-points {
+        top: 75rem; 
+      }
+
       p {
         font-size: 2.25rem;
   
@@ -135,6 +149,10 @@
 
       &.fourth-points {
         top: 44rem;
+      }
+
+      &.fifth-points {
+        top: 95rem; 
       }
     }
   }

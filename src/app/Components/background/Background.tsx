@@ -6,6 +6,9 @@ import Points from "./background-components/Points";
 import Wave1 from "./background-components/Wave1";
 import Wave2 from "./background-components/Wave2";
 import { Code, BracketsSquare, BracketsCurly } from "@phosphor-icons/react";
+import Javascript from "./background-components/Javacript";
+import NextJS from "./background-components/NextJS";
+import Github from "./background-components/Github";
 
 export default function Background() {
   return (
@@ -25,7 +28,13 @@ export default function Background() {
       <p className="bars">&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;</p>
       <Wave2 />
       <Circle styles="third-circle no-background"/> 
-      <Image width={256} height={256} src={'/qr-code.svg'} alt="QR CODE" className="qr-code" />
+      <div className="qr-code">
+        <Image width={256} height={256} src={'/qr-code.png'} alt="QR CODE"/>
+        <Github />
+      </div>
+      <Points styles="vertical fifth-points" quantity={2}/>
+      <Javascript />
+      <NextJS />
     </div>
   )
 }
