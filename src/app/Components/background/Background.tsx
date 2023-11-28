@@ -28,10 +28,6 @@ export default function Background() {
       <p className="bars">&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;</p>
       <Wave2 />
       <Circle styles="third-circle no-background"/> 
-      <div className="qr-code">
-        <Image width={256} height={256} src={'/qr-code.png'} alt="QR CODE"/>
-        <Github />
-      </div>
       <Points styles="vertical fifth-points" quantity={2}/>
       <Javascript />
       <NextJS />
