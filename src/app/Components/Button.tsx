@@ -5,7 +5,7 @@ export default function LinkButton (props: LinkButtonProps) {
   const {link, content, style, img} = props
   
   return (
-      <a href={link} className={`link-button ${style}`} target="_blank" rel="noreferrer">
+      <a href={link} className={`link-button ${style}`} target="_blank" rel="noreferrer" aria-label={content}>
       <Image src={img.src} alt={img.alt} width={img.width} height={img.height} />
       <span>{content}</span>
       </a>

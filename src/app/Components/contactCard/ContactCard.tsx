@@ -40,7 +40,7 @@ export default function ContactCard(props: ContactCardProps) {
       <h2>{props.title}</h2>
 
       <form onSubmit={getMessageFromFormAndSendIt}>
-        <div>
+        <div aria-label="Nome">
           <label htmlFor="name">Nome</label>
           <input 
             type="text" 
@@ -55,7 +55,7 @@ export default function ContactCard(props: ContactCardProps) {
           />
         </div>
         
-        <div>
+        <div aria-label="email">
           <label htmlFor="email">Email</label>
           <input 
             type="email" 
@@ -70,7 +70,7 @@ export default function ContactCard(props: ContactCardProps) {
           />  
         </div>
 
-        <div>
+        <div aria-label="Telefone">
           <label htmlFor="phone">Telefone</label>
           <input 
             type="tel" 
@@ -88,7 +88,7 @@ export default function ContactCard(props: ContactCardProps) {
           />
         </div>
         
-        <div>
+        <div aria-label="Mensagem">
           <label htmlFor="message">Mensagem</label>
           <textarea 
             name="message" 

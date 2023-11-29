@@ -6,15 +6,15 @@ import Logo from "./Logo";
 export default function Header () {
   const [showMenu, setShowMenu] = useState(false)
 
-  const burgerButton = <button onClick={() => setShowMenu(true)} className="burger"><List size={48} color="#e8e8e8" weight="regular" /></button>
+  const burgerButton = <button onClick={() => setShowMenu(true)} className="burger"><List size={48} color="#e8e8e8" weight="regular" aria-label="Abrir menu" /></button>
 
-  const xButton = <button onClick={() => setShowMenu(false)} className="x"><X size={48} color="#e8e8e8" weight="regular" /></button>
+  const xButton = <button onClick={() => setShowMenu(false)} className="x"><X size={48} color="#e8e8e8" weight="regular" aria-label="Fechar menu"/></button>
 
   return (
     <header className={showMenu ? 'opened-menu' : ''}>
         <div className='header'>
           <a href="#home" className="logo" onClick={() => {setShowMenu(false)}}>
-            <h1><Logo /></h1>
+            <h1 aria-label="Ewerton Solitto"><Logo /></h1>
           </a>
           
           {showMenu ? xButton : burgerButton}

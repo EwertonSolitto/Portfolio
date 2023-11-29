@@ -1,6 +1,5 @@
 'use client'
 
-import Image from "next/image";
 import Circle from "./background-components/Circle";
 import Points from "./background-components/Points";
 import Wave1 from "./background-components/Wave1";
@@ -8,11 +7,10 @@ import Wave2 from "./background-components/Wave2";
 import { Code, BracketsSquare, BracketsCurly } from "@phosphor-icons/react";
 import Javascript from "./background-components/Javacript";
 import NextJS from "./background-components/NextJS";
-import Github from "./background-components/Github";
 
 export default function Background() {
   return (
-    <div className="background-elements">
+    <div className="background-elements" aria-hidden>
       <Circle styles="first-circle"/> 
       <Points styles="vertical first-points" quantity={3}/>
       <Points styles="second-points" quantity={3}/>

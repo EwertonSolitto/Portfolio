@@ -14,7 +14,7 @@ export function ProjectFigure(props: ProjectFigureProps) {
     <li className={`projects-figure ${style}`}>
       
       <div className="over-img">
-        <h3>{title}</h3>
+        <h3 aria-label={`Projeto ${title}`}>{title}</h3>
         <div className="line"></div>
   
         <div className="bottom">
@@ -24,7 +24,7 @@ export function ProjectFigure(props: ProjectFigureProps) {
           
           
           <div className="links">
-            <a href={links.github} target="_blank" className="github">GitHub <CaretRight size={20} color="#0f1621" weight="bold" /></a>
+            <a href={links.github} target="_blank" className="github" aria-label="Visite Github">GitHub <CaretRight size={20} color="#0f1621" weight="bold" /></a>
             <a href={links.website} target="_blank" className="website">Visite o Site <CaretRight size={20} color="#0f1621" weight="bold" /></a>
           </div>
         </div>

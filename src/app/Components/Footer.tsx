@@ -5,7 +5,7 @@ export default function Footer() {
   return(
     <footer>
       <div className="footer-top">
-        <h2 className="logo"><Logo /></h2>
+        <h2 className="logo" aria-label="Ewerton Solitto"><Logo /></h2>
         <p>©Todos os Direitos Reservados</p>
       </div>
 
@@ -22,10 +22,10 @@ export default function Footer() {
           </ul>
         </div>
         <div className="social-media">
-          <a className="github" href="https://github.com/EwertonSolitto">
+          <a className="github" href="https://github.com/EwertonSolitto" aria-label="Github">
             <Image src={'/technologies/github-white-logo.svg'} alt="Github logo" width={80} height={80} />
           </a>
-          <a className="linkedin" href="https://www.linkedin.com/in/ewerton-solitto/">
+          <a className="linkedin" href="https://www.linkedin.com/in/ewerton-solitto/" aria-label="Linkedin">
             <Image src={'/social-media/linkedin-white-logo.svg'} alt="LinkedIn logo" width={80} height={80} />
           </a>
         </div>
