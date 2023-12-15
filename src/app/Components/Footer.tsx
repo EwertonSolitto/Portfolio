@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Logo from "./Logo";
+import LinkButton from "./LinkButton";
 
 export default function Footer() {
   return(
@@ -22,12 +23,12 @@ export default function Footer() {
           </ul>
         </div>
         <div className="social-media">
-          <a className="github" href="https://github.com/EwertonSolitto" aria-label="Github">
+          <LinkButton style="github" link="https://github.com/EwertonSolitto" ariaLabel="Github" content="">
             <Image src={'/technologies/github-white-logo.svg'} alt="Github logo" width={80} height={80} />
-          </a>
-          <a className="linkedin" href="https://www.linkedin.com/in/ewerton-solitto/" aria-label="Linkedin">
+          </LinkButton>
+          <LinkButton style="linkedin" link="https://www.linkedin.com/in/ewerton-solitto/" ariaLabel="Linkedin" content="">
             <Image src={'/social-media/linkedin-white-logo.svg'} alt="LinkedIn logo" width={80} height={80} />
-          </a>
+          </LinkButton>
         </div>
       </div>
     </footer>

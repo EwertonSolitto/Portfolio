@@ -1,5 +1,6 @@
+import Image from "next/image";
 import { TextCardProps } from "../../models/interfaces";
-import LinkButton from "../Button";
+import LinkButton from "../LinkButton";
 
 export default function TextCard (props: TextCardProps) {
   const {side, title, paragraphs, a} = props
@@ -18,9 +19,12 @@ export default function TextCard (props: TextCardProps) {
 
   const buttonsDiv = a && 
     <div className="buttons-div">
-      {a.map(({content, link, style = '', img}, index) => {
-        return <LinkButton key={index} link={link} style={style} content={content} img={img}/>
-      })}
+      {a.map(({img, buttonProps}, index) => {
+        return (
+          <LinkButton key={index} link={buttonProps.link} style={buttonProps.style} content={buttonProps.content} ariaLabel={buttonProps.ariaLabel}>
+            {img && <Image src={img.src} alt={img.alt} width={img.width} height={img.height}/>}
+          </ LinkButton>
+      )})}
     </div> 
     
 

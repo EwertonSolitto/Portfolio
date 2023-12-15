@@ -1,12 +1,13 @@
+import { ReactNode } from "react"
 import { ImageType, Side } from "./types"
 
 export interface LinkButtonProps {
   content: string
   link: string
+  ariaLabel: string
+  children?: ReactNode
   
   style?: string
-  
-  img: ImageType
 }
 
 export interface ListCardProps {
@@ -32,7 +33,7 @@ export interface TextCardProps {
 
   title?: {content: string, style?: string}
   paragraphs?: Array<{content: string, style?: string}>;
-  a?: Array<LinkButtonProps>;
+  a?: Array<{img?: ImageType, buttonProps: LinkButtonProps}>;
 }
 
 export interface ProjectCardProps {

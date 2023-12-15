@@ -13,7 +13,7 @@ export default function Header () {
   return (
     <header className={showMenu ? 'opened-menu' : ''}>
         <div className='header'>
-          <a href="#home" className="logo" onClick={() => {setShowMenu(false)}}>
+          <a href="#home" className="logo" onClick={() => {setShowMenu(false)}} tabIndex={-1}>
             <h1 aria-label="Ewerton Solitto"><Logo /></h1>
           </a>
           
