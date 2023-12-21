@@ -1,5 +1,6 @@
 'use client'
 
+import useAppContext from "@/app/hook/useAppContext";
 import { ContactCardProps } from "@/app/models/interfaces";
 import { FormEvent, useState } from "react";
 
@@ -9,6 +10,7 @@ export default function ContactCard(props: ContactCardProps) {
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [message, setMessage] = useState('')
+  const { menuButtonOpened } = useAppContext()
 
   async function getMessageFromFormAndSendIt(e: FormEvent) {
     e.preventDefault()
@@ -52,6 +54,7 @@ export default function ContactCard(props: ContactCardProps) {
             onChange={e => setName(e.target.value)}
             disabled={form.close && true}
             autoComplete="on"
+            tabIndex={menuButtonOpened}
           />
         </div>
         
@@ -67,6 +70,7 @@ export default function ContactCard(props: ContactCardProps) {
             onChange={e => setEmail(e.target.value)}
             disabled={form.close && true}
             autoComplete="on"
+            tabIndex={menuButtonOpened}
           />  
         </div>
 
@@ -85,6 +89,7 @@ export default function ContactCard(props: ContactCardProps) {
             onChange={e => setPhone(e.target.value)}
             disabled={form.close && true}
             autoComplete="on"
+            tabIndex={menuButtonOpened}
           />
         </div>
         
@@ -100,6 +105,7 @@ export default function ContactCard(props: ContactCardProps) {
             value={message}
             onChange={e => setMessage(e.target.value)}
             disabled={form.close && true}
+            tabIndex={menuButtonOpened}
           />
         </div>
 
@@ -124,7 +130,14 @@ export default function ContactCard(props: ContactCardProps) {
             </div>
           </button> 
           : 
-          <button type="submit" disabled={form.close && true} className={form.accepted === 'accepted' ? 'hidden' : ''}>Enviar</button>
+          <button 
+            type="submit" 
+            disabled={form.close && true} 
+            className={form.accepted === 'accepted' ? 'hidden' : ''} 
+            tabIndex={menuButtonOpened}
+          >
+            Enviar
+          </button>
           }
         </div>
       </form>

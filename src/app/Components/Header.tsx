@@ -2,18 +2,25 @@
 import { List, X } from "@phosphor-icons/react";
 import { useState } from "react";
 import Logo from "./Logo";
+import useAppContext from "../hook/useAppContext";
 
 export default function Header () {
   const [showMenu, setShowMenu] = useState(false)
+  const {handleMenuButtonOpened, menuButtonOpened} = useAppContext()
 
-  const burgerButton = <button onClick={() => setShowMenu(true)} className="burger"><List size={48} color="#e8e8e8" weight="regular" aria-label="Abrir menu" /></button>
+  const handleMenu = () => {
+    setShowMenu(!showMenu)
+    handleMenuButtonOpened()
+  }
 
-  const xButton = <button onClick={() => setShowMenu(false)} className="x"><X size={48} color="#e8e8e8" weight="regular" aria-label="Fechar menu"/></button>
+  const burgerButton = <button onClick={() => handleMenu()} className="burger"><List size={48} color="#e8e8e8" weight="regular" aria-label="Abrir menu" /></button>
+
+  const xButton = <button onClick={() => handleMenu()} className="x"><X size={48} color="#e8e8e8" weight="regular" aria-label="Fechar menu"/></button>
 
   return (
     <header className={showMenu ? 'opened-menu' : ''}>
         <div className='header'>
-          <a href="#home" className="logo" onClick={() => {setShowMenu(false)}} tabIndex={-1}>
+          <a href="#home" className="logo" onClick={() => {setShowMenu(false)}} tabIndex={menuButtonOpened}>
             <h1 aria-label="Ewerton Solitto"><Logo /></h1>
           </a>
           

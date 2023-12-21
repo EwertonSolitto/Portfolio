@@ -1,8 +1,13 @@
+'use client'
+
 import Image from "next/image";
 import Logo from "./Logo";
 import LinkButton from "./LinkButton";
+import useAppContext from "../hook/useAppContext";
 
 export default function Footer() {
+  const { menuButtonOpened } = useAppContext()
+  
   return(
     <footer>
       <div className="footer-top">
@@ -15,11 +20,11 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="links">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#home" tabIndex={menuButtonOpened}>Home</a></li>
+            <li><a href="#sobre" tabIndex={menuButtonOpened}>Sobre</a></li>
+            <li><a href="#habilidades" tabIndex={menuButtonOpened}>Habilidades</a></li>
+            <li><a href="#projetos" tabIndex={menuButtonOpened}>Projetos</a></li>
+            <li><a href="#contato" tabIndex={menuButtonOpened}>Contato</a></li>
           </ul>
         </div>
         <div className="social-media">

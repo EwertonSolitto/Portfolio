@@ -6,6 +6,7 @@ import getData from "./staticdata";
 import ContactCard from "./Components/contactCard/ContactCard";
 import Footer from "./Components/Footer";
 import Background from "./Components/background/Background";
+import AppProvider from "./context/AppProvider";
 
 async function App() {
   const mainProps = await getData('/home.json')
@@ -15,41 +16,43 @@ async function App() {
   const contactProps = await getData('/contact.json')
   
   return (
-    <div className="app" id="home">
-      <Header/>
+    <AppProvider>
+      <div className="app" id="home">
+        <Header/>
 
-      <Background />
+        <Background />
 
-      <main className="home-main">
-        <TextCard side="left" paragraphs={mainProps.text} a={mainProps.buttons} />
-      </main>
+        <main className="home-main">
+          <TextCard side="left" paragraphs={mainProps.text} a={mainProps.buttons} />
+        </main>
 
-      <div id="sobre"></div>
+        <div id="sobre"></div>
 
-      <section className="about">
-        <TextCard side="right" title={aboutProps.title} paragraphs={aboutProps.text} />
-      </section>
+        <section className="about">
+          <TextCard side="right" title={aboutProps.title} paragraphs={aboutProps.text} />
+        </section>
 
-      <div id="habilidades"></div>
+        <div id="habilidades"></div>
 
-      <section className="technologies">
-        <ListCard side="left" title={technologyListCardProps.title} lists={technologyListCardProps.lists}/>
-      </section>
+        <section className="technologies">
+          <ListCard side="left" title={technologyListCardProps.title} lists={technologyListCardProps.lists}/>
+        </section>
 
-      <div id="projetos"></div>
+        <div id="projetos"></div>
 
-      <section className="projects">
-        <ProjectsCard side="right" title={projectListProps.title} figure={projectListProps.projects}/>
-      </section>
+        <section className="projects">
+          <ProjectsCard side="right" title={projectListProps.title} figure={projectListProps.projects}/>
+        </section>
 
-      <div id="contato"></div>
+        <div id="contato"></div>
 
-      <section className="contact">
-        <ContactCard side="left" title={contactProps.title} />
-      </section>
+        <section className="contact">
+          <ContactCard side="left" title={contactProps.title} />
+        </section>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </AppProvider>
   );
 }
 
