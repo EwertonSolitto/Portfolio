@@ -12,8 +12,8 @@
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.5",
     "eslint": "^8.44.0",
-    "eslint-config-next": "^13.4.8",
-    "next": "^13.4.8",
+    "eslint-config-next": "^14.0.4",
+    "next": "^14.0.4",
     "nodemailer": "^6.9.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -27,8 +27,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "commit": "cz",
-    "sass": "sass --watch --style=compressed src/styles/sass/index.scss:src/styles/css/index.css"
+    "commit": "cz"
   },
   "eslintConfig": {
     "extends": [
