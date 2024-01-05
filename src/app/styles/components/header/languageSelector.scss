@@ -1,0 +1,65 @@
+header .header .select-div .desktop-language-selector {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  header .header .select-div {
+    select {
+      display: none;
+    }
+
+    .desktop-language-selector {
+      display: block;
+
+      .language-selector-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.125rem;
+        width: 8.5rem;
+        height: 2rem;
+        padding-inline: 0.75rem 0.25rem;
+        border: 1px solid $secondary-color;
+        border-radius: 1rem;
+
+        span {
+          display: flex;
+          align-items: center;
+          padding-right: 0.75rem;
+          border-right: 1px solid $secondary-color;
+          height: 2rem;
+        }
+
+        svg path:first-child {
+          fill: $gray;
+          opacity: 1;
+        }
+      }
+
+      .selector-options {
+        display: none;
+        background-color: $primary-color;
+        padding: 0;
+
+        &.opened {
+          display: block;
+          position: absolute;
+        }
+
+        li button {
+          padding-block: 0.25rem;
+          font-size: 1.125rem;
+          border: 1px solid $secondary-color;
+          width: 8.5rem;
+          padding-left: 0.75rem;
+          text-align: left;
+
+          &:hover, &:focus {
+            background-color: $secondary-color;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import Header from "./Components/Header";
+import Header from "./Components/header/Header";
 import TextCard from "./Components/textCard/TextCard";
 import ListCard from "./Components/listCard/ListCard";
 import ProjectsCard from "./Components/projectCard/ProjectsCard";

@@ -1,8 +1,9 @@
 'use client'
 import { List, X } from "@phosphor-icons/react";
 import { useState } from "react";
-import Logo from "./Logo";
-import useAppContext from "../hook/useAppContext";
+import Logo from "../Logo";
+import useAppContext from "../../hook/useAppContext";
+import LanguageSelector from "./LanguageSelector";
 
 export default function Header () {
   const [showMenu, setShowMenu] = useState(false)
@@ -36,13 +37,8 @@ export default function Header () {
                 <li><a href="#contato" onClick={() => setShowMenu(false)}>Contato</a></li>
               </ul>
             </nav>
-          </div>
 
-          <div className="select-div">
-            <select name="language" id="language">
-              <option className="option" value="portuguese">Português</option>
-              <option className="option" value="english">Inglês</option>
-            </select>
+            <LanguageSelector />
           </div>
         </div>
     </header>
