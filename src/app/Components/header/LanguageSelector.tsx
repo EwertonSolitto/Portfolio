@@ -1,25 +1,10 @@
 'use client'
 import { CaretDown } from "@phosphor-icons/react/dist/ssr"
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 
 export default function LanguageSelector() {
   const [openedSelector, setOpenedSelector] = useState(false)
   const [languageSelected, setLanguageSelected] = useState(navigator.language.includes('pt'))
-  const selectorRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (selectorRef.current && !selectorRef.current.contains(event.target as Node)) {
-        setOpenedSelector(false);
-      }
-    }
-
-    window.addEventListener("click", handleClickOutside);
-    return () => {
-      window.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
-
 
   function handleLanguage(language: string | null) {
     switch(language) {
@@ -35,7 +20,7 @@ export default function LanguageSelector() {
   
   return (
     <div className="select-div">
-      <div className="desktop-language-selector" ref={selectorRef}>
+      <div className="desktop-language-selector">
         <button className="language-selector-button" onClick={() => {setOpenedSelector(!openedSelector)}}>
           <div>
             <span>{languageSelected ? 'Português' : 'Inglês'}</span>
