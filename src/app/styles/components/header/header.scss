@@ -99,7 +99,7 @@ header {
 
     div.header {
       display: grid;
-      grid-template-columns: 18.75rem 2fr;
+      grid-template-columns: 18rem 2fr;
 
       h1 {
         font-size: 1.8125rem;
@@ -117,6 +117,7 @@ header {
 
         nav {
           ul {
+            width: 36vw;
             display: flex;
             flex-direction: row;
             gap: 1.75rem;
