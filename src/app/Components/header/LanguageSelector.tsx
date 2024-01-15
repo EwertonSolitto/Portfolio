@@ -4,7 +4,7 @@ import { useState } from "react"
 
 export default function LanguageSelector() {
   const [openedSelector, setOpenedSelector] = useState(false)
-  const [languageSelected, setLanguageSelected] = useState(navigator.language.includes('pt'))
+  const [languageSelected, setLanguageSelected] = useState(false)
 
   function handleLanguage(language: string | null) {
     switch(language) {
