@@ -1,0 +1,15 @@
+{
+  "title": {
+    "content": "About"
+  },
+  "text": [
+    {
+      "content": "Hello! I'm Ewerton Solitto, 19 years old, and I am a Fullstack Developer with a primary focus on Front-end development. I've been studying programming for over a year and am actively seeking my first opportunity in the field.",
+      "style": "text"
+    },
+    {
+      "content": "I have a strong foundation in key web technologies and am currently dedicated to learning the most sought-after frameworks in the market, along with adopting best practices to ensure that my projects consistently meet high-quality standards.",
+      "style": "text"
+    }
+  ]
+}

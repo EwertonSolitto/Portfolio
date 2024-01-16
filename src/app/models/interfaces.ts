@@ -12,8 +12,6 @@ export interface LinkButtonProps {
 
 export interface ListCardProps {
   side: Side;
-  
-  title: {content: string, style?: string};
 
   lists: Array<TechnologyListProps>
 }

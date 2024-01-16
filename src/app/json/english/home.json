@@ -1,0 +1,20 @@
+{
+  "text": [
+      {
+        "content": "Hello", 
+        "style": "hello"
+      }, 
+      {
+        "content": "Welcome to my portfolio!", 
+        "style": "mid-text"
+      }, 
+      {
+        "content": "I'm Ewerton Solitto.", 
+        "style": "mid-text"
+      }, 
+      {
+        "content": "Fullstack Developer", 
+        "style": "strong-text"
+      }
+  ]
+} 

@@ -1,0 +1,30 @@
+{
+  "buttons": [
+    {
+      "buttonProps": {
+        "content": "GitHub", 
+        "link": "https://github.com/EwertonSolitto",
+        "ariaLabel": "GitHub"
+      },
+      "img": {
+        "src": "/technologies/github-white-logo.svg", 
+        "alt": "GitHub Logo", 
+        "width": 54, 
+        "height": 54
+      }
+    },
+    {
+      "buttonProps": {
+        "content": "LinkedIn", 
+        "link": "https://www.linkedin.com/in/ewerton-solitto/", 
+        "ariaLabel": "LinkedIn"
+      },
+      "img": {
+        "src": "/social-media/linkedin-white-logo.svg", 
+        "alt": "LinkedIn Logo", 
+        "width": 54, 
+        "height": 54
+      }
+    }
+  ]
+}
