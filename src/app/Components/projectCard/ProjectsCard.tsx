@@ -1,4 +1,4 @@
-import { ProjectCardProps } from "@/app/models/interfaces"
+import { ProjectCardProps } from "@models/interfaces"
 import { ProjectFigure } from "./ProjectFigure"
 
 

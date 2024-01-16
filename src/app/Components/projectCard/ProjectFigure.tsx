@@ -1,5 +1,5 @@
 'use client'
-import { ProjectFigureProps } from "@/app/models/interfaces";
+import { ProjectFigureProps } from "@models/interfaces";
 import { CaretRight } from "@phosphor-icons/react";
 import Image from "next/image";
 import LinkButton from "../LinkButton";

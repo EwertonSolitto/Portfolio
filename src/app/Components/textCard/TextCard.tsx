@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { TextCardProps } from "../../models/interfaces";
+import { TextCardProps } from "@models/interfaces";
 import LinkButton from "../LinkButton";
 
 export default function TextCard (props: TextCardProps) {

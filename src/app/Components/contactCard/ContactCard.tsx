@@ -1,7 +1,7 @@
 'use client'
 
-import useAppContext from "@/app/hook/useAppContext";
-import { ContactCardProps } from "@/app/models/interfaces";
+import useAppContext from "@hook/useAppContext";
+import { ContactCardProps } from "@models/interfaces";
 import { FormEvent, useState } from "react";
 
 export default function ContactCard(props: ContactCardProps) { 

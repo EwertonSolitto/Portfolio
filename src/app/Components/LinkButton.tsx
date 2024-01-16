@@ -1,8 +1,8 @@
 'use client'
 
 import React from "react"
-import { LinkButtonProps } from "../models/interfaces"
-import useAppContext from "../hook/useAppContext"
+import { LinkButtonProps } from "@models/interfaces"
+import useAppContext from "@hook/useAppContext"
 
 const LinkButton: React.FC<LinkButtonProps> = (props) => {
   const {link, content, style, ariaLabel, children} = props

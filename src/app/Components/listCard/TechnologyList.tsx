@@ -1,4 +1,4 @@
-import { TechnologyListProps } from "../../models/interfaces";
+import { TechnologyListProps } from "@models/interfaces";
 import TechnologyFigure from "./TechnologyFigure";
 
 export default function TechnologyList(props: TechnologyListProps) {

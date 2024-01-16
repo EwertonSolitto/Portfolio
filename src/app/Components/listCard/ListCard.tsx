@@ -1,4 +1,4 @@
-import { ListCardProps } from "../../models/interfaces"
+import { ListCardProps } from "@models/interfaces"
 import TechnologyList from "./TechnologyList"
 
 export default function ListCard(props: ListCardProps) {

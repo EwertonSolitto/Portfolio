@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Logo from "./Logo";
 import LinkButton from "./LinkButton";
-import useAppContext from "../hook/useAppContext";
+import useAppContext from "@hook/useAppContext";
 
 export default function Footer() {
   const { menuButtonOpened } = useAppContext()
