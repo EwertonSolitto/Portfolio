@@ -1,11 +1,25 @@
 .home-main {
   .text-card {
-      .hello {
-        padding-top: 0.75rem;
-        
-        font-size: clamp(4rem, 20vw, 5rem);
-        line-height: 4.75rem;
+    .hello {
+      padding-top: 0.75rem;
+      
+      font-size: clamp(4rem, 20vw, 5rem);
+      line-height: 4.75rem;
+
+      &.english {
+        margin-left: 2.5rem;
       }
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  .home-main {
+    .text-card {
+      .hello.english {
+        margin-left: 1rem;
+      }
+    }
   }
 }
 
@@ -17,6 +31,10 @@
 
         font-size: 6rem;
         line-height: 5.5rem;
+
+        &.english {
+          margin-left: 1.5rem;
+        }
       }
     }
   }
@@ -30,6 +48,11 @@
 
         font-size: 7rem;
         line-height: 6.25rem;
+
+
+        &.english {
+          margin-left: 2.625rem;
+        }
       }
     }
   }
@@ -43,6 +66,11 @@
 
         font-size: 7.5rem;
         line-height: 6.75rem;
+
+
+        &.english {
+          margin-left: 2.75rem;
+        }
       }
     }
   }
