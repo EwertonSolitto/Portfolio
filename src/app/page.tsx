@@ -1,6 +1,5 @@
 'use client'
 import Header from "@Components/header/Header";
-import TextCard from "@Components/textCard/TextCard";
 import ListCard from "@Components/listCard/ListCard";
 import ProjectsCard from "@Components/projectCard/ProjectsCard";
 import ContactCard from "@Components/contactCard/ContactCard";
@@ -10,6 +9,8 @@ import NavigationDiv from "@Components/NavigationDiv";
 
 import AppProvider from "@context/AppProvider";
 import Home from "./Components/Home";
+import About from "./Components/About";
+
 function App() {
   return (
     <AppProvider>
@@ -22,9 +23,7 @@ function App() {
 
         <NavigationDiv section="about" />
 
-        {/* <section className="about">
-          <TextCard side="right" title={aboutProps.title} paragraphs={aboutProps.text} />
-        </section> */}
+        <About />
 
         <NavigationDiv section="technologies" />
 
