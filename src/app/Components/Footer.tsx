@@ -4,29 +4,40 @@ import Image from "next/image";
 import Logo from "./Logo";
 import LinkButton from "./LinkButton";
 import useAppContext from "@hook/useAppContext";
+import portugueseData from '@json/portuguese/navigation.json';
+import englishData from '@json/english/navigation.json';
 
 export default function Footer() {
-  const { menuButtonOpened } = useAppContext()
+  const { menuButtonOpened, isPortuguese } = useAppContext()
+  const navigationData = isPortuguese ? portugueseData : englishData
+
+  const nav = (
+    <nav className="links">
+        {
+          <ul>
+            {navigationData.navigation.map(({content, link}, index) => {
+                return (
+                  <li key={index}>
+                    <a href={link}>{content}</a>
+                  </li>
+                )
+              })}
+          </ul>
+        }
+    </nav>
+  )
   
   return(
     <footer>
       <div className="footer-top">
         <h2 className="logo" aria-label="Ewerton Solitto"><Logo /></h2>
-        <p>©Todos os Direitos Reservados</p>
+        <p>{isPortuguese ? '©Todos os Direitos Reservados' : "©All rights reserved"}</p>
       </div>
 
       <div className="footer-line"></div>
 
       <div className="footer-bottom">
-        <div className="links">
-          <ul>
-            <li><a href="#home" tabIndex={menuButtonOpened}>Home</a></li>
-            <li><a href="#sobre" tabIndex={menuButtonOpened}>Sobre</a></li>
-            <li><a href="#habilidades" tabIndex={menuButtonOpened}>Habilidades</a></li>
-            <li><a href="#projetos" tabIndex={menuButtonOpened}>Projetos</a></li>
-            <li><a href="#contato" tabIndex={menuButtonOpened}>Contato</a></li>
-          </ul>
-        </div>
+        {nav}
         <div className="social-media">
           <LinkButton style="github" link="https://github.com/EwertonSolitto" ariaLabel="Github" content="">
             <Image src={'/technologies/github-white-logo.svg'} alt="Github logo" width={80} height={80} />
