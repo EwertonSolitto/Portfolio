@@ -1,0 +1,20 @@
+{
+  "title": "Contato",
+  "inputs": {
+    "name": {
+      "name": "Nome"
+    },
+    "phone": {
+      "name": "Telefone"
+    },
+    "message": {
+      "name": "Mensagem",
+      "placeholder": "Olá, meu nome é Ewerton! Adorei seu site."
+    }
+  },
+  "sendButton": "Enviar",
+  "responses": {
+    "accepted": "Sua mensagem foi enviada com sucesso!",
+    "denied": "Não foi possível enviar a mensagem. Tente novamente mais tarde."
+  }
+}

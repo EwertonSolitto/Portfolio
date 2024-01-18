@@ -3,7 +3,6 @@ import portugueseData from '@json/portuguese/projects.json';
 import englishData from '@json/english/projects.json';
 import useAppContext from '@hook/useAppContext';
 
-
 export default function Projects() {
   const { isPortuguese } = useAppContext()
   const projectsData = isPortuguese ? portugueseData : englishData

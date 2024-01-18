@@ -1,0 +1,20 @@
+{
+  "title": "Contact",
+  "inputs": {
+    "name": {
+      "name": "Name"
+    },
+    "phone": {
+      "name": "Phone"
+    },
+    "message": {
+      "name": "Message",
+      "placeholder": "Hi! My name is Ewerton! I like your portfolio."
+    }
+  },
+  "sendButton": "Send",
+  "responses": {
+    "accepted": "Your message has been sent successfully!",
+    "denied": "It was not possible to send the message. Try again later."
+  }
+}
