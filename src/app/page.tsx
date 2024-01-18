@@ -1,15 +1,15 @@
 'use client'
 import Header from "@Components/header/Header";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Projects from "@/Components/projectCard/Projects";
 import Technologies from "@Components/technologiesCard/Technologies";
-import ProjectsCard from "@Components/projectCard/ProjectsCard";
 import ContactCard from "@Components/contactCard/ContactCard";
 import Footer from "@Components/Footer";
 import Background from "@Components/background/Background";
 import NavigationDiv from "@Components/NavigationDiv";
 
 import AppProvider from "@context/AppProvider";
-import Home from "./Components/Home";
-import About from "./Components/About";
 
 function App() {
   return (
@@ -31,9 +31,7 @@ function App() {
 
         <NavigationDiv section="projects" />
 
-        {/* <section className="projects">
-          <ProjectsCard side="right" title={projectListProps.title} figure={projectListProps.projects}/>
-        </section> */}
+        <Projects />
 
         <NavigationDiv section="contact" />
 

@@ -1,10 +1,10 @@
 {
-  "title": {"content": "Projetos"},
+  "title": "Projects",
   "projects": [
     {
       "title": "The Blog.",
       "img": "/projects/the-blog.png",
-      "alt": "Foto The Blog",
+      "alt": "Website The Blog",
       "tecnologies": ["HTML", "CSS", "Javascript"],
       "links": {
         "github": "https://github.com/EwertonSolitto/The-Blog",
@@ -14,7 +14,7 @@
     {
       "title": "Rocket NFTs",
       "img": "/projects/rocket-nfts.png",
-      "alt": "Foto Rocket NFTs",
+      "alt": "Website Rocket NFTs",
       "tecnologies": ["ReactJS", "TailwindCSS", "Typescript"],
       "links": {
         "github": "https://github.com/EwertonSolitto/Rocket-NFTs",
@@ -24,7 +24,7 @@
     {
       "title": "GiordanoFettuccine",
       "img": "/projects/giordanofettuccine.png",
-      "alt": "Foto GiordanoFettuccine",
+      "alt": "Website GiordanoFettuccine",
       "tecnologies": ["HTML", "CSS", "Javascript"],
       "links": {
         "github": "https://github.com/EwertonSolitto/GiordanoFettuccine",
@@ -34,7 +34,7 @@
     {
       "title": "OneBitX",
       "img": "/projects/onebitx.png",
-      "alt": "Foto OneBitX",
+      "alt": "Website OneBitX",
       "tecnologies": ["HTML", "Bootstrap", "Sass"],
       "links": {
         "github": "https://github.com/EwertonSolitto/OneBitX",
