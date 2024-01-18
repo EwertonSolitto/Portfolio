@@ -1,6 +1,6 @@
 'use client'
 import Header from "@Components/header/Header";
-import ListCard from "@Components/listCard/ListCard";
+import Technologies from "@Components/technologiesCard/Technologies";
 import ProjectsCard from "@Components/projectCard/ProjectsCard";
 import ContactCard from "@Components/contactCard/ContactCard";
 import Footer from "@Components/Footer";
@@ -27,9 +27,7 @@ function App() {
 
         <NavigationDiv section="technologies" />
 
-        {/* <section className="technologies">
-          <ListCard side="left" lists={technologyListCardProps.lists}/>
-        </section> */}
+        <Technologies />
 
         <NavigationDiv section="projects" />
 

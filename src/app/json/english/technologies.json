@@ -1,6 +1,7 @@
 {
+  "title": "Technologies",
   "lists": [{
-     "title": "Tecnologias que domino:",
+     "title": "Technologies I have experience with:",
      "technologies": [
       {"img": {"src": "/technologies/html-logo.svg", "alt": "HTML logo", "width": 80, "height": 80}, "description":{"content": "HTML"}},
       {"img": {"src": "/technologies/css-logo.svg", "alt": "CSS logo", "width": 80, "height": 80}, "description":{"content": "CSS"}},
@@ -15,7 +16,7 @@
       {"img": {"src": "/technologies/figma-logo.svg", "alt": "Figma logo", "width": 80, "height": 80}, "description":{"content": "Figma"}}
     ]},
     {
-      "title":"Tecnologias com pouco domínio:", 
+      "title":"Technologies I have little experience with:", 
       "technologies": [
         {"img": {"src": "/technologies/nodejs-logo.svg", "alt": "NodeJS logo", "width": 80, "height": 80}, "description":{"content": "NodeJS"}},
         {"img": {"src": "/technologies/graphql-logo.svg", "alt": "GraphQL logo", "width": 80, "height": 80}, "description":{"content": "GraphQL"}},
@@ -26,7 +27,7 @@
         {"img": {"src": "/technologies/docker-logo.svg", "alt": "Docker logo", "width": 80, "height": 80}, "description":{"content": "Docker"}}
     ]},
     {
-      "title":"Tecnologias que pretendo aprender:", 
+      "title":"Technologies I want to learn in the future:", 
       "technologies": [
         {"img": {"src": "/technologies/angular-logo.svg", "alt": "Angular logo", "width": 80, "height": 80}, "description":{"content": "Angular"}},
         {"img": {"src": "/technologies/jest-logo.svg", "alt": "Jest logo", "width": 80, "height": 80}, "description":{"content": "Jest"}},
