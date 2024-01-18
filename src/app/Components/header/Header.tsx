@@ -24,7 +24,6 @@ export default function Header () {
 
   const nav = (
     <nav>
-      <ul>
         {
           <ul>
             {navigationData.navigation.map(({content, link}, index) => {
@@ -36,7 +35,6 @@ export default function Header () {
               })}
           </ul>
         }
-      </ul>
     </nav>
   )
 
