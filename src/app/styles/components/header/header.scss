@@ -111,13 +111,12 @@ header {
         padding: 0;
         border: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         position: initial;
         flex-direction: row;
 
         nav {
           ul {
-            width: 36vw;
             display: flex;
             flex-direction: row;
             gap: 1.75rem;
@@ -148,6 +147,10 @@ header {
   header {
     div.header {
       grid-template-columns: 1fr 2fr;
+
+      .opened-nav {
+        justify-content: space-between;
+      }
 
       h1 {
         font-size: 2rem;
