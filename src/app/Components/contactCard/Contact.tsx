@@ -27,7 +27,8 @@ export default function Contact() {
         email,
         name,
         phone,
-        message
+        message,
+        isPortuguese
       }),
       headers: {
         'content-type': 'application/json',
@@ -89,6 +90,7 @@ export default function Contact() {
               minLength={0}
               maxLength={16}
               required
+              pattern="[0-9\s]{10,16}"
               value={phone}
               onChange={e => setPhone(e.target.value)}
               disabled={form.close && true}
