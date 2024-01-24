@@ -31,7 +31,6 @@
       "technologies": [
         {"img": {"src": "/technologies/angular-logo.svg", "alt": "Angular logo", "width": 80, "height": 80}, "description":{"content": "Angular"}},
         {"img": {"src": "/technologies/jest-logo.svg", "alt": "Jest logo", "width": 80, "height": 80}, "description":{"content": "Jest"}},
-        {"img": {"src": "/technologies/vuejs-logo.svg", "alt": "Vue.js logo", "width": 80, "height": 80}, "description":{"content": "Vue.js"}},
         {"img": {"src": "/technologies/electron-logo.svg", "alt": "Electron logo", "width": 80, "height": 80}, "description":{"content": "Electron"}},
         {"img": {"src": "/technologies/nestjs-logo.svg", "alt": "NestJS logo", "width": 80, "height": 80}, "description":{"content": "NestJS"}},
         {"img": {"src": "/technologies/photoshop-logo.svg", "alt": "Photoshop logo", "width": 80, "height": 80}, "description":{"content": "Photoshop"}},
