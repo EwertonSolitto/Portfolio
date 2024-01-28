@@ -11,6 +11,28 @@
       box-shadow: -1px 1px $primary-color, -2px 2px $gray;
     }
 
+    &.gray-background {
+      background-color: $primary-color;
+      box-shadow: 1px -1px $gray, 2px -2px $primary-color;
+      opacity: 0.6;
+    }
+
+    &.gray-reverse {
+      box-shadow: -1px 1px $gray, -2px 2px $primary-color;
+    }
+
+    &.gray-no-background {
+      background: none;
+      box-shadow: none;
+      border: 1px $primary-color solid;
+    }
+
+    &.white-background {
+      background-color: $gray;
+      box-shadow: 1px -1px $white, 2px -2px $gray;
+      opacity: 0.6;
+    }
+
     &.no-background {
       background: none;
       box-shadow: none;
@@ -32,6 +54,36 @@
       top: 24rem;
       left: 72%;
     }
+
+    &.fourth-circle {
+      top: 40rem;
+      left: 10%;
+    }
+
+    &.fifth-circle {
+      top: 90rem;
+      right: 25%;
+    }
+
+    &.sixth-circle {
+      top: 110rem;
+      left: 2%;
+    }
+
+    &.seventh-circle {
+      top: 150rem;
+      left: 10%;
+    }
+
+    &.eighth-circle {
+      top: 190rem;
+      right: 5%;
+    }
+
+    &.ninth-circle {
+      top: 210rem;
+      left: 3%;
+    }
   }
 }
 
@@ -40,6 +92,18 @@
     .circle {
       width: 3rem;
       height: 3rem;
+
+      &.fourth-circle {
+        top: 45rem;
+      }
+
+      &.eighth-circle {
+        top: 200rem;
+      }
+
+      &.ninth-circle {
+        top: 225rem;
+      }
     }
   }
 }
@@ -69,6 +133,30 @@
         top: 40rem;
         left: 70%;
       }
+
+      &.fourth-circle {
+        top: 60rem;
+      }
+
+      &.fifth-circle {
+        top: 125rem;
+      }
+
+      &.sixth-circle {
+        top: 146rem;
+      }
+
+      &.seventh-circle {
+        top: 175rem;
+      }
+
+      &.eighth-circle {
+        top: 215rem;
+      }
+
+      &.ninth-circle {
+        top: 243rem;
+      }
     }
   }
 }
@@ -78,6 +166,32 @@
     .circle {
       &.third-circle {
         top: 50rem;
+      }
+
+      &.fourth-circle {
+        top: 75rem;
+        left: 15%;
+      }
+
+      &.fifth-circle {
+        top: 150rem;
+      }
+
+      &.sixth-circle {
+        top: 180rem;
+      }
+
+      &.seventh-circle {
+        top: 210rem;
+      }
+
+      &.eighth-circle {
+        top: 252rem;
+      }
+
+      &.ninth-circle {
+        top: 287rem;
+        left: 25%;
       }
     }
   }
