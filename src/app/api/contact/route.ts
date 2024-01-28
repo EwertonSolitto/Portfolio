@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import getEmailHTML from "./getEmailHTML"
 
 export const POST = async (req: Request, res: Response) => {
-  const {name, email, phone, message, isPortuguese} = await req.json()
+  const {data, isPortuguese} = await req.json()
   
-  const html = getEmailHTML(name, email, phone, message, isPortuguese)
+  const html = getEmailHTML(data, isPortuguese)
 
   const nodemailer = require("nodemailer");
 
@@ -22,7 +22,7 @@ export const POST = async (req: Request, res: Response) => {
   try {
     await transporter.sendMail({
       from: 'Ewerton Solitto <ewerton2004@yahoo.com.br>',
-      to: ["ewerton2004@yahoo.com.br", email],
+      to: ["ewerton2004@yahoo.com.br", data.email],
       subject: isPortuguese ? "Obrigado por entrar em contato!" : "Thank you for your message!",
       html,
     })

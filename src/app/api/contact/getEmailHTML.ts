@@ -1,8 +1,12 @@
+import FormResponseData from "@/models/types/FormResponseData";
+
 export default function getEmailHTML( 
-  name: FormDataEntryValue | null, 
-  email: FormDataEntryValue | null, 
-  phone: FormDataEntryValue | null, 
-  message: FormDataEntryValue | null,
+  {
+    name, 
+    email, 
+    phone, 
+    message
+  }: FormResponseData,
   isPortuguese: boolean
 ) {
   return `
