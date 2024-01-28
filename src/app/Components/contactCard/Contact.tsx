@@ -7,6 +7,8 @@ import { useForm } from "react-hook-form";
 import portugueseData from '@json/portuguese/contact.json';
 import englishData from '@json/english/contact.json';
 import FormResponseData from "@/models/types/FormResponseData";
+import ContactInput from "./ContactInput";
+import ContactTextarea from "./ContactTextarea";
 
 
 export default function Contact() { 
@@ -53,7 +55,7 @@ export default function Contact() {
         <form onSubmit={handleSubmit((data) => {getMessageFromFormAndSendIt(data)})}>
           <div aria-label={inputs.name.name}>
             <label htmlFor="name">{inputs.name.name}</label>
-            <input 
+            <ContactInput 
               type="text" 
               id="name" 
               placeholder="Ewerton Solitto"
@@ -61,13 +63,12 @@ export default function Contact() {
               {...register('name', {required: true})}
               disabled={form.close && true}
               autoComplete="on"
-              tabIndex={menuButtonOpened}
             />
           </div>
           
           <div aria-label="Email">
             <label htmlFor="email">Email</label>
-            <input 
+            <ContactInput 
               type="email" 
               id="email" 
               placeholder="email@email.com" 
@@ -75,13 +76,12 @@ export default function Contact() {
               {...register('email', {required: true})}
               disabled={form.close && true}
               autoComplete="on"
-              tabIndex={menuButtonOpened}
             />  
           </div>
 
           <div aria-label={inputs.phone.name}>
             <label htmlFor="phone">{inputs.phone.name}</label>
-            <input 
+            <ContactInput 
               type="tel" 
               id="phone" 
               placeholder="11 12345-6789"
@@ -92,13 +92,12 @@ export default function Contact() {
               {...register('phone', {required: true})}
               disabled={form.close && true}
               autoComplete="on"
-              tabIndex={menuButtonOpened}
             />
           </div>
           
           <div aria-label={inputs.message.name}>
             <label htmlFor="message">{inputs.message.name}</label>
-            <textarea
+            <ContactTextarea
               id="message" 
               cols={22} 
               rows={5} 
@@ -106,7 +105,6 @@ export default function Contact() {
               required
               {...register('message', {required: true})}
               disabled={form.close && true}
-              tabIndex={menuButtonOpened}
             />
           </div>
 
