@@ -21,17 +21,25 @@ export default function Background() {
       <Circle styles="eighth-circle white-background" />
       <Circle styles="ninth-circle white-background no-background" />
 
-      <Points styles="vertical first-points" quantity={3}/>
+      <Points styles="first-points vertical" quantity={3}/>
       <Points styles="second-points" quantity={3}/>
       <Points styles="third-points" quantity={3}/>
       <Points styles="fourth-points" quantity={2}/>
-      <Points styles="vertical fifth-points" quantity={2}/>
-
-      <Code color="#272D37" weight="regular" size={64} className="code"/>
+      <Points styles="fifth-points vertical" quantity={2}/>
+      <Points styles="sixth-points vertical" quantity={3}/>
+      <Points styles="seventh-points gray-background vertical" quantity={3}/>
+      <Points styles="eighth-points gray-background" quantity={2}/>
+      <Points styles="ninth-points gray-background" quantity={3}/>
+      <Points styles="tenth-points gray-background vertical" quantity={3}/>
+      <Points styles="eleventh-points gray-background" quantity={3}/>
+      <Points styles="twelfth-points gray-background vertical" quantity={2}/>
+      <Points styles="thirteenth-points vertical" quantity={3}/>
+      <Points styles="fourteenth-points" quantity={2}/>
 
       <Wave1 />
       <Wave2 />
       
+      <Code color="#272D37" weight="regular" size={64} className="code"/>
       <BracketsSquare color="#272D37" weight="regular" size={64} className="array"/>
       <BracketsCurly color="#272D37" weight="regular" size={64} className="object"/>
 

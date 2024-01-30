@@ -30,12 +30,61 @@
       left: 35%;
     }
 
+    &.sixth-points {
+      top: 40rem;
+      left: 10%;
+    }
+
+    &.seventh-points {
+      top: 80rem;
+      right: 5%;
+    }
+
+    &.eighth-points {
+      top: 65rem;
+      right: 50%;
+    }
+
+    &.ninth-points {
+      top: 108.5rem;
+      left: 42%;
+    }
+
+    &.tenth-points {
+      top: 120rem;
+      left: 20%;
+    }
+
+    &.eleventh-points {
+      display: none;
+    }
+
+    &.twelfth-points {
+      display: none;
+      rotate: -90deg;
+    }
+
+    &.thirteenth-points {
+      top: 186rem;
+      right: 20%;
+      rotate: -90deg;
+    }
+
+    &.fourteenth-points {
+      top: 207.5rem;
+      right: 55%;
+    }
+    
     p {
       position: absolute;
       color: $gray;
       font-size: 1.75rem;
       letter-spacing: 0.125rem;
       opacity: 0.5;
+
+      &.gray-background {
+        color: $primary-color;
+      }
 
       &:first-child {
         padding-top: 0.75rem;
@@ -44,6 +93,10 @@
       &:last-child {
         padding-top: 1.5rem;
       }
+    }
+
+    &.gray-background p {
+      color: $primary-color;
     }
   }
 }
@@ -66,6 +119,37 @@
       &.fourth-points {
         left: 10%;
       }
+
+      &.eighth-points {
+        top: 68rem;
+        right: 30%;
+      }
+
+      &.ninth-points {
+        top: 112rem;
+      }
+
+      &.eleventh-points {
+        display: block;
+        top: 160rem;
+        left: 2%;
+      }
+
+      &.twelfth-points {
+        display: block;
+        top: 150rem;
+        right: 12%;
+      }
+
+      &.thirteenth-points {
+        top: 209rem;
+        right: 15%;
+      }
+
+      &.fourteenth-points {
+        top: 221rem;
+        right: 92%;
+      }
     }
   }
 }
@@ -84,6 +168,44 @@
       &.fifth-points {
         top: 56rem;
         left: 40%;
+      }
+
+      &.sixth-points {
+        top: 50rem;
+      }
+
+      &.seventh-points {
+        top: 90rem;
+      }
+
+      &.eighth-points {
+        top: 76rem;
+        right: 35%;
+      }
+
+      &.ninth-points {
+        top: 116rem;
+        left: 66%;
+      }
+
+      &.tenth-points {
+        top: 130rem;
+        left: 25%;
+      }
+
+      &.twelfth-points {
+        top: 160rem;
+        right: 10%;
+      }
+
+      &.thirteenth-points {
+        top: 220rem;
+        right: 20%;
+      }
+
+      &.fourteenth-points {
+        top: 229rem;
+        right: 90%;
       }
     }
   }
@@ -120,6 +242,48 @@
         top: 75rem; 
       }
 
+      &.sixth-points {
+        top: 70rem;
+      }
+
+      &.seventh-points {
+        top: 115rem;
+        right: 3%;
+      }
+
+      &.eighth-points {
+        top: 100rem;
+        right: 30%;
+      }
+
+      &.ninth-points {
+        top: 145rem;
+      }
+
+      &.tenth-points {
+        top: 160rem;
+        left: 12%;
+      }
+
+      &.eleventh-points {
+        top: 184rem;
+        left: 4%;
+      }
+
+      &.twelfth-points {
+        top: 168rem;
+        right: 0%;
+      }
+
+      &.thirteenth-points {
+        top: 228rem;
+        right: 10%;
+      }
+
+      &.fourteenth-points {
+        top: 247.5rem;
+      }
+
       p {
         font-size: 2.25rem;
   
@@ -153,6 +317,47 @@
 
       &.fifth-points {
         top: 95rem; 
+      }
+
+      &.sixth-points {
+        top: 90rem;
+      }
+
+      &.seventh-points {
+        top: 142rem;
+      }
+
+      &.eighth-points {
+        top: 125rem;
+      }
+
+      &.ninth-points {
+        top: 176rem;
+        left: 70%;
+      }
+
+      &.tenth-points {
+        top: 193rem;
+        left: 18%;
+      }
+
+      &.eleventh-points {
+        top: 222rem;
+        left: 15%;
+      }
+
+      &.twelfth-points {
+        top: 200rem;
+      }
+
+      &.thirteenth-points {
+        top: 270rem;
+        right: 14%;
+      }
+
+      &.fourteenth-points {
+        top: 289rem;
+        right: 95%;
       }
     }
   }
