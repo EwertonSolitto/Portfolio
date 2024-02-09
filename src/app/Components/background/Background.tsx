@@ -5,8 +5,14 @@ import Points from "./background-components/Points";
 import Wave1 from "./background-components/Wave1";
 import Wave2 from "./background-components/Wave2";
 import { Code, BracketsSquare, BracketsCurly } from "@phosphor-icons/react";
-import Javascript from "./background-components/Javacript";
-import NextJS from "./background-components/NextJS";
+import Javascript from "./background-components/technologies/Javacript";
+import NextJS from "./background-components/technologies/NextJS";
+import Typescript from "./background-components/technologies/Typescript";
+import ReactJS from "./background-components/technologies/ReactJS"; 
+import Github from "./background-components/technologies/Github";
+import Sass from "./background-components/technologies/Sass";
+import CSS from "./background-components/technologies/CSS";
+import HTML from "./background-components/technologies/HTML";
 
 export default function Background() {
   return (
@@ -48,7 +54,13 @@ export default function Background() {
       <p className="html">&lt;html&gt;</p>
       
       <Javascript />
+      <ReactJS />
+      <Github />
       <NextJS />
+      <HTML />
+      <Sass />
+      <Typescript />
+      <CSS />
       
     </div>
   )

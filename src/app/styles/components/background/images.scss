@@ -30,6 +30,27 @@
       }
     }
 
+    &.reactjs {
+      top: 34rem;
+      left: 23%;
+
+      path, circle {
+        opacity: 0.2;
+        fill: $secondary-color;
+      }
+    }
+
+    &.github {
+      display: none;
+      top: 52rem;
+      right: 2%;
+
+      path {
+        opacity: 0.2;
+        fill: $secondary-color;
+      }
+    }
+
     &.nextjs {
       width: 6rem;
       height: 1.21875rem;
@@ -38,6 +59,69 @@
 
       path {
         fill: $primary-color;
+      }
+    }
+
+    &.html {
+      top: 104rem;
+      right: 12%;
+      
+      path:first-child, path:nth-child(2) {
+        fill: $primary-color;
+      }
+
+      path:nth-child(2) {
+        fill: $gray;
+        opacity: 0.25;
+      }
+
+      path:nth-child(3) {
+        fill: $gray;
+      }
+    }
+
+    &.sass {
+      top: 115rem;
+      left: 15%;
+      
+      path {
+        fill: $primary-color;
+      }
+    }
+
+    &.css {
+      top: 162rem;
+      left: 4%;
+
+      path:first-child {
+        fill: $primary-color;
+      }
+
+      path:nth-child(2) {
+        opacity: 0.1;
+        fill: $gray;
+      }
+      
+      path:nth-child(3) {
+        fill: $gray;
+      }
+
+      path:nth-child(4) {
+        opacity: 0.8;
+        fill: $gray;
+      }
+    }
+
+    &.typescript {
+      top: 200rem;
+      right: 12%;
+
+      rect {
+        fill: $primary-color;
+      }
+
+      path {
+        fill: $secondary-color;
       }
     }
   }
@@ -67,14 +151,22 @@
         left: 45%;
       }
 
+      &.github {
+        display: block;
+      }
+
       &.nextjs {
         top: 75rem;
         left: 80%;
       }
 
-      &.github {
-        top: 46.5rem;
-        left: 11.5%;
+      &.css {
+        top: 172rem;
+      }
+
+      &.typescript {
+        top: 217rem;
+        right: 15%;
       }
     }
   }
@@ -98,8 +190,33 @@
         left: 35%;
       }
 
+      &.reactjs {
+        top: 55rem;
+        left: 22%;
+      }
+
+      &.github {
+        top: 60rem;
+        right: 1%;
+      }
+
       &.nextjs {
         top: 85rem;
+      }
+
+      &.sass {
+        top: 125rem;
+        left: 30%;
+      }
+
+      &.css {
+        top: 176rem;
+        left: 8%;
+      }
+      
+      &.typescript {
+        top: 226rem;
+        right: 20%;
       }
     }
   }
@@ -129,9 +246,37 @@
         top: 40rem;
       }
 
+      &.reactjs {
+        top: 67rem;
+        left: 25%;
+      }
+
+      &.github {
+        top: 80rem;
+      }
+
       &.nextjs {
         top: 110rem;
         left: 88%;
+      }
+
+      &.html {
+        top: 135rem;
+      }
+
+      &.sass {
+        top: 155rem;
+        left: 15%;
+      }
+
+      &.css {
+        top: 180rem;
+        left: 1%;
+      }
+
+      &.typescript {
+        top: 242rem;
+        right: 6%;
       }
     }
   }
@@ -154,9 +299,38 @@
         left: 35%;
       }
 
+      &.reactjs {
+        top: 97rem;
+        left: 24%;
+      }
+
+      &.github {
+        top: 105rem;
+        right: 3%;
+      }
+
       &.nextjs {
         top: 135rem;
         left: 85%;
+      }
+
+      &.html {
+        top: 164rem;
+      }
+
+      &.sass {
+        top: 185rem;
+        left: 25%;
+      }
+
+      &.css {
+        top: 220rem;
+        left: 2%;
+      }
+
+      &.typescript {
+        top: 285rem;
+        right: 27%;
       }
     }
   }
