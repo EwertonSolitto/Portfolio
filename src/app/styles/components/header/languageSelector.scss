@@ -16,7 +16,7 @@ header .header .select-div .desktop-language-selector {
         align-items: center;
         justify-content: space-between;
         font-size: 1.125rem;
-        width: 8.5rem;
+        width: 10.25rem;
         height: 2rem;
         padding-inline: 0.75rem 0.25rem;
         border: 1px solid $secondary-color;
@@ -25,14 +25,14 @@ header .header .select-div .desktop-language-selector {
         div {
           display: flex;
           align-items: center;
-          width: 6rem;
+          width: 7.75rem;
           height: 2rem;
           border-right: 1px solid $secondary-color;
           
           span {
             display: flex;
             align-items: center;
-            padding-right: 0.75rem;
+            padding-right: 0.5rem;
           }
         }
 
@@ -56,7 +56,7 @@ header .header .select-div .desktop-language-selector {
           padding-block: 0.25rem;
           font-size: 1.125rem;
           border: 1px solid $secondary-color;
-          width: 8.5rem;
+          width: 10.25rem;
           padding-left: 0.75rem;
           text-align: left;
 
