@@ -23,6 +23,20 @@
       top: 22.25rem;
       left: 20%;
     }
+
+    &.show-my-projects {
+      font-size: 1rem;
+      color: $primary-color;
+      left: 12%;
+      top: 112rem;
+    }
+
+    &.close-show-my-projects {
+      font-size: 1rem;
+      color: $primary-color;
+      right: 5%;
+      top: 172rem;
+    }
   }
 }
 
@@ -39,6 +53,17 @@
 
       &.bars {
         top: 22.125rem;
+      }
+
+      &.show-my-projects {
+        font-size: 1.25rem;
+        left: 15%;
+        top: 114rem;
+      }
+
+      &.close-show-my-projects {
+        font-size: 1.25rem;
+        top: 181rem;
       }
     }
   }
@@ -60,6 +85,14 @@
 
       &.bars {
         top: 26.5rem;
+      }
+
+      &.show-my-projects {
+        top: 118rem;
+      }
+
+      &.close-show-my-projects {
+        top: 187.5rem;
       }
     }
   }
@@ -89,6 +122,16 @@
         top: 34.5rem;
         left: 20%;
       }
+
+      &.show-my-projects {
+        font-size: 1.5rem;
+        top: 148rem;
+      }
+
+      &.close-show-my-projects {
+        font-size: 1.5rem;
+        top: 195rem;
+      }
     }
   }
 }
@@ -102,6 +145,15 @@
 
       &.bars {
         top: 42rem;
+      }
+
+      &.show-my-projects {
+        top: 180.5rem;
+        left: 20%;
+      }
+
+      &.close-show-my-projects {
+        top: 236rem;
       }
     }
   }

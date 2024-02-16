@@ -13,6 +13,8 @@ import Github from "./background-components/technologies/Github";
 import Sass from "./background-components/technologies/Sass";
 import CSS from "./background-components/technologies/CSS";
 import HTML from "./background-components/technologies/HTML";
+import Wave3 from "./background-components/Wave3";
+import Wave4 from "./background-components/Wave4";
 
 export default function Background() {
   return (
@@ -44,6 +46,8 @@ export default function Background() {
 
       <Wave1 />
       <Wave2 />
+      <Wave3 />
+      <Wave4 />
       
       <Code color="#272D37" weight="regular" size={64} className="code"/>
       <BracketsSquare color="#272D37" weight="regular" size={64} className="array"/>
@@ -52,6 +56,8 @@ export default function Background() {
       <p className="hello-world">console.log(&quot;Hello World!&quot;)</p>
       <p className="bars">&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;</p>
       <p className="html">&lt;html&gt;</p>
+      <p className="show-my-projects">function showMyProjects (projects) &#x0007B;</p>
+      <p className="close-show-my-projects">&#x0007D;</p>
       
       <Javascript />
       <ReactJS />

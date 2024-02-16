@@ -1,21 +1,13 @@
 .background-elements {
-  .wave-group-1 {
-    display: none;
-  }
-
-  .wave-group-2 {
-    display: none;
-  }
-
   svg {
     position: absolute;
 
     &.wave-1 {
-      opacity: 0.2;
+      opacity: 1;
     }
 
     &.wave-2 {
-      opacity: 0.4;
+      opacity: 0.8;
     }
 
     &.wave-3 {
@@ -23,61 +15,113 @@
     }
 
     &.wave-4 {
-      opacity: 0.8;
+      opacity: 0.4;
     }
+
+    &.wave-5 {
+      opacity: 0.2;
+    }
+  }
+  
+  .wave-group-1, .wave-group-2, .wave-group-4 {
+    display: none;
+  }
+
+  .wave-group-2, .wave-group-3, .wave-group-4 {
+    position: absolute;
+  }
+
+  .wave-group-2, .wave-group-3, .wave-group-4 {
+    svg {
+      width: 100vw;
+      height: auto;
+  
+      &.wave-2 {
+        top: 0.5rem;
+      }
+  
+      &.wave-3 {
+        top: 1rem;
+      }
+  
+      &.wave-4 {
+        top: 1.5rem;
+      }
+
+      &.wave-5 {
+        top: 2rem;
+      }
+    }
+  }
+
+  .wave-group-3 {
+    top: 80rem;
   }
 }
 
 @media (min-width: 720px) {
   .background-elements {
-    .wave-group-1 {
+    .wave-group-1, .wave-group-2, .wave-group-4 {
       display: block;
+    }
 
+    .wave-group-1 {
       svg {
         width: 50%;
         height: auto;
-        top: -0.5rem;
+        
+        &.wave-1 {
+          top: 2rem;
+        }
   
         &.wave-2 {
-          top: 0;
+          top: 1.5rem;
         }
   
         &.wave-3 {
-          top: 0.5rem;
-        }
-    
-        &.wave-4 {
           top: 1rem;
         }
     
+        &.wave-4 {
+          top: 0.5rem;
+        }
+    
         &.wave-5 {
-          top: 1.5rem;
+          top: 0rem;
         }
       }
     }
 
     .wave-group-2 {
-      display: block;
+      top: 24.5rem;
+    }
+
+    .wave-group-3 {
+      top: 85rem;
+    }
+
+    .wave-group-4 {
+      top: 188rem;
 
       svg {
-        width: 100vw;
-        height: auto;
-        top: 24.5rem;
-  
+        &.wave-1 {
+          opacity: 0.75;
+        }
+    
         &.wave-2 {
-          top: 24rem;
+          opacity: 0.60;
         }
-  
+    
         &.wave-3 {
-          top: 23.5rem;
+          opacity: 0.45;
         }
-  
+    
         &.wave-4 {
-          top: 23rem;
+          opacity: 0.30;
         }
-  
+    
         &.wave-5 {
-          top: 22.5rem;
+          opacity: 0.15;
         }
       }
     }
@@ -89,45 +133,52 @@
     .wave-group-1 {
       svg {
         width: initial;
+      }
+    }
 
+    .wave-group-2, .wave-group-3, .wave-group-4 {
+      svg {
         &.wave-2 {
-          top: 0;
+          top: 0.75rem;
         }
   
         &.wave-3 {
-          top: 0.5rem;
+          top: 1.5rem;
         }
   
         &.wave-4 {
-          top: 1rem;
+          top: 2.25rem;
         }
   
         &.wave-5 {
-          top: 1.5rem;
+          top: 3rem;
         }
       }
     }
 
-    .wave-group-2 {
-      svg {
-        top: 28rem;
 
-        &.wave-2 {
-          top: 27.25rem;
-        }
-  
-        &.wave-3 {
-          top: 26.5rem;
-        }
-  
-        &.wave-4 {
-          top: 25.75rem;
-        }
-  
-        &.wave-5 {
-          top: 25rem;
-        }
-      }
+    .wave-group-2 {
+      top: 28rem;
+    }
+
+    .wave-group-3 {
+      top: 97rem;
+    }
+
+    .wave-group-4 {
+      top: 195rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .background-elements {
+    .wave-group-3 {
+      top: 115rem;
+    }
+
+    .wave-group-4 {
+      top: 226rem;
     }
   }
 }
