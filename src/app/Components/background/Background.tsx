@@ -15,6 +15,8 @@ import CSS from "./background-components/technologies/CSS";
 import HTML from "./background-components/technologies/HTML";
 import Wave3 from "./background-components/Wave3";
 import Wave4 from "./background-components/Wave4";
+import Wave6 from "./background-components/Wave6";
+import Wave5 from "./background-components/Wave5";
 
 export default function Background() {
   return (
@@ -48,16 +50,28 @@ export default function Background() {
       <Wave2 />
       <Wave3 />
       <Wave4 />
+      <Wave5 />
+      <Wave6 />
       
-      <Code color="#272D37" weight="regular" size={64} className="code"/>
-      <BracketsSquare color="#272D37" weight="regular" size={64} className="array"/>
-      <BracketsCurly color="#272D37" weight="regular" size={64} className="object"/>
+      <Code color="#272D37" weight="regular" size={64} className="code first"/>
+      <Code color="#0F1621" weight="regular" size={64} className="code second"/>
+      <BracketsSquare color="#272D37" weight="regular" size={64} className="array first"/>
+      <BracketsSquare color="#272D37" weight="regular" size={64} className="array second"/>
+      <BracketsSquare color="#272D37" weight="regular" size={64} className="array third"/>
+      <BracketsCurly color="#272D37" weight="regular" size={64} className="object first"/>
+      <BracketsCurly color="#0F1621" weight="regular" size={64} className="object second"/>
 
       <p className="hello-world">console.log(&quot;Hello World!&quot;)</p>
       <p className="bars">&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;&#x0002F;</p>
       <p className="html">&lt;html&gt;</p>
       <p className="show-my-projects">function showMyProjects (projects) &#x0007B;</p>
       <p className="close-show-my-projects">&#x0007D;</p>
+
+      <p className="css-code">
+        <span className="first-part">h1 &#x0007B;</span>
+        <span className="second-part">color: red;</span>
+        <span className="third-part">&#x0007D;</span>
+      </p>
       
       <Javascript />
       <ReactJS />

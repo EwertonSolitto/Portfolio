@@ -37,6 +37,22 @@
       right: 5%;
       top: 172rem;
     }
+
+    &.css-code {
+      top: 155rem;
+      left: 25%;
+      span {
+        position: relative;
+        display: block;
+        font-size: 1rem;
+        color: $primary-color;
+        opacity: 1;
+
+        &.second-part {
+          left: 1.5rem;
+        }
+      }
+    }
   }
 }
 
@@ -94,6 +110,19 @@
       &.close-show-my-projects {
         top: 187.5rem;
       }
+
+      &.css-code {
+        top: 160rem;
+        left: 35%;
+        span {
+          position: relative;
+          font-size: 1.25rem;
+  
+          &.second-part {
+            left: 2rem;
+          }
+        }
+      }
     }
   }
 }
@@ -132,6 +161,10 @@
         font-size: 1.5rem;
         top: 195rem;
       }
+
+      &.css-code {
+        display: none;
+      }
     }
   }
 }
@@ -148,7 +181,7 @@
       }
 
       &.show-my-projects {
-        top: 180.5rem;
+        top: 178rem;
         left: 20%;
       }
 

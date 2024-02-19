@@ -23,11 +23,11 @@
     }
   }
   
-  .wave-group-1, .wave-group-2, .wave-group-4 {
+  .wave-group-1, .wave-group-2, .wave-group-4, .wave-group-5, .wave-group-6 {
     display: none;
   }
 
-  .wave-group-2, .wave-group-3, .wave-group-4 {
+  .wave-group-2, .wave-group-3, .wave-group-4, .wave-group-5, .wave-group-6 {
     position: absolute;
   }
 
@@ -61,34 +61,32 @@
 
 @media (min-width: 720px) {
   .background-elements {
-    .wave-group-1, .wave-group-2, .wave-group-4 {
+    .wave-group-1, .wave-group-2, .wave-group-4, .wave-group-5, .wave-group-6 {
       display: block;
     }
 
-    .wave-group-1 {
-      svg {
-        width: 50%;
-        height: auto;
-        
-        &.wave-1 {
-          top: 2rem;
-        }
+    :is(.wave-group-1, .wave-group-6) svg {
+      width: 50%;
+      height: auto;
+      
+      &.wave-1 {
+        top: 2rem;
+      }
+
+      &.wave-2 {
+        top: 1.5rem;
+      }
+
+      &.wave-3 {
+        top: 1rem;
+      }
   
-        &.wave-2 {
-          top: 1.5rem;
-        }
+      &.wave-4 {
+        top: 0.5rem;
+      }
   
-        &.wave-3 {
-          top: 1rem;
-        }
-    
-        &.wave-4 {
-          top: 0.5rem;
-        }
-    
-        &.wave-5 {
-          top: 0rem;
-        }
+      &.wave-5 {
+        top: 0rem;
       }
     }
 
@@ -125,6 +123,44 @@
         }
       }
     }
+
+    .wave-group-5 {
+      top: 135rem;
+      
+      svg {
+        &.wave-5 {
+          top: 2rem;
+        }
+  
+        &.wave-4 {
+          top: 1.5rem;
+        }
+  
+        &.wave-3 {
+          top: 1rem;
+        }
+    
+        &.wave-2 {
+          top: 0.5rem;
+        }
+    
+        &.wave-1 {
+          top: 0rem;
+        }
+      } 
+    }
+
+    :is(.wave-group-5, .wave-group-6) svg {
+      width: 50vw;
+      height: auto;
+    }
+
+    .wave-group-6 {
+      top: 157rem;
+        svg {
+          width: 50vw;
+        }
+    }
   }
 }
 
@@ -136,7 +172,7 @@
       }
     }
 
-    .wave-group-2, .wave-group-3, .wave-group-4 {
+    .wave-group-2, .wave-group-3, .wave-group-4, .wave-group-5 {
       svg {
         &.wave-2 {
           top: 0.75rem;
@@ -168,6 +204,18 @@
     .wave-group-4 {
       top: 195rem;
     }
+
+    .wave-group-5 {
+      top: 130rem; 
+      
+      svg {
+        width: 100vw;
+      }
+    }
+
+    .wave-group-6 {
+      display: none;
+    }
   }
 }
 
@@ -179,6 +227,10 @@
 
     .wave-group-4 {
       top: 226rem;
+    }
+
+    .wave-group-5 {
+      top: 153rem;
     }
   }
 }

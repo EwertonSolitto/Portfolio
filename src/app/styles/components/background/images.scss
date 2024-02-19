@@ -3,17 +3,43 @@
     position: absolute;
   
     &.code {
-      top: 4.5rem;
-      left: 10%;
+      &.first {
+        top: 4.5rem;
+        left: 10%;
+      }
+
+      &.second {
+        top: 63rem;
+        right: 5%;
+      }
     }
 
     &.array {
-      left: 85%;
-      top: 15rem;
+      &.first {
+        left: 85%;
+        top: 15rem;
+      }
+
+      &.second {
+        top: 38rem;
+        left: 35%;
+      }
+
+      &.third {
+        top: 206rem;
+        right: 1%;
+      }
     }
 
     &.object {
-      display: none;
+      &.first {
+        display: none;
+      }
+
+      &.second {
+        top: 135rem;
+        left: 25%;
+      }
     }
 
     &.javascript {
@@ -144,7 +170,18 @@
       height: 2.5rem;
     
       &.code {
-        top: 4rem;
+        &.first {
+          top: 4rem;
+        }
+
+        &.second {
+          top: 65.5rem;
+        }
+      }
+
+      &.array.third {
+          top: 222rem;
+          right: 4%;
       }
 
       &.javascript {
@@ -183,10 +220,34 @@
       width: 3rem;
       height: 3rem;
 
+      &.code {
+        &.second {
+          top: 74rem;
+        }
+      }
+
+      &.array {
+        &.second {
+          top: 52rem;
+          left: 45%;
+        }
+
+        &.third {
+          top: 229rem;
+        }
+      }
+
       &.object {
-        display: block;
-        top: 15rem;
-        left: 53%;
+        &.first {
+          display: block;
+          top: 15rem;
+          left: 53%;
+        }
+
+        &.second {
+          top: 142rem;
+          left: 35%;
+        }
       }
 
       &.javascript {
@@ -237,17 +298,42 @@
       height: 4rem;
     
       &.code {
-        top: 6rem;
-        left: 8%;
+        &.first {
+          top: 6rem;
+          left: 8%;
+        }
+
+        &.second {
+          top: 100rem;
+          right: 2%;
+        }
       }
 
       &.array {
-        top: 25rem;
+        &.first {
+          top: 25rem;
+        }
+
+        &.second {
+          top: 65rem;
+          left: 40%;
+        }
+
+        &.third {
+          top: 248rem;
+          right: 35%;
+        }
       }
 
       &.object {
-        top: 22rem;
-        left: 57%;
+        &.first {
+          top: 22rem;
+          left: 57%;
+        }
+
+        &.second {
+          display: none;
+        }
       }
 
       &.javascript {
@@ -274,7 +360,7 @@
       }
 
       &.sass {
-        top: 155rem;
+        top: 165rem;
         left: 15%;
       }
 
@@ -295,12 +381,39 @@
   .background-elements {
     svg {
       &.code {
-        top: 8rem;
-        left: 5%;
+        &.first {
+          top: 8rem;
+          left: 5%;
+        }
+
+        &.second {
+          top: 122.5rem;
+          right: 4%;
+        }
+      }
+
+      &.array {
+        &.second {
+          top: 84rem;
+          left: 44%;
+        }
+
+        &.third {
+          top: 288rem;
+          right: 4%;
+        }
       }
 
       &.object {
-        top: 30rem;
+        &.first {
+          top: 30rem;
+        }
+
+        &.second {
+          display: block;
+          top: 206rem;
+          left: 27%;
+        }
       }
 
       &.javascript {
@@ -329,8 +442,8 @@
       }
 
       &.sass {
-        top: 185rem;
-        left: 25%;
+        top: 195rem;
+        left: 23%;
       }
 
       &.css {
