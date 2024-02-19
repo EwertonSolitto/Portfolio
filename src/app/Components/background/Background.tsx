@@ -1,10 +1,17 @@
-'use client'
+'use client';
+
+import { Code, BracketsSquare, BracketsCurly } from "@phosphor-icons/react";
 
 import Circle from "./background-components/Circle";
 import Points from "./background-components/Points";
+
 import Wave1 from "./background-components/Wave1";
 import Wave2 from "./background-components/Wave2";
-import { Code, BracketsSquare, BracketsCurly } from "@phosphor-icons/react";
+import Wave3 from "./background-components/Wave3";
+import Wave4 from "./background-components/Wave4";
+import Wave5 from "./background-components/Wave5";
+import Wave6 from "./background-components/Wave6";
+
 import Javascript from "./background-components/technologies/Javacript";
 import NextJS from "./background-components/technologies/NextJS";
 import Typescript from "./background-components/technologies/Typescript";
@@ -13,10 +20,7 @@ import Github from "./background-components/technologies/Github";
 import Sass from "./background-components/technologies/Sass";
 import CSS from "./background-components/technologies/CSS";
 import HTML from "./background-components/technologies/HTML";
-import Wave3 from "./background-components/Wave3";
-import Wave4 from "./background-components/Wave4";
-import Wave6 from "./background-components/Wave6";
-import Wave5 from "./background-components/Wave5";
+
 
 export default function Background() {
   return (
