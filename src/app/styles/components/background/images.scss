@@ -89,7 +89,7 @@
     }
 
     &.html {
-      top: 104rem;
+      top: 103rem;
       right: 12%;
       
       path:first-child, path:nth-child(2) {
@@ -116,7 +116,7 @@
     }
 
     &.css {
-      top: 162rem;
+      top: 157rem;
       left: 4%;
 
       path:first-child {
@@ -139,7 +139,7 @@
     }
 
     &.typescript {
-      top: 200rem;
+      top: 195rem;
       right: 12%;
 
       rect {
@@ -198,16 +198,17 @@
       }
 
       &.html {
-        right: 20%;
+        top: 100rem;
+        right: 5%;
       }
 
       &.css {
-        top: 172rem;
+        top: 167rem;
       }
 
       &.typescript {
-        top: 217rem;
-        right: 15%;
+        top: 205rem;
+        right: 30%;
       }
     }
   }
@@ -284,8 +285,8 @@
       }
       
       &.typescript {
-        top: 226rem;
-        right: 20%;
+        top: 217rem;
+        right: 32%;
       }
     }
   }
@@ -370,8 +371,8 @@
       }
 
       &.typescript {
-        top: 242rem;
-        right: 6%;
+        top: 238rem;
+        right: 5%;
       }
     }
   }
@@ -448,11 +449,11 @@
 
       &.css {
         top: 220rem;
-        left: 2%;
+        left: 4%;
       }
 
       &.typescript {
-        top: 285rem;
+        top: 283rem;
         right: 27%;
       }
     }
