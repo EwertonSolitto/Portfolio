@@ -9,6 +9,8 @@ import englishData from '@json/english/contact.json';
 import FormResponseData from "@/models/types/FormResponseData";
 import ContactInput from "./ContactInput";
 import ContactTextarea from "./ContactTextarea";
+import LinkButton from "../LinkButton";
+import Image from "next/image";
 
 
 export default function Contact() { 
@@ -108,16 +110,8 @@ export default function Contact() {
             />
           </div>
 
-          <div className="button-div">
-            {
-            form.accepted === 'denied' 
-              ?
-            <p className='denied'>{responses.denied}</p>
-              :
-            form.accepted === 'accepted' 
-              && 
-            <p className="accepted">{responses.accepted}</p>
-            }
+          <div className={`button-div ${form.accepted === 'accepted' && 'accepted'}`}>
+            {form.accepted === 'accepted' && <p className="accepted">{responses.accepted}</p>}
             {
             form.accepted === 'loading' 
               ? 
@@ -138,7 +132,11 @@ export default function Contact() {
               {sendButton}
             </button>
             }
+            <LinkButton content="Whatsapp" link="https://wa.me/5511990250440" ariaLabel="whatsapp" >
+              <Image src={'./social-media/whatsapp-logo.svg'} alt="whatsapp logo" width={56} height={56} />
+            </LinkButton>
           </div>
+          {form.accepted === 'denied' && <p className='denied'>{responses.denied}</p>}
         </form>
       </div>
     </section>
