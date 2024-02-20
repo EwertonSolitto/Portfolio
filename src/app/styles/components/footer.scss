@@ -71,7 +71,7 @@ footer {
   
         &:hover, &:focus {
           background-color: $dark-gray;
-          transition: background-color 300ms ease;
+          scale: 110%;
         }
   
         &.linkedin img {

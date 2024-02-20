@@ -41,6 +41,8 @@
 
         border-radius: 0.25rem;
 
+        transition: scale 100ms ease-out;
+
         span {
           margin-top: 0.25rem;
         }
@@ -48,6 +50,11 @@
         img {
           width: clamp(1.8rem, 8vw, 1.9rem);
           height: clamp(1.8rem, 8vw, 1.9rem);
+        }
+
+        &:hover, &:focus {
+          transition: scale 100ms ease-in;
+          scale: 105%;
         }
     }
   }
