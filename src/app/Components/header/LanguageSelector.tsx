@@ -1,11 +1,16 @@
 'use client'
+import languageChecker from "./languageChecker"
 import useAppContext from "@hook/useAppContext"
 import { CaretDown } from "@phosphor-icons/react/dist/ssr"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function LanguageSelector() {
   const [openedSelector, setOpenedSelector] = useState(false)
   const {isPortuguese, setIsPortuguese} = useAppContext()
+
+  useEffect(() => {
+      setIsPortuguese(languageChecker())
+  }, [setIsPortuguese])
 
   function handleLanguage(language: string | null) {
     switch(language) {

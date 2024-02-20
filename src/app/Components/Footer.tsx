@@ -18,7 +18,7 @@ export default function Footer() {
             {navigationData.navigation.map(({content, link}, index) => {
                 return (
                   <li key={index}>
-                    <a href={link}>{content}</a>
+                    <a href={link} tabIndex={menuButtonOpened}>{content}</a>
                   </li>
                 )
               })}
