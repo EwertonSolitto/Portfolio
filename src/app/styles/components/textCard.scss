@@ -17,6 +17,16 @@
     color: $primary-color;
 
     padding-top: 0.75rem;
+
+    span {
+      color: $primary-color;
+    }
+
+    em {
+      color: $primary-color;
+      font-style: normal;
+      font-weight: 500;
+    }
   }
 
   .buttons-div {
@@ -45,6 +55,7 @@
 
         span {
           margin-top: 0.25rem;
+          color: $secondary-color;
         }
 
         img {

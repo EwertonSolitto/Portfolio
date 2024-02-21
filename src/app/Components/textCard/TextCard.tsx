@@ -13,7 +13,13 @@ export default function TextCard (props: TextCardProps) {
   const paragraphDiv = paragraphs &&
   <div className="paragraph-div">
     {paragraphs.map(({content, style = ''}, index) => {
-      return <p key={index} className={style}>{content}</p>
+      const newContent = <>{
+        content.split('*').map((cont, i) => {
+          return i % 2 !== 0 ? <em key={i}>{cont}</em> : <span key={i}>{cont}</span>
+        })
+      }</>
+
+      return <p key={index} className={style}>{newContent}</p>
     })} 
   </div>
 
