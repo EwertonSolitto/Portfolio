@@ -234,3 +234,9 @@
     }
   }
 }
+
+@media (min-width: 2310px) {
+  .background-elements :is(.wave-group-4, .wave-group-5) {
+    display: none;
+  }
+}
