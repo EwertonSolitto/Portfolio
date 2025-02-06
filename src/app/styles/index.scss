@@ -106,3 +106,9 @@ li {
     width: 90vw;
   }
 }
+
+@media (min-width: 1875px) {
+  .home-main, section.about, section.technologies, section.projects, section.contact  {
+    width: 1875px;
+  }
+}
