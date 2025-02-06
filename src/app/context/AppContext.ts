@@ -1,11 +1,6 @@
-import { Dispatch, SetStateAction, createContext } from 'react'
+import { createContext } from 'react'
 
-type AppState = {
-  menuButtonOpened: 0 | -1;
-  handleMenuButtonOpened: () => void;
-  isPortuguese: boolean;
-  setIsPortuguese: Dispatch<SetStateAction<boolean>>
-}
+import AppState from '@/models/types/AppState'
 
 const appContextDefaultValues: AppState = {
   menuButtonOpened: 0,

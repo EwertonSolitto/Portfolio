@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import LinkButton from "../LinkButton";
 
-import { TextCardProps } from "@models/interfaces";
+import TextCardProps from "@models/props/TextCardProps";
 
 export default function TextCard (props: TextCardProps) {
   const {side, title, paragraphs, a} = props

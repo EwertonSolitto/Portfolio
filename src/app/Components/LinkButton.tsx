@@ -2,7 +2,7 @@
 
 import useAppContext from "@hook/useAppContext"
 
-import { LinkButtonProps } from "@models/interfaces"
+import LinkButtonProps from "@models/props/LinkButtonProps"
 
 const LinkButton: React.FC<LinkButtonProps> = (props) => {
   const {link, content, style, ariaLabel, children} = props

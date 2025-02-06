@@ -7,6 +7,8 @@ import languageChecker from "./languageChecker"
 
 import useAppContext from "@hook/useAppContext"
 
+import LanguageType from "@models/types/LanguageType"
+
 export default function LanguageSelector() {
   const [openedSelector, setOpenedSelector] = useState(false)
   const {isPortuguese, setIsPortuguese} = useAppContext()
@@ -15,7 +17,7 @@ export default function LanguageSelector() {
       setIsPortuguese(languageChecker())
   }, [setIsPortuguese])
 
-  function handleLanguage(language: string | null) {
+  function languageHandler(language: LanguageType) {
     switch(language) {
       case 'portuguese':
         setIsPortuguese(true)
@@ -25,6 +27,12 @@ export default function LanguageSelector() {
         break
     }
     setOpenedSelector(false)
+  }
+
+  function handleLanguage(value: string) {
+    if(value === "portuguese" || value === "english") {
+      languageHandler(value)
+    }
   }
   
   return (
@@ -38,10 +46,10 @@ export default function LanguageSelector() {
         </button>
         <ul className={`selector-options ${openedSelector ? 'opened' : ''}`}>
             <li>
-              <button onClick={() => {handleLanguage('portuguese')}}>🇧🇷 {isPortuguese ? "Português" : "Portuguese"}</button>
+              <button onClick={() => {languageHandler('portuguese')}}>🇧🇷 {isPortuguese ? "Português" : "Portuguese"}</button>
             </li>
             <li>
-              <button onClick={() => {handleLanguage('english')}}>🇺🇸 {isPortuguese ? "Inglês" : "English"}</button>
+              <button onClick={() => {languageHandler('english')}}>🇺🇸 {isPortuguese ? "Inglês" : "English"}</button>
             </li>
           </ul>
       </div>

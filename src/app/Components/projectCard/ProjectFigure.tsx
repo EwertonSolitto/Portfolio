@@ -7,10 +7,10 @@ import LinkButton from "../LinkButton";
 
 import useAppContext from "@/hook/useAppContext";
 
-import { ProjectFigureProps } from "@models/interfaces";
+import ProjectFigureProps from "@models/props/ProjectFigureProps";
 
 export default function ProjectFigure(props: ProjectFigureProps) {
-  const {title, img, alt, tecnologies, links} = props
+  const { title, img, alt, tecnologies, links } = props
   const { isPortuguese } = useAppContext()
 
   const RightRow = <CaretRight size={20} color="#0f1621" weight="bold" />

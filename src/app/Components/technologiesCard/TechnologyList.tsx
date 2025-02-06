@@ -1,6 +1,6 @@
 import TechnologyFigure from "./TechnologyFigure";
 
-import { TechnologyListProps } from "@models/interfaces";
+import TechnologyListProps from "@models/props/TechnologyListProps";
 
 export default function TechnologyList(props: TechnologyListProps) {
   const {technologies, title} = props
