@@ -16,12 +16,14 @@ export default function Technologies() {
   })
 
   return (
-    <div className="card list-card left">
+    <section className="technologies">
+      <div className="card list-card left">
       
-    <h2>{technologiesData.title}</h2>
-
-    {technologyLists}
-
-    </div>
+        <h2>{technologiesData.title}</h2>
+  
+        {technologyLists}
+  
+      </div>
+    </section>
   )
 }
