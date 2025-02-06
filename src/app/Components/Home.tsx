@@ -1,9 +1,12 @@
 'use client'
+
+import TextCard from './textCard/TextCard';
+
+import useAppContext from '@hook/useAppContext';
+
 import portugueseData from '@json/portuguese/home.json';
 import englishData from '@json/english/home.json';
 import linksData from '@json/links.json';
-import TextCard from './textCard/TextCard';
-import useAppContext from '@/hook/useAppContext';
 
 export default function Home() {
   const { isPortuguese } = useAppContext()

@@ -1,11 +1,14 @@
 'use client'
 
-import NavigationIDs from "@/models/types/NavigationIDs";
+import { useEffect, useState } from "react";
+
 import useAppContext from "@hook/useAppContext";
+
+import NavigationIDs from "@models/types/NavigationIDs";
 
 import navigationIDsEnglish from "@json/english/navigationIDs.json"
 import navigationIDsPortuguese from "@json/portuguese/navigationIDs.json"
-import { useEffect, useState } from "react";
+
 
 export default function NavigationDiv({section}: {section: NavigationIDs}) {
   const { isPortuguese } = useAppContext()

@@ -1,8 +1,11 @@
 'use client'
-import languageChecker from "./languageChecker"
-import useAppContext from "@hook/useAppContext"
-import { CaretDown } from "@phosphor-icons/react/dist/ssr"
+
 import { useEffect, useState } from "react"
+import { CaretDown } from "@phosphor-icons/react/dist/ssr"
+
+import languageChecker from "./languageChecker"
+
+import useAppContext from "@hook/useAppContext"
 
 export default function LanguageSelector() {
   const [openedSelector, setOpenedSelector] = useState(false)

@@ -1,9 +1,12 @@
 'use client'
 
 import Image from "next/image";
+
 import Logo from "./Logo";
 import LinkButton from "./LinkButton";
+
 import useAppContext from "@hook/useAppContext";
+
 import portugueseData from '@json/portuguese/navigation.json';
 import englishData from '@json/english/navigation.json';
 

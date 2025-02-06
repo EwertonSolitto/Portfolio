@@ -1,7 +1,9 @@
 import TextCard from "./textCard/TextCard";
+
+import useAppContext from "@hook/useAppContext";
+
 import portugueseData from '@json/portuguese/about.json';
 import englishData from '@json/english/about.json';
-import useAppContext from "@hook/useAppContext";
 
 export default function About() {
   const { isPortuguese } = useAppContext()

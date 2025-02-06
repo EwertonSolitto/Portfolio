@@ -1,4 +1,5 @@
 import Image from "next/image"
+
 import { TechnologyFigureProps } from "@models/interfaces"
 
 export default function TechnologyFigure(props: TechnologyFigureProps) {

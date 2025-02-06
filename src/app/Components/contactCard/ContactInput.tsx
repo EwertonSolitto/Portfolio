@@ -1,5 +1,6 @@
-import useAppContext from "@/hook/useAppContext"
 import { InputHTMLAttributes, forwardRef } from "react"
+
+import useAppContext from "@/hook/useAppContext"
 
 const ContactInput = forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLInputElement>>((
   {name, type, ...rest}, ref

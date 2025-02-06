@@ -1,17 +1,19 @@
 'use client'
 
-import useAppContext from "@hook/useAppContext";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import Image from "next/image";
 
-import portugueseData from '@json/portuguese/contact.json';
-import englishData from '@json/english/contact.json';
-import FormResponseData from "@/models/types/FormResponseData";
 import ContactInput from "./ContactInput";
 import ContactTextarea from "./ContactTextarea";
 import LinkButton from "../LinkButton";
-import Image from "next/image";
 
+import useAppContext from "@hook/useAppContext";
+
+import FormResponseData from "@/models/types/FormResponseData";
+
+import portugueseData from '@json/portuguese/contact.json';
+import englishData from '@json/english/contact.json';
 
 export default function Contact() { 
   const [ form, setForm ] = useState({close: false, accepted: 'initial'})

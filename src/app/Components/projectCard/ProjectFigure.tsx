@@ -1,11 +1,15 @@
 'use client'
-import { ProjectFigureProps } from "@models/interfaces";
-import { CaretRight } from "@phosphor-icons/react";
+
 import Image from "next/image";
+import { CaretRight } from "@phosphor-icons/react";
+
 import LinkButton from "../LinkButton";
+
 import useAppContext from "@/hook/useAppContext";
 
-export function ProjectFigure(props: ProjectFigureProps) {
+import { ProjectFigureProps } from "@models/interfaces";
+
+export default function ProjectFigure(props: ProjectFigureProps) {
   const {title, img, alt, tecnologies, links} = props
   const { isPortuguese } = useAppContext()
 
