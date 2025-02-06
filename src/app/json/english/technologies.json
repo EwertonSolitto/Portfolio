@@ -8,6 +8,8 @@
       {"img": {"src": "/technologies/javascript-logo.svg", "alt": "Javascript logo", "width": 80, "height": 80}, "description":{"content": "Javascript"}},
       {"img": {"src": "/technologies/typescript-logo.svg", "alt": "Typescript logo", "width": 80, "height": 80}, "description":{"content": "Typescript"}},
       {"img": {"src": "/technologies/reactjs-logo.svg", "alt": "ReactJS logo", "width": 80, "height": 80}, "description":{"content": "ReactJs"}},
+      {"img": {"src": "/technologies/expo-logo.svg", "alt": "Expo logo", "width": 80, "height": 80}, "description":{"content": "Expo"}},
+      {"img": {"src": "/technologies/reactjs-logo.svg", "alt": "React Native logo", "width": 80, "height": 80}, "description":{"content": "React Native"}},
       {"img": {"src": "/technologies/sass-logo.svg", "alt": "Sass logo", "width": 80, "height": 80}, "description":{"content": "Sass"}},
       {"img": {"src": "/technologies/bootstrap-logo.svg", "alt": "Bootstrap logo", "width": 80, "height": 80}, "description":{"content": "Bootstrap"}},
       {"img": {"src": "/technologies/tailwindcss-logo.svg", "alt": "TailwindCSS logo", "width": 80, "height": 80}, "description":{"content": "TailwindCSS"}},
