@@ -1,7 +1,7 @@
 import { ReactNode } from "react"
 
 interface LinkButtonProps {
-  content: string
+  content?: string
   link: string
   ariaLabel: string
   children?: ReactNode

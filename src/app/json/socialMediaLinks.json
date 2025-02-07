@@ -1,0 +1,18 @@
+{
+  "socialMedias": [
+    {
+      "name": "GitHub",
+      "style": "github",
+      "link": "https://github.com/EwertonSolitto",
+      "imageSrc": "/technologies/github-white-logo.svg",
+      "alt": "Github logo"
+    },
+    {
+      "name": "LinkedIn",
+      "style": "linkedin",
+      "link": "https://www.linkedin.com/in/ewerton-solitto/",
+      "imageSrc": "/social-media/linkedin-white-logo.svg",
+      "alt": "LinkedIn logo"
+    }
+  ]
+}

@@ -6,7 +6,7 @@ import About from "@Components/About";
 import Projects from "@/Components/projectCard/Projects";
 import Technologies from "@Components/technologiesCard/Technologies";
 import Contact from "@Components/contactCard/Contact";
-import Footer from "@Components/Footer";
+import Footer from "@/Components/footer/Footer";
 import Background from "@Components/background/Background";
 import NavigationDiv from "@Components/NavigationDiv";
 
