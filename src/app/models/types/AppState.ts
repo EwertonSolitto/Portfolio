@@ -1,7 +1,9 @@
 import { Dispatch, SetStateAction } from "react";
 
+import TabIndex from "./TabIndex";
+
 type AppState = {
-  menuButtonOpened: 0 | -1;
+  menuButtonOpened: TabIndex;
   handleMenuButtonOpened: () => void;
   isPortuguese: boolean;
   setIsPortuguese: Dispatch<SetStateAction<boolean>>
