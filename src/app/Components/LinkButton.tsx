@@ -4,7 +4,7 @@ import useAppContext from "@hook/useAppContext"
 
 import LinkButtonProps from "@models/props/LinkButtonProps"
 
-const LinkButton: React.FC<LinkButtonProps> = (props) => {
+export default function LinkButton(props: LinkButtonProps)  {
   const {link, content, style, ariaLabel, children} = props
   const {menuButtonOpened} = useAppContext()
   
@@ -15,5 +15,3 @@ const LinkButton: React.FC<LinkButtonProps> = (props) => {
       </a>
   )
 }
-
-export default LinkButton
