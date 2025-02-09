@@ -1,20 +1,22 @@
 {
-  "text": [
-      {
-        "content": "Hello", 
-        "style": "hello english"
-      }, 
-      {
-        "content": "Welcome to my portfolio!", 
-        "style": "mid-text"
-      }, 
-      {
-        "content": "I'm Ewerton Solitto.", 
-        "style": "mid-text"
-      }, 
-      {
-        "content": "Front-end Developer", 
-        "style": "strong-text"
-      }
-  ]
+  "text": {
+    "paragraphs": [
+        {
+          "content": "Hello", 
+          "style": "hello english"
+        }, 
+        {
+          "content": "Welcome to my portfolio!", 
+          "style": "mid-text"
+        }, 
+        {
+          "content": "I'm Ewerton Solitto.", 
+          "style": "mid-text"
+        }, 
+        {
+          "content": "Front-end Developer", 
+          "style": "strong-text"
+        }
+    ]
+  }
 } 

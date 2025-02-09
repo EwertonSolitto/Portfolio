@@ -1,49 +1,18 @@
-import Image from "next/image";
-
-import LinkButton from "../LinkButton";
+import TextCardTitle from "./TextCardTitle";
+import TextCardParagraphDiv from "./TextCardParagraphDiv/TextCardParagraphDiv";
+import TextCardButtonDiv from "./TextCardButtonDiv/TextCardButtonDiv";
 
 import TextCardProps from "@models/props/TextCardProps";
 
-export default function TextCard (props: TextCardProps) {
-  const {side, title, paragraphs, a} = props
-
-  const h2 = title &&
-    <h2 className={title.style}>
-      {title.content}
-    </h2>
-  
-  const paragraphDiv = paragraphs &&
-  <div className="paragraph-div">
-    {paragraphs.map(({content, style = ''}, index) => {
-      const newContent = <>{
-        content.split('*').map((cont, i) => {
-          return i % 2 !== 0 ? <em key={i}>{cont}</em> : <span key={i}>{cont}</span>
-        })
-      }</>
-
-      return <p key={index} className={style}>{newContent}</p>
-    })} 
-  </div>
-
-  const buttonsDiv = a && 
-    <div className="buttons-div">
-      {a.map(({img, buttonProps}, index) => {
-        return (
-          <LinkButton key={index} link={buttonProps.link} style={buttonProps.style} content={buttonProps.content} ariaLabel={buttonProps.ariaLabel}>
-            {img && <Image src={img.src} alt={img.alt} width={img.width} height={img.height}/>}
-          </ LinkButton>
-      )})}
-    </div> 
-    
-
+export default function TextCard ({side, title, paragraphs, buttons}: TextCardProps) {
   return (
     <div className={`card text-card ${side}`}>
 
-          {h2 && h2}
+          {title && <TextCardTitle content={title.content} style={title.style} />}
           
-          {paragraphDiv && paragraphDiv}
+          {paragraphs && <TextCardParagraphDiv paragraphs={paragraphs.paragraphs}/>}
 
-          {buttonsDiv && buttonsDiv}
+          {buttons && <TextCardButtonDiv buttons={buttons.buttons}/>}
 
     </div>
   )

@@ -2,14 +2,16 @@
   "title": {
     "content": "About"
   },
-  "text": [
-    {
-      "content": "Hello, my name is Ewerton Silva Solitto, I am 20 years old and I am a *Front-end* developer. The main technologies I currently use are *Next.js*, *ReactJS*, *TypeScript*, *TailwindCSS*, *React Native* and *Figma*.",
-      "style": "text"
-    },
-    {
-      "content": "I always strive for quality and performance in my projects, in addition to learning the most sought-after and used technologies in the market. I believe that teamwork and collaboration are essential for a creative and successful process.",
-      "style": "text"
-    }
-  ]
+  "text": {
+    "paragraphs": [
+      {
+        "content": "Hello, my name is Ewerton Silva Solitto, I am 20 years old and I am a *Front-end* developer. The main technologies I currently use are *Next.js*, *ReactJS*, *TypeScript*, *TailwindCSS*, *React Native* and *Figma*.",
+        "style": "text"
+      },
+      {
+        "content": "I always strive for quality and performance in my projects, in addition to learning the most sought-after and used technologies in the market. I believe that teamwork and collaboration are essential for a creative and successful process.",
+        "style": "text"
+      }
+    ]
+  }
 }

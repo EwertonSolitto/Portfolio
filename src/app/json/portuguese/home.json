@@ -1,20 +1,22 @@
 {
-  "text": [
-      {
-        "content": "Olá", 
-        "style": "hello"
-      }, 
-      {
-        "content": "Bem vindo ao meu portfólio!", 
-        "style": "mid-text"
-      }, 
-      {
-        "content": "Eu sou o Ewerton Solitto.", 
-        "style": "mid-text"
-      }, 
-      {
-        "content": "Programador Front-end", 
-        "style": "strong-text"
-      }
-  ]
+  "text": {
+    "paragraphs": [
+        {
+          "content": "Olá", 
+          "style": "hello"
+        }, 
+        {
+          "content": "Bem vindo ao meu portfólio!", 
+          "style": "mid-text"
+        }, 
+        {
+          "content": "Eu sou o Ewerton Solitto.", 
+          "style": "mid-text"
+        }, 
+        {
+          "content": "Programador Front-end", 
+          "style": "strong-text"
+        }
+    ]
+  }
 } 

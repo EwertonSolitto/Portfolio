@@ -14,7 +14,7 @@ export default function Home() {
   
   return (
     <main className="home-main">
-      <TextCard side="left" paragraphs={homeData.text} a={linksData.buttons} />
+      <TextCard side="left" paragraphs={homeData.text} buttons={linksData.buttons} />
     </main> 
   )
 }

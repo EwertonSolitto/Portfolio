@@ -1,13 +1,14 @@
 import Side from "../types/Side";
-import ImageType from "../types/ImageType";
-import LinkButtonProps from "./LinkButtonProps";
+import TextCardTitleProps from "./TextCardTitleProps";
+import TextCardParagraphDivProps from "./TextCardParagraphsDiv";
+import TextCardButtonDivProps from "./TextCardButtonDivProps";
 
 interface TextCardProps {
   side: Side;
 
-  title?: {content: string, style?: string}
-  paragraphs?: Array<{content: string, style?: string}>;
-  a?: Array<{img?: ImageType, buttonProps: LinkButtonProps}>;
+  title?: TextCardTitleProps
+  paragraphs?: TextCardParagraphDivProps;
+  buttons?: TextCardButtonDivProps;
 }
 
 export default TextCardProps
