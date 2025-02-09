@@ -1,47 +1,44 @@
 'use client'
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { List, X } from "@phosphor-icons/react";
 
-import LanguageSelector from "./LanguageSelector";
+import checkScreenSizeToChangeTabIndex from "./checkScreenSizeToChangeTabIndex";
+
+import LanguageSelector from "./languageSelector/LanguageSelector";
 
 import Logo from "../Logo";
+import Navigation from "../navigation/Navigation";
 
 import useAppContext from "@/hook/useAppContext";
-
-import portugueseData from '@json/portuguese/navigation.json';
-import englishData from "@json/english/navigation.json"
+import TabIndex from "@/models/types/TabIndex";
 
 export default function Header () {
   const [showMenu, setShowMenu] = useState(false)
-  const {handleMenuButtonOpened, menuButtonOpened, isPortuguese} = useAppContext()
+  const [tabNav, setTabNav] = useState<TabIndex>(0)
+  const {handleMenuButtonOpened, menuButtonOpened} = useAppContext()
 
-  const navigationData = isPortuguese ? portugueseData : englishData
+  useEffect(() => {
+    setTabNav(checkScreenSizeToChangeTabIndex())
+  }, [setTabNav])
 
-  const handleMenu = () => {
+  function handleMenu() {
     setShowMenu(!showMenu)
+    handleTabNav()
+  }
+
+  function handleTabNav() {
     handleMenuButtonOpened()
+    if(tabNav === 0) {
+      setTabNav(-1)
+    } else {
+      setTabNav(0)
+    }
   }
 
   const burgerButton = <button onClick={() => handleMenu()} className="burger"><List size={48} color="#e8e8e8" weight="regular" aria-label="Abrir menu" /></button>
 
   const xButton = <button onClick={() => handleMenu()} className="x"><X size={48} color="#e8e8e8" weight="regular" aria-label="Fechar menu"/></button>
-
-  const nav = (
-    <nav>
-        {
-          <ul>
-            {navigationData.navigation.map(({content, link}, index) => {
-                return (
-                  <li key={index}>
-                    <a href={link} onClick={() => handleMenu()}>{content}</a>
-                  </li>
-                )
-              })}
-          </ul>
-        }
-    </nav>
-  )
 
   return (
     <header className={showMenu ? 'opened-menu' : ''}>
@@ -53,9 +50,11 @@ export default function Header () {
           {showMenu ? xButton : burgerButton}
           
           <div className="opened-nav">
-            {nav}
+            <Navigation onClick={handleMenu} 
+            tIndex={tabNav}
+          />
 
-            <LanguageSelector />
+            <LanguageSelector tabNavigation={tabNav} />
           </div>
         </div>
     </header>

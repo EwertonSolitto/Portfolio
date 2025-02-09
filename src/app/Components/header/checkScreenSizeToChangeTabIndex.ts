@@ -1,13 +1,7 @@
-import TabIndex from "@/models/types/TabIndex"
-
-export default function checkScreenSizeToChangeTabIndex(currentTabIndex: TabIndex) {
-  const screenSize = window.screen.width
-
-  if(screenSize >= 1024) {
-    return currentTabIndex
-  }
-  if(currentTabIndex === 0) {
+export default function checkScreenSizeToChangeTabIndex() {
+  if(window.screen.width >= 1024) {
+    return 0
+  } else {
     return -1
   }
-  return 0
 }

@@ -4,8 +4,10 @@ import { ReactNode, useState } from "react"
 
 import { AppContext } from "./AppContext"
 
+import TabIndex from "@models/types/TabIndex"
+
 export default function AppProvider(props: { children: ReactNode }) {
-  const [menuButtonOpened, setMenuButtonOpened] = useState<0 | -1>(0)
+  const [menuButtonOpened, setMenuButtonOpened] = useState<TabIndex>(0)
   const [isPortuguese, setIsPortuguese] = useState(true)
 
   const handleMenuButtonOpened = (): void => {

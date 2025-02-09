@@ -8,8 +8,9 @@ import languageChecker from "./languageChecker"
 import useAppContext from "@hook/useAppContext"
 
 import LanguageType from "@models/types/LanguageType"
+import LanguageSelectorProps from "@models/props/LanguageSelectorProps"
 
-export default function LanguageSelector() {
+export default function LanguageSelector({ tabNavigation }: LanguageSelectorProps) {
   const [openedSelector, setOpenedSelector] = useState(false)
   const {isPortuguese, setIsPortuguese} = useAppContext()
 
@@ -53,7 +54,13 @@ export default function LanguageSelector() {
             </li>
           </ul>
       </div>
-      <select name="language" id="language" onChange={(e) => {handleLanguage(e.target.value)}} value={isPortuguese ? 'português' : 'english'}>
+      <select 
+        name="language" 
+        id="language" 
+        onChange={(e) => {handleLanguage(e.target.value)}} 
+        value={isPortuguese ? 'português' : 'english'}
+        tabIndex={tabNavigation}
+      >
         <option className="option" value="portuguese">{isPortuguese ? "🇧🇷 Português" : "🇧🇷 Portuguese"}</option>
         <option className="option" value="english">{isPortuguese ? "🇺🇸 Inglês" : "🇺🇸 English"}</option>
       </select>
