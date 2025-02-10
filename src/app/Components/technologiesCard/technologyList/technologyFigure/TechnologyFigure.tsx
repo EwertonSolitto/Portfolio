@@ -2,9 +2,7 @@ import Image from "next/image"
 
 import TechnologyFigureProps from "@models/props/TechnologyFigureProps"
 
-export default function TechnologyFigure(props: TechnologyFigureProps) {
-  const {img, description} = props
-
+export default function TechnologyFigure({img, description}: TechnologyFigureProps) {
   return (
     <li aria-label={description?.content}>
       <figure>
