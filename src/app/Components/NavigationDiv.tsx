@@ -9,7 +9,6 @@ import NavigationIDs from "@models/types/NavigationIDs";
 import navigationIDsEnglish from "@json/english/navigationIDs.json"
 import navigationIDsPortuguese from "@json/portuguese/navigationIDs.json"
 
-
 export default function NavigationDiv({section}: {section: NavigationIDs}) {
   const { isPortuguese } = useAppContext()
   const [ navigationIDs, setNavigationIDs ] = useState(navigationIDsPortuguese)
