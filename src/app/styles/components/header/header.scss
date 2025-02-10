@@ -106,8 +106,12 @@ header {
       display: grid;
       grid-template-columns: 27% 2fr;
 
-      h1 {
-        font-size: 1.8125rem;
+      .logo {
+        margin-right: auto;
+        
+        h1 {
+          font-size: 1.8125rem;
+        }
       }
 
       .opened-nav {
