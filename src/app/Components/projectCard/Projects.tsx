@@ -1,4 +1,4 @@
-import ProjectFigure from "./ProjectFigure"
+import PrintProjectFigures from "./projectFigure/PrintProjectFigures";
 
 import useAppContext from '@hook/useAppContext';
 
@@ -9,17 +9,13 @@ export default function Projects() {
   const { isPortuguese } = useAppContext()
   const projectsData = isPortuguese ? portugueseData : englishData
 
-  const figureList = projectsData.projects.map(({title, img, alt, tecnologies, links}, index) => {
-    return <ProjectFigure title={title} img={img} tecnologies={tecnologies} links={links} alt={alt} key={index}/>
-  })
-
   return (
     <section className="projects">
       <div className="card projects-card right">
         <h2>{projectsData.title}</h2>
 
         <ul className="figure-list">
-          {figureList}
+          {PrintProjectFigures(projectsData.projects)}
         </ul>
       </div>
     </section>

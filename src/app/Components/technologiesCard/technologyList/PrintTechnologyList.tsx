@@ -1,5 +1,6 @@
-import TechnologyListProps from "@/models/props/TechnologyListProps"
 import TechnologyList from "./TechnologyList"
+
+import TechnologyListProps from "@models/props/TechnologyListProps"
 
 export default function PrintTechnologyList(technologyList: Array<TechnologyListProps>) {
   return (

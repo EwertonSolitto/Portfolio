@@ -1,10 +1,12 @@
+import GithubAndWebsiteLinks from "../types/GithubAndWebsiteLinks"
+
 interface ProjectFigureProps {
   title: string
   style?: string
   img: string
   alt: string
   tecnologies: Array<string>
-  links: {github: string, website: string}
+  links: GithubAndWebsiteLinks
 }
 
 export default ProjectFigureProps

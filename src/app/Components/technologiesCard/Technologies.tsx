@@ -1,12 +1,11 @@
 'use client'
 
-import TechnologyList from "./technologyList/TechnologyList"
+import PrintTechnologyList from "./technologyList/PrintTechnologyList";
 
 import useAppContext from '@hook/useAppContext';
 
 import portugueseData from '@json/portuguese/technologies.json';
 import englishData from '@json/english/technologies.json';
-import PrintTechnologyList from "./technologyList/PrintTechnologyList";
 
 export default function Technologies() {
   const { isPortuguese } = useAppContext()
