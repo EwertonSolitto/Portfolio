@@ -6,18 +6,26 @@ import useAppContext from '@hook/useAppContext';
 
 import portugueseData from '@json/portuguese/technologies.json';
 import englishData from '@json/english/technologies.json';
+import technologyData from '@json/technologies.json'
+import createTechnologyList from "./createTechnologyList";
 
 export default function Technologies() {
   const { isPortuguese } = useAppContext()
-  const technologiesData = isPortuguese ? portugueseData : englishData
+  const data = isPortuguese ? portugueseData : englishData
 
   return (
     <section className="technologies">
       <div className="card list-card left">
       
-        <h2>{technologiesData.title}</h2>
+        <h2>{data.title}</h2>
   
-        {PrintTechnologyList(technologiesData.lists)}
+        {PrintTechnologyList(
+          createTechnologyList(
+            technologyData.technologies, 
+            data.technologyTitles
+            )
+          )
+        }
   
       </div>
     </section>
