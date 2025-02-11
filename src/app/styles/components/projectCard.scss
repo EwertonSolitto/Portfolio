@@ -5,7 +5,7 @@
   margin-top: 6rem;
 
   .projects-card {
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.25rem;
     width: clamp(15rem, 95vw, 20.5rem);
   
     .figure-list {
@@ -94,6 +94,25 @@
               }
             }
           }
+        }
+      }
+    }
+
+    .see-more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: .5rem;
+
+      a {
+        font-size: 1.25rem;
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: .5rem .75rem;
+        border-radius: .5rem;
+
+        &:is(:hover, :focus) {
+          scale: 105%;
         }
       }
     }
@@ -258,6 +277,13 @@
               }
             }
           }
+        }
+      }
+      .see-more {
+        margin-top: 1.5rem;
+
+        a {
+          font-size: 1.5rem;
         }
       }
     }

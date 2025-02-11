@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import PrintProjectFigures from "./projectFigure/PrintProjectFigures";
 
 import useAppContext from '@hook/useAppContext';
@@ -17,6 +19,10 @@ export default function Projects() {
         <ul className="figure-list">
           {PrintProjectFigures(projectsData.projects)}
         </ul>
+        
+        <div className="see-more">
+          <Link href={'/projects'}>{projectsData.seeMore}</Link>
+        </div>
       </div>
     </section>
   )
