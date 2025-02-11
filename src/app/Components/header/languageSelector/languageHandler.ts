@@ -9,9 +9,11 @@ export default function languageHandler(
 ) {
   switch(language) {
     case 'portuguese':
+      document.documentElement.lang = 'pt-br'
       setIsPortuguese(true)
       break
     case 'english':
+      document.documentElement.lang = 'en'
       setIsPortuguese(false)
       break
   }

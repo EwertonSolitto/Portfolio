@@ -9,7 +9,6 @@ import LanguageSelectorDesktopProps from "@models/props/LanguageSelectorDesktopP
 import portugueseData from '@json/portuguese/languageSelector.json';
 import englishData from '@json/english/languageSelector.json';
 
-
 export default function LanguageSelectorDesktop({
   handleSelector, 
   openedSelector, 
