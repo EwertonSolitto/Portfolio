@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 import checkScreenSizeToChangeTabIndex from "./checkScreenSizeToChangeTabIndex";
 import handleTabNav from "./handleTabNav";
@@ -33,9 +34,9 @@ export default function Header () {
   return (
     <header className={showMenu ? 'opened-menu' : ''}>
         <div className='header'>
-            <a href="#home" className="logo" onClick={() => {setShowMenu(false)}} tabIndex={menuButtonOpened}>
+            <Link href="/" className="logo" onClick={() => {setShowMenu(false)}} tabIndex={menuButtonOpened}>
             <h1 aria-label="Ewerton Solitto"><Logo /></h1>
-          </a>
+          </Link>
 
           <HeaderButton handler={handleMenu} >
             {ShowMenuHandler(showMenu)}

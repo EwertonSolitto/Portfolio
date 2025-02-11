@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import useAppContext from "@hook/useAppContext"
 
 import NavigationProps from "@models/props/NavigationProps";
@@ -16,7 +18,7 @@ export default function Navigation({tIndex, onClick}: NavigationProps) {
             {navigationData.navigation.map(({content, link}, index) => {
                 return (
                   <li key={index}>
-                    <a href={link} tabIndex={tIndex} onClick={onClick}>{content}</a>
+                    <Link href={'/' + link} tabIndex={tIndex} onClick={onClick}>{content}</Link>
                   </li>
                 )
               })}
