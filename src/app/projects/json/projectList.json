@@ -52,5 +52,59 @@
       "github": "https://github.com/EwertonSolitto/GiordanoFettuccine",
       "website": "https://ewertonsolitto.github.io/GiordanoFettuccine/"
     }
+  },
+  {
+    "title": "Rocket NFTs",
+    "description": {
+      "portuguese": "Rocket NFTs é uma aplicação Front-end feita com ReactJS, Typescript e TailwindCSS",
+      "english": "Rocket NFTs is a Front-end application made with ReactJS, Typescript and TailwindCSS."
+    },
+    "imageSrc": "/projects/rocket-nfts.png",
+    "projectType": "Front-end",
+    "technologies": [
+      {
+        "name": "ReactJS",
+        "src": "/technologies/reactjs-logo.svg"
+      },
+      {
+        "name": "TailwindCSS",
+        "src": "/technologies/tailwindcss-logo.svg"
+      },
+      {
+        "name": "Typescript",
+        "src": "/technologies/typescript-logo.svg"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/EwertonSolitto/Rocket-NFTs",
+      "website": "https://rocket-nfts-ewertonsolitto.vercel.app/"
+    }
+  },
+  {
+    "title": "OneBitX",
+    "description": {
+      "portuguese": "Exercício do curso da OneBitCode para treinar Bootstrap e Sass, refazendo um site com 3 páginas, também usando a biblioteca Animate on Scroll",
+      "english": "Exercise of OneBitCode course to train Bootstrap and Sass, remaking a website with 3 pages, also using the Animate on Scroll Library."
+    },
+    "imageSrc": "/projects/onebitx.png",
+    "projectType": "Front-end",
+    "technologies": [
+      {
+        "name": "SASS",
+        "src": "/technologies/sass-logo.svg"
+      },
+      {
+        "name": "HTML",
+        "src": "/technologies/html-logo.svg"
+      },
+      {
+        "name": "Bootstrap",
+        "src": "/technologies/bootstrap-logo.svg"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/EwertonSolitto/OneBitX",
+      "website": "https://ewertonsolitto.github.io/OneBitX/pages/index.html"
+    }
   }
 ]
