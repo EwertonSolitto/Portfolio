@@ -10,6 +10,7 @@ import PrintTechnologyFigures from "./PrintTechnologyFigures";
 import useAppContext from "@hook/useAppContext";
 
 import CardProps from "@models/props/CardProps";
+import PrintProjectType from "./PrintProjectType";
 
 
 export default function Card({
@@ -39,8 +40,7 @@ export default function Card({
 
       </div>
       <div className='bottom-img'>
-        <Layout size={32} color='#0F1621' weight='fill' />
-        <p>{projectType}</p>
+        {PrintProjectType(projectType)}
       </div>
 
       <div className='description'>
@@ -56,10 +56,9 @@ export default function Card({
         <ul>
           {PrintTechnologyFigures(technologies)}
         </ul>
-        
+
       </div>
       
-
       <div className='link-buttons'>
         {PrintLinks(links)}
       </div>
