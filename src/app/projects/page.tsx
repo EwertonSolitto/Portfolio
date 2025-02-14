@@ -8,6 +8,7 @@ import PrintAllCards from './components/card/PrintAllCards';
 
 import Header from "@Components/header/Header";
 import Footer from '@Components/footer/Footer';
+import Title from './components/Title';
 
 metadata.title = 'Projects'
 
@@ -19,7 +20,7 @@ export default function AppProjects() {
         <Header />
 
         <section className="projects-section">
-          <h2>Projetos</h2>
+          <Title />
           
           <ul className='projects-list'>
 

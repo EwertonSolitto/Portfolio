@@ -376,7 +376,13 @@ div.app-projects {
 @media (min-width: 1124px) {
   div.app-projects {
     .projects-section {
+      margin-top: 6rem;
       padding-inline: 4rem;
+
+      h2 {
+        font-size: 3rem;
+        padding-left: 10rem;
+      }
 
       ul.projects-list {
         li.project-card {
