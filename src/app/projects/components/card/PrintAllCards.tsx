@@ -8,6 +8,7 @@ export default function PrintAllCards()  {
   return projectsData.map(({
     title,
     description,
+    imageSrc,
     projectType,
     technologies,
     links
@@ -17,6 +18,7 @@ export default function PrintAllCards()  {
         <Card 
           title={title} 
           description={description} 
+          imageSrc={imageSrc}
           links={links} 
           technologies={technologies} 
           projectType={projectType} 

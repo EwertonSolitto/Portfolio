@@ -6,6 +6,7 @@ import ProjectType from "../types/ProjectType"
 export default interface CardProps {
   title: string
   description: DescriptionLanguages
+  imageSrc: string
   projectType: ProjectType
   technologies: Array<ProjectCardTechnologyType>
   links: CardLinks

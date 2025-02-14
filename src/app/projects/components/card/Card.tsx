@@ -1,21 +1,22 @@
 'use client'
 
 import Image from "next/image";
-import { Layout } from "@phosphor-icons/react";
 
-import PrintLinks from "./PrintLinks";
+import PrintProjectType from "./PrintProjectType";
 import PrintTopTechnologies from "./PrintTopTechnologies";
 import PrintTechnologyFigures from "./PrintTechnologyFigures";
+import PrintLinks from "./PrintLinks";
 
 import useAppContext from "@hook/useAppContext";
 
 import CardProps from "@models/props/CardProps";
-import PrintProjectType from "./PrintProjectType";
+
 
 
 export default function Card({
   title, 
-  description, 
+  description,
+  imageSrc, 
   projectType, 
   technologies, 
   links
@@ -36,7 +37,7 @@ export default function Card({
       
       <div className='img-card'>
 
-        <Image src={"/projects/the-blog.png"} alt='foto' width={448} height={292}/>
+        <Image src={imageSrc} alt='foto' width={448} height={292}/>
 
       </div>
       <div className='bottom-img'>

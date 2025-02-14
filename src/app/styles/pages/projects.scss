@@ -39,11 +39,14 @@ div.app-projects {
 
           h3 {
             font-size: 1.5rem;
+            min-width: 10rem;
+            max-width: 10rem;
           }
   
           .top-technology-list {
             display: flex;
-            
+            padding: 0;
+
             li {
               position: relative;
               z-index: 3;
@@ -183,6 +186,12 @@ div.app-projects {
   }
 }
 
+@media (max-width: 360px) {
+  div.app-projects .projects-section ul.projects-list li.project-card .top-card h3 {
+    font-size: 1.25rem;
+  }
+}
+
 @media (min-width: 425px) {
   div.app-projects {
     .projects-section {
@@ -197,6 +206,8 @@ div.app-projects {
           .top-card {
             h3 {
               font-size: 1.75rem;
+              max-width: none;
+              min-width: none;
             }
           }
 

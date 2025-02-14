@@ -5,6 +5,7 @@
       "portuguese": "The Blog é uma aplicação Front-end feita em um desafio da Rocketseat. Neste projeto, muitos métodos foram usados para tornar o SEO e o desempenho do site os melhores possíveis.",
       "english": "The Blog is a Front-end application built on a challenge made by Rocketseat. In this project, many methods were used to make the SEO and performance of the website as good as possible."
     },
+    "imageSrc": "/projects/the-blog.png",
     "projectType": "Front-end",
     "technologies": [
       {
@@ -23,6 +24,33 @@
     "links": {
       "github": "https://github.com/EwertonSolitto/The-Blog",
       "website": "https://ewertonsolitto.github.io/The-Blog/"
+    }
+  },
+  {
+    "title": "GiordanoFettuccine",
+    "description": {
+      "portuguese": "GiordanoFettucine é uma aplicação Front-end feita na edição NLW RETURN, evento organizado pela Rocketseat.",
+      "english": "GiordanoFettuccine is a Front-end application built on the NLW RETURN edition, organized event by Rocketseat."
+    },
+    "imageSrc": "/projects/giordanofettuccine.png",
+    "projectType": "Front-end",
+    "technologies": [
+      {
+        "name": "HTML",
+        "src": "/technologies/html-logo.svg"
+      },
+      {
+        "name": "CSS",
+        "src": "/technologies/css-logo.svg"
+      },
+      {
+        "name": "Javascript",
+        "src": "/technologies/javascript-logo.svg"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/EwertonSolitto/GiordanoFettuccine",
+      "website": "https://ewertonsolitto.github.io/GiordanoFettuccine/"
     }
   }
 ]
