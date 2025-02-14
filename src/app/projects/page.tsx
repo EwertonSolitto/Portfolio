@@ -7,6 +7,7 @@ import AppProvider from '@context/AppProvider';
 import Header from "@Components/header/Header";
 import Footer from '@Components/footer/Footer';
 import Card from './components/Card';
+import PrintAllCards from './components/PrintAllCards';
 
 metadata.title = 'Projects'
 
@@ -22,9 +23,7 @@ export default function AppProjects() {
           
           <ul className='projects-list'>
 
-            <Card />
-            <Card />
-            <Card />
+            {PrintAllCards()}
             
           </ul>
         </section>
