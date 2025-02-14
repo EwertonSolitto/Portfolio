@@ -1,5 +1,4 @@
 import TechnologyFigureProps from "@/models/props/TechnologyFigureProps"
-import TechnologyListProps from "@/models/props/TechnologyListProps"
 
 export default function createTechnologyList(
   technologies: Array<Array<TechnologyFigureProps>>, 

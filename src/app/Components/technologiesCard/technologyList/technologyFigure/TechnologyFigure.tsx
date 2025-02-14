@@ -7,7 +7,7 @@ export default function TechnologyFigure({img, description}: TechnologyFigurePro
     <li aria-label={description?.content}>
       <figure>
         <div>
-          <Image src={img.src} alt={img.alt} width={img.width} height={img.height} />
+          <Image src={img.src} alt={img.alt} width={80} height={80} />
         </div>
         <figcaption className={description?.style}>{description?.content}</figcaption>
       </figure>

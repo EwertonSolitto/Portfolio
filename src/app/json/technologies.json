@@ -1,30 +1,29 @@
 {
   "technologies": [
     [
-      {"img": {"src": "/technologies/html-logo.svg", "alt": "HTML logo", "width": 80, "height": 80}, "description":{"content": "HTML"}},
-      {"img": {"src": "/technologies/css-logo.svg", "alt": "CSS logo", "width": 80, "height": 80}, "description":{"content": "CSS"}},
-      {"img": {"src": "/technologies/javascript-logo.svg", "alt": "Javascript logo", "width": 80, "height": 80}, "description":{"content": "Javascript"}},
-      {"img": {"src": "/technologies/typescript-logo.svg", "alt": "Typescript logo", "width": 80, "height": 80}, "description":{"content": "Typescript"}},
-      {"img": {"src": "/technologies/reactjs-logo.svg", "alt": "ReactJS logo", "width": 80, "height": 80}, "description":{"content": "ReactJs"}},
-      {"img": {"src": "/technologies/expo-logo.svg", "alt": "Expo logo", "width": 80, "height": 80}, "description":{"content": "Expo"}},
-      {"img": {"src": "/technologies/reactjs-logo.svg", "alt": "React Native logo", "width": 80, "height": 80}, "description":{"content": "React Native"}},
-      {"img": {"src": "/technologies/sass-logo.svg", "alt": "Sass logo", "width": 80, "height": 80}, "description":{"content": "Sass"}},
-      {"img": {"src": "/technologies/bootstrap-logo.svg", "alt": "Bootstrap logo", "width": 80, "height": 80}, "description":{"content": "Bootstrap"}},
-      {"img": {"src": "/technologies/tailwindcss-logo.svg", "alt": "TailwindCSS logo", "width": 80, "height": 80}, "description":{"content": "TailwindCSS"}},
-      {"img": {"src": "/technologies/git-logo.svg", "alt": "Git logo", "width": 80, "height": 80}, "description":{"content": "Git"}},
-      {"img": {"src": "/technologies/github-black-logo.svg", "alt": "GitHub logo", "width": 80, "height": 80}, "description":{"content": "Github"}},
-      {"img": {"src": "/technologies/figma-logo.svg", "alt": "Figma logo", "width": 80, "height": 80}, "description":{"content": "Figma"}}
+      {"img": {"src": "/technologies/html-logo.svg", "alt": "HTML logo"}, "description":{"content": "HTML"}},
+      {"img": {"src": "/technologies/css-logo.svg", "alt": "CSS logo"}, "description":{"content": "CSS"}},
+      {"img": {"src": "/technologies/javascript-logo.svg", "alt": "Javascript logo"}, "description":{"content": "Javascript"}},
+      {"img": {"src": "/technologies/typescript-logo.svg", "alt": "Typescript logo"}, "description":{"content": "Typescript"}},
+      {"img": {"src": "/technologies/reactjs-logo.svg", "alt": "ReactJS logo"}, "description":{"content": "ReactJs"}},
+      {"img": {"src": "/technologies/expo-logo.svg", "alt": "Expo logo"}, "description":{"content": "Expo"}},
+      {"img": {"src": "/technologies/reactjs-logo.svg", "alt": "React Native logo"}, "description":{"content": "React Native"}},
+      {"img": {"src": "/technologies/sass-logo.svg", "alt": "Sass logo"}, "description":{"content": "Sass"}},
+      {"img": {"src": "/technologies/bootstrap-logo.svg", "alt": "Bootstrap logo"}, "description":{"content": "Bootstrap"}},
+      {"img": {"src": "/technologies/tailwindcss-logo.svg", "alt": "TailwindCSS logo"}, "description":{"content": "TailwindCSS"}},
+      {"img": {"src": "/technologies/git-logo.svg", "alt": "Git logo"}, "description":{"content": "Git"}},
+      {"img": {"src": "/technologies/figma-logo.svg", "alt": "Figma logo"}, "description":{"content": "Figma"}}
     ],
     [
-      {"img": {"src": "/technologies/nodejs-logo.svg", "alt": "NodeJS logo", "width": 80, "height": 80}, "description":{"content": "NodeJS"}},
-      {"img": {"src": "/technologies/graphql-logo.svg", "alt": "GraphQL logo", "width": 80, "height": 80}, "description":{"content": "GraphQL"}},
-      {"img": {"src": "/technologies/mongodb-logo.svg", "alt": "MongoDB logo", "width": 80, "height": 80}, "description":{"content": "MongoDB"}},
-      {"img": {"src": "/technologies/prisma-logo.svg", "alt": "Prisma logo", "width": 80, "height": 80}, "description":{"content": "Prisma"}},
-      {"img": {"src": "/technologies/vite-logo.svg", "alt": "Vite logo", "width": 80, "height": 80}, "description":{"content": "Vite"}},
-      {"img": {"src": "/technologies/nextjs-logo.svg", "alt": "NextJS logo", "width": 80, "height": 80}, "description":{"content": "NextJS"}},
-      {"img": {"src": "/technologies/docker-logo.svg", "alt": "Docker logo", "width": 80, "height": 80}, "description":{"content": "Docker"}},
-      {"img": {"src": "/technologies/angular-logo.svg", "alt": "Angular logo", "width": 80, "height": 80}, "description":{"content": "Angular"}},
-      {"img": {"src": "/technologies/jest-logo.svg", "alt": "Jest logo", "width": 80, "height": 80}, "description":{"content": "Jest"}}
+      {"img": {"src": "/technologies/nodejs-logo.svg", "alt": "NodeJS logo"}, "description":{"content": "NodeJS"}},
+      {"img": {"src": "/technologies/graphql-logo.svg", "alt": "GraphQL logo"}, "description":{"content": "GraphQL"}},
+      {"img": {"src": "/technologies/mongodb-logo.svg", "alt": "MongoDB logo"}, "description":{"content": "MongoDB"}},
+      {"img": {"src": "/technologies/prisma-logo.svg", "alt": "Prisma logo"}, "description":{"content": "Prisma"}},
+      {"img": {"src": "/technologies/vite-logo.svg", "alt": "Vite logo"}, "description":{"content": "Vite"}},
+      {"img": {"src": "/technologies/nextjs-logo.svg", "alt": "NextJS logo"}, "description":{"content": "NextJS"}},
+      {"img": {"src": "/technologies/docker-logo.svg", "alt": "Docker logo"}, "description":{"content": "Docker"}},
+      {"img": {"src": "/technologies/angular-logo.svg", "alt": "Angular logo"}, "description":{"content": "Angular"}},
+      {"img": {"src": "/technologies/jest-logo.svg", "alt": "Jest logo"}, "description":{"content": "Jest"}}
     ]
   ]
 }
