@@ -6,7 +6,7 @@ div.app-projects {
 
   .projects-section {
     margin-top: 5rem;
-    margin-inline: 1rem;
+    padding-inline: .75rem;
 
     h2 {
       color: $primary-color;
@@ -18,14 +18,17 @@ div.app-projects {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
       padding: 0;
 
       li.project-card {
-        min-width: 90vw;
+        max-width: 25rem;
         padding: .5rem 1rem;
         background-color: $primary-color;
         border: .5rem solid $terciary-color;
         border-radius: 1rem;
+        box-shadow: .5rem .5rem 0.25rem rgba(0,0,0,25%);
         
         .top-card {
           display: flex;
@@ -65,7 +68,6 @@ div.app-projects {
         }
   
         div.img-card {
-          
           img {
             width: 100%;
             height: auto;
@@ -106,6 +108,7 @@ div.app-projects {
           p {
             font-size: .875rem;
             text-align: justify;
+            height: 5.5rem;
           }
         }
 
@@ -178,4 +181,301 @@ div.app-projects {
       }
     }
   }
+}
+
+@media (min-width: 425px) {
+  div.app-projects {
+    .projects-section {
+      padding-inline: 2rem;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      ul.projects-list {
+        li.project-card {
+          .top-card {
+            h3 {
+              font-size: 1.75rem;
+            }
+          }
+
+          div.bottom-img {
+            svg {
+              height: 1.75rem;
+              margin-inline: .5rem .25rem;
+            }
+            
+            p {
+              font-size: 1.125rem;
+            }
+          }
+
+          div.description {
+            h4 {
+              font-size: 1.25rem;
+            }
+  
+            p {
+              font-size: 1rem;
+              height: 6rem;
+            }
+          }
+
+          div.technologies {
+            h4 {
+              font-size: 1.25rem;
+            }
+
+            ul {
+              li {
+                figure {
+                  img {
+                    height: 2.5rem;
+                  }
+
+                  figcaption {
+                    font-size: 1rem;
+                  }
+                }
+              }
+            }
+          }
+
+          div.link-buttons {
+            margin-bottom: .5rem;
+
+            a {
+              padding: .5rem 1rem;
+              gap: .5rem;
+
+              span {
+                font-size: 1.25rem;
+              }
+  
+              img, svg {
+                height: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  div.app-projects {
+    .projects-section {
+      ul.projects-list {
+        li.project-card {
+          max-width: 28rem;
+          padding: .5rem 1.5rem;
+
+          .top-card {
+            h3 {
+              font-size: 2rem;
+            }
+            
+            .top-technology-list {              
+              li {
+                left: 2rem;
+                top: .125rem;
+  
+                &:nth-child(2) {
+                  left: 1.125rem;
+                }
+  
+                img {
+                  height: 2.25rem;
+                }
+              }
+            }
+          }
+
+          div.bottom-img {
+            bottom: 1rem;
+  
+            svg {
+              height: 1.875rem;
+              margin-inline: .625rem .5rem; 
+            }
+  
+            p {
+              font-size: 1.375rem;
+            }
+          }
+
+          div.description {
+            margin-bottom: .375rem;
+  
+            h4 {
+              font-size: 1.375rem;
+            }
+  
+            p {
+              font-size: 1.125rem;
+              height: 7rem;
+            }
+          }
+
+          div.technologies {
+            margin-bottom: .875rem;
+  
+            h4 {
+              font-size: 1.375rem;
+            }
+  
+            ul {
+              gap: .75rem;
+              
+              li {
+                figure {
+                  gap: .375rem;
+  
+                  img {
+                    height: 3rem;
+                  }
+                  
+                  figcaption {
+                    font-size: 1.125rem;
+                  }
+                }
+              }
+            }
+          }
+
+          div.link-buttons {
+            a {
+              gap: .625rem;
+              border-radius: .5rem;
+
+              span {
+                font-size: 1.75rem;
+              }
+  
+              img, svg {
+                height: 1.75rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: 920px) {
+  div.app-projects {
+    .projects-section {
+      margin-inline: auto
+    }
+  }
+}
+
+@media (min-width: 1124px) {
+  div.app-projects {
+    .projects-section {
+      padding-inline: 4rem;
+
+      ul.projects-list {
+        li.project-card {
+          max-width: 32rem;
+          padding: .75rem 1.5rem;
+
+          .top-card {
+            h3 {
+              font-size: 2.5rem;
+            }
+            
+            .top-technology-list {              
+              li {
+                left: 2.375rem;
+  
+                &:nth-child(2) {
+                  left: 1.375rem;
+                }
+  
+                img {
+                  height: 2.75rem;
+                }
+              }
+            }
+          }
+
+          div.bottom-img {
+            bottom: 1.25rem;
+            border-radius: .25rem;
+  
+            svg {
+              height: 2rem;
+              margin-inline: .625rem; 
+            }
+  
+            p {
+              font-size: 1.5rem;
+              margin-block: .25rem;
+            }
+          }
+
+          div.description {
+            margin-bottom: .5rem;
+  
+            h4 {
+              font-size: 1.5rem;
+            }
+  
+            p {
+              font-size: 1.25rem;
+              height: 8rem;
+            }
+          }
+
+          div.technologies {
+            margin-bottom: 1rem;
+  
+            h4 {
+              font-size: 1.5rem;
+              margin-bottom: .75rem;
+            }
+  
+            ul {
+              gap: 1rem;  
+              li {
+                figure {
+                  gap: .5rem;
+  
+                  img {
+                    width: auto;
+                    height: 3.5rem;
+                  }
+                  
+                  figcaption {
+                    font-size: 1.125rem;
+                  }
+                }
+              }
+            }
+          }
+
+          div.link-buttons {
+            a {
+              padding: .75rem 1rem;
+              gap: .75rem;
+              border-radius: .5rem;
+
+              span {
+                font-size: 2rem;
+              }
+  
+              img, svg {
+                height: 2rem;
+                width: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
 }
