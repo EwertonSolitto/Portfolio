@@ -2,7 +2,7 @@ import checkProjectType from "./checkProjectType";
 
 import Card from "./Card";
 
-import projectsData from "../json/projectList.json"
+import projectsData from "../../json/projectList.json"
 
 export default function PrintAllCards()  {
   return projectsData.map(({

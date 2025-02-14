@@ -8,6 +8,7 @@ import LinkButton from "@Components/LinkButton";
 import useAppContext from "@hook/useAppContext";
 
 import CardProps from "@models/props/CardProps";
+import PrintLinks from "./PrintLinks";
 
 export default function Card({
   title, 
@@ -72,13 +73,7 @@ export default function Card({
       
 
       <div className='link-buttons'>
-        <LinkButton ariaLabel='0' link={links.github} content='Github' style='github'>
-          <Image src={"technologies/github-black-logo.svg"} alt='github logo' width={32} height={32} />
-        </LinkButton>
-
-        <LinkButton ariaLabel='0' link={links.website} content='Website' style='website'>
-          <ArrowRight size={32} color="#0F1621" fill="bold" />
-        </LinkButton>
+        {PrintLinks(links)}
       </div>
     </li>
   )

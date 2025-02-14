@@ -1,3 +1,4 @@
+import CardLinks from "../types/CardLinks"
 import ProjectType from "../types/ProjectType"
 
 export default interface CardProps {
@@ -11,9 +12,5 @@ export default interface CardProps {
     name: string,
     src: string,
   }>
-  links: {
-    github: string,
-    website?: string,
-    download?: string
-  }
+  links: CardLinks
 }
