@@ -12,10 +12,6 @@ export default function PrintLinks(links: CardLinks) {
     </LinkButton>
   )
 
-  const downloadButton = links.download && (
-    <LinkButton ariaLabel='0' link={links.download} content='Download'></LinkButton>
-  )
-
   return (
     <>
       <LinkButton ariaLabel='0' link={links.github} content='Github' style='github'>
@@ -23,7 +19,6 @@ export default function PrintLinks(links: CardLinks) {
       </LinkButton>
 
       {websiteButton}
-      {downloadButton}
     </>
   )
 }

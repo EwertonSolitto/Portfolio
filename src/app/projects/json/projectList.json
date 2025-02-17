@@ -1,5 +1,36 @@
 [
   {
+    "title": "Portfolio Web",
+    "description": {
+      "portuguese": "Portfolio We é uma aplicação Front-end feita em Next.js e Typescript. É o projeto em que mais me dediquei, com uso de Nodemailer para envios de email dentro do app, uso de vários hooks (useState, UseEffect, UseContext, UseForm), SEO, e Mobile First.",
+      "english": "Portfolio We is a Front-end application built in Next.js and Typescript. It's my most dedicaded project, using Nodemailer to send emails, using several hooks (useState, UseEffect, UseContext, UseForm), SEO, and Mobile First."
+    },
+    "imageSrc": "/projects/portfolio-web.png",
+    "projectType": "Front-end",
+    "technologies": [
+      {
+        "name": "ReactJS",
+        "src": "/technologies/reactjs-logo.svg"
+      },
+      {
+        "name": "Next.js",
+        "src": "/technologies/nextjs-logo.svg"
+      },
+      {
+        "name": "Typescript",
+        "src": "/technologies/typescript-logo.svg"
+      },
+      {
+        "name": "SASS",
+        "src": "/technologies/sass-logo.svg"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/EwertonSolitto/Portfolio",
+      "website": "https://portfolio-ewertonsolitto.vercel.app/"
+    }
+  },
+  {
     "title": "The Blog.",
     "description": {
       "portuguese": "The Blog é uma aplicação Front-end feita em um desafio da Rocketseat. Neste projeto, muitos métodos foram usados para tornar o SEO e o desempenho do site os melhores possíveis.",
@@ -56,7 +87,7 @@
   {
     "title": "Rocket NFTs",
     "description": {
-      "portuguese": "Rocket NFTs é uma aplicação Front-end feita com ReactJS, Typescript e TailwindCSS",
+      "portuguese": "Rocket NFTs é uma aplicação Front-end feita com ReactJS, Typescript e TailwindCSS.",
       "english": "Rocket NFTs is a Front-end application made with ReactJS, Typescript and TailwindCSS."
     },
     "imageSrc": "/projects/rocket-nfts.png",
@@ -83,7 +114,7 @@
   {
     "title": "OneBitX",
     "description": {
-      "portuguese": "Exercício do curso da OneBitCode para treinar Bootstrap e Sass, refazendo um site com 3 páginas, também usando a biblioteca Animate on Scroll",
+      "portuguese": "Exercício do curso da OneBitCode para treinar Bootstrap e Sass, refazendo um site com 3 páginas, também usando a biblioteca Animate on Scroll.",
       "english": "Exercise of OneBitCode course to train Bootstrap and Sass, remaking a website with 3 pages, also using the Animate on Scroll Library."
     },
     "imageSrc": "/projects/onebitx.png",
@@ -105,6 +136,163 @@
     "links": {
       "github": "https://github.com/EwertonSolitto/OneBitX",
       "website": "https://ewertonsolitto.github.io/OneBitX/pages/index.html"
+    }
+  },
+  {
+    "title": "Blog Angular",
+    "description": {
+      "portuguese": "Blog Angular é uma single page application de um blog.",
+      "english": "Blog Angular is a single page application of a blog."
+    },
+    "imageSrc": "/projects/the-blog-angular.png",
+    "projectType": "Front-end",
+    "technologies": [
+      {
+        "name": "Angular",
+        "src": "/technologies/angular-logo.svg"
+      },
+      {
+        "name": "CSS",
+        "src": "/technologies/css-logo.svg"
+      },
+      {
+        "name": "Typescript",
+        "src": "/technologies/typescript-logo.svg"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/EwertonSolitto/blog-angular",
+      "website": "https://blog-angular-vert.vercel.app/"
+    }
+  },
+  {
+    "title": "SpaceshipSecurity",
+    "description": {
+      "portuguese": "Aplicativo feito em React Native e Expo que gera senhas automaticamente a partir das opções selecionadas antes de gerar.",
+      "english": "Application made in React Native and Expo that automatically generates passwords from the options selected before generating."
+    },
+    "imageSrc": "/projects/spaceship-security.png",
+    "projectType": "Mobile",
+    "technologies": [
+      {
+        "name": "React Native",
+        "src": "/technologies/reactjs-logo.svg"
+      },
+      {
+        "name": "Expo",
+        "src": "/technologies/expo-logo.svg"
+      },
+      {
+        "name": "Typescript",
+        "src": "/technologies/typescript-logo.svg"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/EwertonSolitto/spaceship-security"
+    }
+  },
+  {
+    "title": "Portfolio Mobile",
+    "description": {
+      "portuguese": "Aplicativo feito em React Native e Expo inspirado no meu portfólio web, mas com menos funcionalidades e mais simples.",
+      "english": "Application made in React Native and Expo that is like my portfolio web, but with less features and more simple."
+    },
+    "imageSrc": "/projects/portfolio-mobile.png",
+    "projectType": "Mobile",
+    "technologies": [
+      {
+        "name": "React Native",
+        "src": "/technologies/reactjs-logo.svg"
+      },
+      {
+        "name": "Expo",
+        "src": "/technologies/expo-logo.svg"
+      },
+      {
+        "name": "Typescript",
+        "src": "/technologies/typescript-logo.svg"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/EwertonSolitto/portfolio-react-native"
+    }
+  },
+  {
+    "title": "Food Generator",
+    "description": {
+      "portuguese": "Aplicativo feito em React Native e Expo que usa a Foodish API para gerar uma imagem de comida e que possui algumas opções de comida no bottom tab.",
+      "english": "Application made in React Native and Expo that uses Foodish api to generate a food image with some options of food on the bottom tab."
+    },
+    "imageSrc": "/projects/food-generator.png",
+    "projectType": "Mobile",
+    "technologies": [
+      {
+        "name": "React Native",
+        "src": "/technologies/reactjs-logo.svg"
+      },
+      {
+        "name": "Expo",
+        "src": "/technologies/expo-logo.svg"
+      },
+      {
+        "name": "Typescript",
+        "src": "/technologies/typescript-logo.svg"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/EwertonSolitto/food-generator"
+    }
+  },
+  {
+    "title": "Camera Clone",
+    "description": {
+      "portuguese": "Aplicativo feito em React Native e Expo que funciona como uma camera normal.",
+      "english": "Application made in React Native and Expo that works like a usual camera."
+    },
+    "imageSrc": "/projects/camera-clone.png",
+    "projectType": "Mobile",
+    "technologies": [
+      {
+        "name": "React Native",
+        "src": "/technologies/reactjs-logo.svg"
+      },
+      {
+        "name": "Expo",
+        "src": "/technologies/expo-logo.svg"
+      },
+      {
+        "name": "Typescript",
+        "src": "/technologies/typescript-logo.svg"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/EwertonSolitto/camera-clone"
+    }
+  },
+  {
+    "title": "Login App",
+    "description": {
+      "portuguese": "Aplicativo feito em React Native e Expo para criar uma conta e logar no aplicativo.",
+      "english": "Application made in React Native and Expo to create account and log into the app."
+    },
+    "imageSrc": "/projects/login-app.png",
+    "projectType": "Mobile",
+    "technologies": [
+      {
+        "name": "React Native",
+        "src": "/technologies/reactjs-logo.svg"
+      },
+      {
+        "name": "Expo",
+        "src": "/technologies/expo-logo.svg"
+      },
+      {
+        "name": "Typescript",
+        "src": "/technologies/typescript-logo.svg"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/EwertonSolitto/login-app"
     }
   }
 ]

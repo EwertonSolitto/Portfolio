@@ -51,6 +51,7 @@ div.app-projects {
               position: relative;
               z-index: 3;
               left: 1.75rem;
+              min-width: 2rem;
 
               &:nth-child(2) {
                 z-index: 2;
@@ -111,7 +112,7 @@ div.app-projects {
           p {
             font-size: .875rem;
             text-align: justify;
-            height: 6.5rem;
+            height: 7.375rem;
           }
         }
 
@@ -229,7 +230,7 @@ div.app-projects {
   
             p {
               font-size: 1rem;
-              height: 6rem;
+              height: 8.125rem;
             }
           }
 
@@ -326,7 +327,6 @@ div.app-projects {
   
             p {
               font-size: 1.125rem;
-              height: 7rem;
             }
           }
 
@@ -443,7 +443,7 @@ div.app-projects {
   
             p {
               font-size: 1.25rem;
-              height: 8rem;
+              height: 8.5rem;
             }
           }
 
