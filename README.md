@@ -3,7 +3,7 @@
 
 ## About 📝
 
-https://portfolio-ewertonsolitto.vercel.app/
+https://portfolio-ewertonsolittos-projects.vercel.app/
 
 **Portfolio** is one of my most dedicated projects, in general, there is everything you need to know me.
 
